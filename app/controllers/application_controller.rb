@@ -11,6 +11,10 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :email
   end
 
+  def index
+    @pst = Post.find(params[:id])
+  end
+
   def after_sign_in_path_for(resource)
     if (resource.sign_in_count <= 1)
       '/profiles/new'

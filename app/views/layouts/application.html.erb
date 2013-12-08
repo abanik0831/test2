@@ -8,7 +8,8 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body class="bdy">
+<body class="bdy <%= @home_page ? 'homepage' : 'not_homepage'%>">
+
 <% if user_signed_in? %>
 <script>
   $(".bdy").addClass("signed_in");

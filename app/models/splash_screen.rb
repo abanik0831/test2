@@ -11,6 +11,6 @@ class Splash_screen < ActiveRecord::Base
   has_one :post_pic, :dependent => :destroy
   accepts_nested_attributes_for :post_pic
   attr_accessible :post_pic_attributes
-  attr_accessible :user_id, :comment_visibility, :post_id, :cmtpost
+  attr_accessible :user_id, :comment_visibility, :post_id, :cmtpost, :profile_id
 
 end

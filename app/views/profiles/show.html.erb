@@ -11,8 +11,108 @@
 
 
 <p class="picprofile">
-  <%= image_tag @profpic.image_url(:thumb).to_s %>
+    <%= image_tag @profpic.image_url(:thumb).to_s %>
 </p>
+
+
+<div id = "dash_content">
+
+  <ul id = "post_container">
+
+    <% @dash_post_array_sorted_reverse.each do |f| %>
+
+        <% if @profiles.id == f.profile_id %>
+
+        <% if f.visibility == true %>
+            <% if !(Deletepost.where(post_id: f.id).where( user_id: current_user.id).first)  %>
+                <div class="container">
+                  <div class="container_text">
+
+                    <li class="name_position">
+                      <% @profilescan.each do |profilescan| %>
+                          <% if (f.profile_id == profilescan.id) %>
+                              <%= profilescan.f_name %>
+                          <% end %>
+                      <% end %>
+                    </li>
+
+                    <li>
+                      <% @profilepic.each do |pic| %>
+                          <% if (f.profile_id == pic.profile_id) %>
+                              <%= image_tag pic.image_url(:thumb).to_s, :class => "dashpost_profilepic" %>
+                          <% end %>
+                      <% end %>
+                    </li>
+
+                    <li class="dashpost_time">
+                      <%= f.created_at.strftime("%B %d, %Y")  %>
+                    </li>
+                    <div class="container_content" data-id="<%= f.id %>">
+                      <li>
+                        <%= f.post %>
+                        <!--Post.where("posts.id" => ff.id).first-->
+                      </li>
+
+                      <li class="cross">
+                        <% @Postvisibility.each do |ff| %>
+                            <% if f.id == ff.id %>
+                                <%= form_for Deletepost.new do |delete| %>
+                                    <%= delete.hidden_field :user_id, :value => current_user.id, :class => "dlt_userid" %>
+                                    <%= delete.hidden_field :profile_id, :value => f.id, :class => "dlt_postid" %>
+                                    <div class="profileid" data-url="<%= f.profile_id %>"></div>
+                                    <%= button_tag "", :class => "close fui-cross" %>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                      </li>
+
+                      <% @postpic.each do |pict| %>
+                          <% if f.id == pict.post_id && !pict.picture.blank? %>
+                              <li>
+                                <%= image_tag pict.picture_url(:thumb).to_s, :class => "dashpost_commentpic" %>
+                              </li>
+
+                          <% end %>
+                      <% end %>
+
+                      <%= content_tag :div, id: "comments", data: {url: post_comments_url(f.id)} do %>
+                          <%= render f.comments %>
+                      <% end %>
+
+                      <li>
+                        <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
+                      </li>
+                      <li class="form_post">
+                        <%= form_for [f,@comment] do |commentpost| %>
+                            <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1", :placeholder => "Add a comment..." %>
+                            <%= commentpost.hidden_field :user_id, :value => current_user.id %>
+                            <%= commentpost.hidden_field :post_id, :value => f.id %>
+                            <%= commentpost.hidden_field :profile_id, :value => current_user.id %>
+                            <%= commentpost.hidden_field :comment_visibility, :value => "true" %>
+                            <%= commentpost.submit "Post", :class => " comment_splash btn btn-large btn-primary"%>
+                        <% end %>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+            <% end %>
+        <% end %>
+        <% end %>
+
+    <% end %>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <p>
   <strong>F name:</strong>

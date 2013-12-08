@@ -12,14 +12,24 @@
  *= require_tree .
  */
 
-body {
+
+/*@font-face {*/
+    /*font-family: 'automobi';*/
+    /*src: font-url('AUTOMOBI.TTF', font)  format('truetype');*/
+/*}*/
+
+body.homepage {
     background: url("connect-collaborate-create.png") no-repeat 50% 0%, url("startup-social-logo.png") no-repeat 50% -73%, url("la-startup-community.png");
     font-family: 'lucida grande', sans-serif;
     margin: 0 auto;
     padding: 0;
 }
 
-body.signed_in {
+h1 {
+    font: 'automobi';
+}
+
+body.not_homepage, body.signed_in {
     background:rgb(237, 240, 241) !important;
     margin: 0 auto;
     padding: 0;

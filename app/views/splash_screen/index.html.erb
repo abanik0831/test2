@@ -3,31 +3,36 @@
   <div class="inner_welcome">
     <% if user_signed_in? %>
 
-        <div id="headerpic">
-          <%= image_tag @profpic.image_url(:thumb).to_s %>
+
+        <div id = "skill_section">
+            <p class="skill_text">Design</p>
+            <%= image_tag("design.png" , :class => "skill_img")%>
+            <p class="skill_text">Technology</p>
+            <%= image_tag("technology.png" , :class => "skill_img") %>
+            <p class="skill_text">Business</p>
+            <%= image_tag("business.png", :class => "skill_img") %>
         </div>
+
         <div id="dashboard-post">
             <%= form_for @postnew, :html => {:multipart => true} do |post| %>
-                <%= post.label :post %><br>
-                <%= post.text_area :post, :class => "post_field", :size => "300x3" %>
+              <div class="dashboard-post_containter">
+                <%= post.text_area :post, :class => "post_field", :size => "300x3", :placeholder => "Share something startup related" %>
                 <%= post.hidden_field :profile_id, :value => current_user.id, :class => "user_id" %>
                  <%= post.hidden_field :visibility, :value => "true" %>
 
 
-                <%=  post.fields_for :post_pic do |pic| %>
+                <%=  post.fields_for :post_pics do |pic| %>
                     <div class="form_field">
-                      <%= pic.file_field :picture, :class => "input img_up" %>
+                      <%= pic.file_field :picture,:class => "input img_up" %>
                       <!--, multiple: true, name: "post[post_pic][picture]",-->
                       <img class="camera-image" src="/assets/camera.png">
                       <%= pic.hidden_field :profile_id, :value => current_user.id, :class => "input user_id" %>
                     </div>
                 <% end %>
-                <%= post.submit "Post", :class => " post_splash btn btn-large btn-primary"%>
-
+                <%= post.submit "POST", :class => " post_splash btn btn-large btn-primary"%>
+              </div>
             <% end %>
         </div>
-
-
 
         <div id = "dash_content">
 
@@ -38,6 +43,16 @@
                         <% if !(Deletepost.where(post_id: f.id).where( user_id: current_user.id).first)  %>
                     <div class="container">
                       <div class="container_text">
+
+                        <li class="name_position">
+                          <% @profilescan.each do |profilescan| %>
+                              <% if (f.profile_id == profilescan.id) %>
+                                  <%= profilescan.f_name %>
+                              <% end %>
+                          <% end %>
+                        </li>
+
+
                    <li>
                      <% @profilepic.each do |pic| %>
                      <% if (f.profile_id == pic.profile_id) %>
@@ -49,7 +64,7 @@
                     <li class="dashpost_time">
                       <%= f.created_at.strftime("%B %d, %Y")  %>
                     </li>
-                    <div class="container_content">
+                    <div class="container_content" data-id="<%= f.id %>">
                     <li>
                       <%= f.post %>
 <!--Post.where("posts.id" => ff.id).first-->
@@ -77,26 +92,35 @@
                     <% end %>
                 <% end %>
 
-                 <li>
-                   <% @commentdisplay.each do |comment| %>
-                    <% if comment.post_id == f.id %>
-                       <%= comment.cmtpost %>
-                    <% end %>
-                   <% end %>
-                 </li>
+                      <li>
+                        <% @commentdisplay.each do |comment| %>
+                            <% if comment.post_id == f.id %>
+                                <% ProfilePic.all.each do |cmtpict| %>
+                                    <% if comment.profile_id == cmtpict.id && !cmtpict.image.blank? %>
+                                        hi<%= comment.profile_id %>
+                                      <li>
+                                        <%= comment.id %>
+                                        <%= image_tag cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic" %>
+                                      </li>
+                                  <% end %>
+                              <% end %>
+                                <%= simple_format comment.cmtpost %>
+                            <% end %>
+                        <% end %>
+                      </li>
 
-
-                 <li>
+                  <li>
                    <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
                   </li>
                   <li class="form_post">
-                   <%= form_for @comment do |commentpost| %>
-                       <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1" %>
-                       <%= commentpost.hidden_field :user_id, :value => current_user.id %>
-                       <%= commentpost.hidden_field :post_id, :value => f.id %>
-                       <%= commentpost.hidden_field :comment_visibility, :value => "true" %>
-                       <%= commentpost.submit "Post", :class => " comment_splash btn btn-large btn-primary"%>
-                   <% end %>
+                    <%= form_for [f,@comment] do |commentpost| %>
+                    <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1", :placeholder => "Add a comment..." %>
+                    <%= commentpost.hidden_field :user_id, :value => current_user.id %>
+                    <%= commentpost.hidden_field :post_id, :value => f.id %>
+                    <%= commentpost.hidden_field :profile_id, :value => current_user.id %>
+                    <%= commentpost.hidden_field :comment_visibility, :value => "true" %>
+                    <%= commentpost.submit "POST", :class => " comment_splash btn btn-large btn-primary"%>
+                    <% end %>
                  </li>
                     </div>
                       </div>

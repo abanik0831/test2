@@ -1,14 +1,38 @@
 //function updateComments() {
-//    $.getScript("/");
-//    setTimeout(updateComments, 2000);
+//    var post_id = $(".container_content").attr("data-id");
+////
+////    $(".container_content").on("focus", function(){
+////       var post_id = $(this).attr("data-id");
+////        console.log(post_id);
+////    });
+//
+//    var after = $(".comment:last").attr("data-time");
+//    $.getScript("/?post_id=" + post_id + "&after=" + after);
+//    setTimeout(updateComments, 5000000);
+//}
+//
+//
+//var CommentPoller;
+//
+//CommentPoller = {
+//    poll: function() {
+//        setTimeout(this.request, 5000);
+//        return {
+//            request: function() {
+//                return $.get($('#comments').data('url'));
+//            }
+//        };
+//    }
+//};
+
+//function updateComments(){
+//    console.log("hiii");
 //}
 
 $(document).ready(function(){
     //e.preventDefault();
-
-
     // if($(".container").length > 0) {
-       // setTimeout(updateComments, 2000);
+       // setTimeout(updateComments, 500000000);
    // }
 
 //    $(".close").on('click', function(e){
@@ -24,6 +48,10 @@ $(document).ready(function(){
 //
 //
 //    });
+
+    //if ($('#comments').length > 0) {
+       // return CommentPoller.poll();
+    //}
 
     $(".fui-cross").on("click", function(e){
         console.log("h1");

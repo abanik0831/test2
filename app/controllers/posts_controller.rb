@@ -10,12 +10,13 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-
+    @post = Post.find(params[:id])
+    @comment = Comment.new
   end
 
   # GET /posts/new
   def new
-    #@post = Post.new
+    @post = Post.new
     #@post.build_profiles
     #@post.profile_id = Post
   end
@@ -29,6 +30,10 @@ class PostsController < ApplicationController
   def create
     #@post_pic = PostPic.create(params[:post_pic])
     @post = Post.new(post_params)
+    #params[:post][:post_pics_attributes]["0"][:picture].each do |f|
+    ## puts f
+    #  @feature_asset = PostPic.create(:picture => f)
+    #end
       respond_to do |format|
        if @post.save
          format.html {redirect_to(:controller => "/splash_screen", :action => "index")}
@@ -70,6 +75,9 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:post, :profile_id, :visibility, :profileid_del, :cmtpost, :post_id, :user_id, :comment_visibility, :post_pic_attributes => [:picture, :profile_id])
+      params.require(:post).permit(:post, :profile_id, :visibility, :profileid_del, :cmtpost, :post_id, :user_id, :comment_visibility, :post_pics_attributes => [:profile_id, :picture])
+      #:groundtruth => [:type, :coordinates => []]
+      #params.require(:post).permit!
+
     end
 end

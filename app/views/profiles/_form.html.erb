@@ -11,74 +11,59 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :f_name %><br>
-    <%= f.text_field :f_name %>
-  </div>
-  <div class="field">
-    <%= f.label :l_name %><br>
-    <%= f.text_field :l_name %>
-  </div>
-   <%= f.fields_for :profile_pic do |pic| %>
-  <div class = "field">
-
-    <%= pic.label :image %><br>
-    <%= pic.text_field :image %>
-   </div>
-   <div>
-       <%= pic.file_field :image %>
-    </div>
-   <% end %>
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-
-   <%= f.text_field :user_id, :value => current_user.id %>
+    <%= f.fields_for :profile_pic do |pic| %>
+        <div class = "field">
+          <%= pic.label :Photo, :class => "label_field" %><br>
+        </div>
+        <div>
+          <%= pic.file_field :image,:class => "file1 content_field input img_up" %>
+          <!--, multiple: true, name: "post[post_pic][picture]",-->
+          <a class="profilepic_upload btn btn-mini btn-primary btn-embossed mlm">
+            UPLOAD
+          </a>
+        </div>
+    <% end %>
 
   <div class="field">
-    <div class="mbl">
-      <div class="btn-group">
-        <i class="dropdown-arrow dropdown-arrow-inverse"></i>
-        <button class="btn btn-primary btn-huge">Dropdown</button>
-        <%= f.label :area %><br>
-        <%= f.select :area, options_for_select([["Red", "red"], ["Green", "green"]]), :class => "btn btn-primary btn-huge" %>
-        <button class="btn btn-primary btn-huge dropdown-toggle" data-toggle="dropdown">
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu dropdown-inverse">
-          <li><a href="#fakelink" class="active">Sub Menu Element</a></li>
-          <li><a href="#fakelink">Sub Menu Element</a></li>
-          <li><a href="#fakelink">Sub Menu Element</a></li>
-        </ul>
-      </div>
-    </div>
-
-
+    <%= f.label :First_Name, :class => "label_field" %><br>
+    <%= f.text_field :f_name, :class => "content_field" %>
+  </div>
+  <div class="field">
+    <%= f.label :Last_Name, :class => "label_field" %><br>
+    <%= f.text_field :l_name, :class => "content_field" %>
   </div>
 
+  <div class="field">
+    <%= f.label :title, :class => "label_field" %><br>
+    <%= f.text_area :title, :class => "content_field" %>
+  </div>
+
+   <%= f.hidden_field :user_id, :value => current_user.id, :class => "userpic_profile" %>
 
   <div class="field">
-    <%= f.label :skills %><br>
-    <%= f.text_field :skills %>
+    <%= f.label :skills, :class => "label_field" %><br>
+     <div class="content_field">
+    <%= f.select :skills, options_for_select(["Design", "Technology", "Business"]) %>
+     </div>
+  </div>
+
+  <div class="field">
+    <%= image_tag("facebook.png", :alt => "Show Group", :class => "picture_field") %><br>
+    <%= f.text_field :fb_url, :class => "content_field" %>
   </div>
   <div class="field">
-    <%= f.label :fb_url %><br>
-    <%= f.text_field :fb_url %>
+    <%= image_tag("linkedin.png", :alt => "Show Group", :class => "picture_field") %><br>
+    <%= f.text_field :linkedin_url, :class => "content_field" %>
   </div>
   <div class="field">
-    <%= f.label :linkedin_url %><br>
-    <%= f.text_field :linkedin_url %>
+    <%= image_tag("meetup.png", :alt => "Show Group", :class => "picture_field") %><br>
+    <%= f.text_field :meetup_url, :class => "content_field" %>
   </div>
   <div class="field">
-    <%= f.label :meetup_url %><br>
-    <%= f.text_field :meetup_url %>
-  </div>
-  <div class="field">
-    <%= f.label :twitter_url %><br>
-    <%= f.text_field :twitter_url %>
+    <%= image_tag("twitter.png", :alt => "Show Group", :class => "picture_field") %><br>
+    <%= f.text_field :twitter_url, :class => "content_field" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "ENTER" , :class => "profile_submit btn btn-small btn-primary btn-embossed mlm" %>
   </div>
 <% end %>

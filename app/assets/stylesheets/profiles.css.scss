@@ -6,8 +6,52 @@
   width: 200px;
   height: 200px;
   -webkit-border-radius: 50%;
+  position: relative;
+  left: 48%;
+
 }
 
-//.messageuser {
-//  display: none;
-//}
+.label_field {
+  text-align: right;
+  position: relative;
+  right: 54%;
+  cursor: default;
+  color: rgb(146, 148, 149);
+}
+.content_field {
+  position: relative;
+  left: 48%;
+  position: relative;
+  top: -47px;
+  margin-bottom: -14px !important;
+}
+
+.profile_submit {
+  position: relative;
+  left: 50%;
+  width: 9% !important;
+}
+
+.btn.btn-primary.profile_submit {
+  background-color: rgb(71, 75, 84);
+}
+
+.picture_field {
+  position: relative;
+  left: 42%;
+}
+
+.welcome_profile {
+  position: relative;
+  left: 41%;
+  color: rgb(146, 148, 149);
+}
+
+.profilepic_upload {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+  left: 44%;
+  top: -41px;
+  background-color: rgb(71, 75, 84) !important;
+}

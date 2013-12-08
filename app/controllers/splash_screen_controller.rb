@@ -4,6 +4,9 @@ class SplashScreenController < ApplicationController
   end
 
     def index
+
+      @home_page = true
+
       if user_signed_in?
         @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
       end
@@ -19,13 +22,13 @@ class SplashScreenController < ApplicationController
      # @newpic = PostPic.new(params[@post_pic])
       @postnew = Post.new
       @profile = Profile.new
+      @profilescan = Profile.all
       @user = User.new
-      @postnew.build_post_pic
-      #@postnew.post_pics.build
+      #@postnew.build_post_pic
+      @postnew.post_pics.build
       @comment = @postnew.comments.build
       @profilepic = ProfilePic.all
-     # @Postvisibility = Post.find(params[:id])
-     # @Postvisibility = Post.where("posts.id" => 130).first
+
       @Postvisibility = Post.all
       @dash_post = Post.joins("INNER JOIN relationships ON relationships.followed_id = Posts.profile_id").where(:relationships => {:follower_id => current_user.id})
 
@@ -43,10 +46,10 @@ class SplashScreenController < ApplicationController
       @deleteposts = @postnew.deleteposts.build
       #@deletepostscheck = Deletepost.where("deleteposts.post_id" => "169").first
         gb = Gibbon::API.new("e944455757266e34f5fff9d53f2c6e8c-us3")
-        #@lists = gb.lists({:start => 0, :limit=> 100})["data"]
         @lists = gb.lists.list({:start => 0, :limit=> 100})
-
         #@post.profile_id = current_user.id
+       #@pst = Post.all
+        @post = Post.joins(:comments).where("posts.id = comments.post_id").first
       end
     end
       #@post.save

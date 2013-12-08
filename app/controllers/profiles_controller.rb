@@ -17,9 +17,39 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
 
-    @profpic = ProfilePic.find(params[:id])
+    @postnew = Post.new
+
+   # @dash_post = Post.joins("INNER JOIN relationships ON relationships.followed_id = Posts.profile_id").where(:relationships => {:follower_id => current_user.id})
+
+   # @dash_pic = ProfilePic.joins("INNER JOIN relationships ON relationships.followed_id = profile_pics.profile_id").where(:relationships => {:follower_id => current_user.id})
+
+
+    @dash_post = Post.all
+    @dash_pic = ProfilePic.all
+
+    @dash_post_array = (@dash_post.to_a + @post.to_a)
+
+    @dash_pic_array = @dash_pic.to_a.sort_by { |obj| obj.created_at }.reverse!
+
+    @dash_post_array_sorted = @dash_post_array.sort_by { |obj| obj.created_at }
+    @dash_post_array_sorted_reverse = @dash_post_array_sorted.reverse!
+
+    @profilepic = ProfilePic.all
+
+    @Postvisibility = Post.all
+    @post = Post.joins(:comments).where("posts.id = comments.post_id").first
+    @postpic = PostPic.order("created_at DESC").all
+
+    @profilescan = Profile.all
+
+    @profpic = ProfilePic.where("profile_pics.id" => current_user.id).first
+
+
+
    # @user = User.new
     @crntuser = Profile.where("profiles.id" => current_user.id).first
+    @comment = @postnew.comments.build
+
     @profiles = Profile.find(params[:id])
     #@relationships = @crntuser.relationships.build(followed_id: @profiles.id)
   end
@@ -28,7 +58,6 @@ class ProfilesController < ApplicationController
   def new
     @profile = Profile.new
     @profile.build_profile_pic
-
     @pic = ProfilePic.new(params[:profile_pic])
 
     #@profile.image = @pic.image
@@ -59,6 +88,13 @@ class ProfilesController < ApplicationController
   # POST /profiles.json
   def create
     @profile = Profile.new(profile_params)
+    #@profilepic = ProfilePic.new(params[:id])
+    #@profiledefault = @profilepic.image.blank?
+    #if @profiledefault
+    #  @profilepic.image = 'default.png'
+    #  @profilepic.save
+    #end
+
     respond_to do |format|
       if @profile.save
         format.html { redirect_to @profile, notice: 'Profile was successfully created.' }

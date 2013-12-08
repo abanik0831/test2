@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131205100119) do
+ActiveRecord::Schema.define(version: 20131207005752) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20131205100119) do
     t.integer  "post_id"
     t.integer  "user_id"
     t.boolean  "comment_visibility", default: true
+    t.integer  "profile_id"
   end
 
   create_table "conversations", force: true do |t|
@@ -143,6 +144,7 @@ ActiveRecord::Schema.define(version: 20131205100119) do
     t.integer  "user_id"
     t.integer  "profilepicid"
     t.integer  "post_id"
+    t.string   "type"
   end
 
   create_table "receipts", force: true do |t|

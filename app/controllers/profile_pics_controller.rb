@@ -13,9 +13,9 @@ class ProfilePicsController < ApplicationController
   end
 
   # GET /profile_pics/new
-  def new
-    @profile_pic = ProfilePic.new
-  end
+  #def new
+  #  @profile_pic = ProfilePic.new
+  #end
 
   # GET /profile_pics/1/edit
   def edit
@@ -24,17 +24,7 @@ class ProfilePicsController < ApplicationController
   # POST /profile_pics
   # POST /profile_pics.json
   def create
-    @profile_pic = ProfilePic.new(profile_pic_params)
-
-    respond_to do |format|
-      if @profile_pic.save
-        format.html { redirect_to @profile_pic, notice: 'Profile pic was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @profile_pic }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @profile_pic.errors, status: :unprocessable_entity }
-      end
-    end
+    @profile_pic = ProfilePic.create(params[:profile_pic])
   end
 
   # PATCH/PUT /profile_pics/1
@@ -69,6 +59,6 @@ class ProfilePicsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_pic_params
-      params.require(:profile_pic).permit(:image)
+      params.require(:profile_pic).permit(:image, :profile_id)
     end
 end

@@ -1,7 +1,8 @@
 class ProfilePic < ActiveRecord::Base
   belongs_to :profile
   belongs_to :splash_screen
-  attr_accessible :image
+  belongs_to :comment
+  attr_accessible :image, :profile_id
   mount_uploader :image, ImageUploader
 
 end
