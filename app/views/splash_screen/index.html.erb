@@ -92,22 +92,9 @@
                     <% end %>
                 <% end %>
 
-                      <li>
-                        <% @commentdisplay.each do |comment| %>
-                            <% if comment.post_id == f.id %>
-                                <% ProfilePic.all.each do |cmtpict| %>
-                                    <% if comment.profile_id == cmtpict.id && !cmtpict.image.blank? %>
-                                        hi<%= comment.profile_id %>
-                                      <li>
-                                        <%= comment.id %>
-                                        <%= image_tag cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic" %>
-                                      </li>
-                                  <% end %>
-                              <% end %>
-                                <%= simple_format comment.cmtpost %>
-                            <% end %>
-                        <% end %>
-                      </li>
+                      <%= content_tag :div, id: "comments", data: {url: post_comments_url(f.id)} do %>
+                          <%= render f.comments %>
+                      <% end %>
 
                   <li>
                    <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
