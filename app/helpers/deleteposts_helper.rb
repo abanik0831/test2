@@ -1,0 +1,2 @@
+module DeletepostsHelper
+end

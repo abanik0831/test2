@@ -1,0 +1,290 @@
+// Place all the styles related to the splashScreen controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.welcome {
+  .inner_welcome p {
+     background: yellow;
+     font-weight: bold;
+  }
+
+
+}
+
+.post_field {
+  width: 65%;
+  position: relative;
+  left: 15%;
+}
+
+#headerpic {
+  position: absolute;
+  left: 44%;
+  z-index: 1;
+}
+
+#dashboard-post {
+  background: white;
+  width: 500px;
+  height: 200px;
+  //margin-left: 32%;
+  //position: absolute;
+  //left: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  top: 30px;
+}
+
+@media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
+  #dashboard-post {
+    width: 80%;
+  }
+  .post_field {
+    width: 220px;
+    height: 75px;
+  }
+  .post_field:focus {
+    width: 220px;
+    height: 75px;
+  }
+}
+
+#headerpic img {
+  width: 60px;
+  height: 60px;
+  //position: absolute;
+  //left: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.img_up {
+  //display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 0;
+}
+
+.camera-image {
+  position: relative;
+  left: -60px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+input[type="file"] {
+  height: 50px;
+  width: 57px;
+}
+
+.post_splash.btn.btn-primary {
+  background: #34495e;
+  position: relative;
+  top: -45px;
+  left: 80%;
+  height: 32px;
+}
+
+.comment_splash.btn.btn-primary {
+  background: #34495e;
+  position: relative;
+  top: 47px;
+  left: 64px;
+  height: 32px;
+}
+
+#post_container {
+  position: relative;
+  top: 60px;
+  right: 12px;
+}
+
+#post_container .container {
+  list-style: none;
+  width: 500px;
+  margin: 0 auto;
+  //height: 100px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+.dashpost_profilepic {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 46%;
+  top: -54px;
+}
+
+
+
+.dashpost_time {
+  position: relative;
+  top: -50px;
+  left: 41%;
+}
+
+
+.cross {
+  position: absolute;
+  top: -73px;
+  left: 100%;
+}
+
+.container_text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.comment_field {
+  position: relative;
+  left: 67px;
+  top: 13px;
+}
+
+
+.comment_profilepic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 12px;
+  left: -2px;
+  float: left;
+}
+
+.container_content {
+  position: relative;
+  top: -26px;
+  left: 5%;
+}
+
+.dashpost_commentpic {
+  width: 400px;
+  height: 400px;
+}
+
+.signup_form {
+  position: absolute;
+  top: 377px;
+  left: 38%;
+}
+
+.signupname {
+  width: 162%;
+}
+
+.mergeRow {
+  margin-bottom: 20px;
+}
+
+.btn.btn-primary.smtbtn {
+  width: 164%;
+  background: #000;
+  font-size: 16px;
+}
+
+@media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
+  #post_container .container {
+    width: 80%;
+  }
+  .post_field {
+    width: 80%;
+    height: 75px;
+    position: relative;
+    left: 9%;
+  }
+
+  .post_splash.btn.btn-primary {
+    background: #34495e;
+    position: relative;
+    top: -45px;
+    left: 70%;
+    height: 32px;
+  }
+  #headerpic {
+    position: absolute;
+    left: 41%;
+    z-index: 1;
+  }
+
+  .dashpost_profilepic {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 28%;
+    top: -54px;
+  }
+
+  .dashpost_time {
+    position: relative;
+    top: -50px;
+    left: 13%;
+  }
+
+  .container_text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .comment_field {
+    position: relative;
+    left: 24px;
+    top: -26px;
+    width: 169px;
+  }
+
+
+  .comment_profilepic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 22px;
+    left: -24px;
+    float: left;
+  }
+
+  .comment_splash.btn.btn-primary {
+    background: #34495e;
+    position: relative;
+    top: -21px;
+    left: 66%;
+  }
+  .form_post {
+    height: 88px;
+  }
+  .container_content {
+    position: relative;
+    top: -26px;
+    left: 0%;
+  }
+
+  .dashpost_commentpic {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.btn.btn-large {
+  padding: 6px 19px 14px;
+}
+
+
+.cross .close {
+  font-size: 16px;
+}
+
+//.field-group {
+//  width: 350px;
+//  height: 27px;
+//}

@@ -1,0 +1,140 @@
+<!doctype html>
+<div class="welcome">
+  <div class="inner_welcome">
+    <% if user_signed_in? %>
+
+        <div id="headerpic">
+          <%= image_tag @profpic.image_url(:thumb).to_s %>
+        </div>
+        <div id="dashboard-post">
+            <%= form_for @postnew, :html => {:multipart => true} do |post| %>
+                <%= post.label :post %><br>
+                <%= post.text_area :post, :class => "post_field", :size => "300x3" %>
+                <%= post.hidden_field :profile_id, :value => current_user.id, :class => "user_id" %>
+                 <%= post.hidden_field :visibility, :value => "true" %>
+
+
+                <%=  post.fields_for :post_pic do |pic| %>
+                    <div class="form_field">
+                      <%= pic.file_field :picture, :class => "input img_up" %>
+                      <!--, multiple: true, name: "post[post_pic][picture]",-->
+                      <img class="camera-image" src="/assets/camera.png">
+                      <%= pic.hidden_field :profile_id, :value => current_user.id, :class => "input user_id" %>
+                    </div>
+                <% end %>
+                <%= post.submit "Post", :class => " post_splash btn btn-large btn-primary"%>
+
+            <% end %>
+        </div>
+
+
+
+        <div id = "dash_content">
+
+              <ul id = "post_container">
+
+                <% @dash_post_array_sorted_reverse.each do |f| %>
+                   <% if f.visibility == true %>
+                        <% if !(Deletepost.where(post_id: f.id).where( user_id: current_user.id).first)  %>
+                    <div class="container">
+                      <div class="container_text">
+                   <li>
+                     <% @profilepic.each do |pic| %>
+                     <% if (f.profile_id == pic.profile_id) %>
+                        <%= image_tag pic.image_url(:thumb).to_s, :class => "dashpost_profilepic" %>
+                     <% end %>
+                    <% end %>
+                   </li>
+
+                    <li class="dashpost_time">
+                      <%= f.created_at.strftime("%B %d, %Y")  %>
+                    </li>
+                    <div class="container_content">
+                    <li>
+                      <%= f.post %>
+<!--Post.where("posts.id" => ff.id).first-->
+                    </li>
+
+                      <li class="cross">
+                        <% @Postvisibility.each do |ff| %>
+                            <% if f.id == ff.id %>
+                                <%= form_for Deletepost.new do |delete| %>
+                                    <%= delete.hidden_field :user_id, :value => current_user.id, :class => "dlt_userid" %>
+                                    <%= delete.hidden_field :profile_id, :value => f.id, :class => "dlt_postid" %>
+                                    <div class="profileid" data-url="<%= f.profile_id %>"></div>
+                                    <%= button_tag "", :class => "close fui-cross" %>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                      </li>
+
+                    <% @postpic.each do |pict| %>
+                        <% if f.id == pict.post_id && !pict.picture.blank? %>
+                            <li>
+                              <%= image_tag pict.picture_url(:thumb).to_s, :class => "dashpost_commentpic" %>
+                            </li>
+
+                    <% end %>
+                <% end %>
+
+                 <li>
+                   <% @commentdisplay.each do |comment| %>
+                    <% if comment.post_id == f.id %>
+                       <%= comment.cmtpost %>
+                    <% end %>
+                   <% end %>
+                 </li>
+
+
+                 <li>
+                   <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
+                  </li>
+                  <li class="form_post">
+                   <%= form_for @comment do |commentpost| %>
+                       <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1" %>
+                       <%= commentpost.hidden_field :user_id, :value => current_user.id %>
+                       <%= commentpost.hidden_field :post_id, :value => f.id %>
+                       <%= commentpost.hidden_field :comment_visibility, :value => "true" %>
+                       <%= commentpost.submit "Post", :class => " comment_splash btn btn-large btn-primary"%>
+                   <% end %>
+                 </li>
+                    </div>
+                      </div>
+                    </div>
+                <% end %>
+                   <% end %>
+                <% end %>
+              </ul>
+        </div>
+
+    <% else %>
+        <form action="http://herokuapp.us3.list-manage1.com/subscribe/post" method="POST" class="signup_form">
+          <input type="hidden" name="u" value="c51fbcd290d106fe0f3069b48">
+          <input type="hidden" name="id" value="767b861c1b">
+          <div id="mergeTable" class="mergeTable">
+            <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+              <div class="field-group">
+                <input class="signupname" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email address" value="">
+              </div>
+            </div>
+            <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
+              <div class="field-group">
+                <input class="signupname" type="text" name="MERGE1" id="MERGE1" size="25" placeholder="First name" value="">
+              </div>
+            </div>
+            <div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-2">
+              <div class="field-group">
+                <input class="signupname" type="text" name="MERGE2" id="MERGE2" size="25" placeholder="Last name" value="">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="submit_container">
+            <input type="submit" class="btn btn-huge btn-block btn-primary smtbtn" name="submit" value="REQUEST A BETA INVITE">
+          </div>
+        </form>
+
+      </div>
+    <% end %>
+</div>
+</html>

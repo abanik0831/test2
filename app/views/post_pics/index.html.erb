@@ -1,0 +1,16 @@
+<h1>Listing post_pics</h1>
+
+<div id="paintings">
+  <%= render @post_pics %>
+</div>
+
+<%= form_for PostPic.new do |f| %>
+    <%= f.file_field :picture, multiple: true, name: "post_pic[picture]" %>
+<% end %>
+
+<script id="template-upload" type="text/x-tmpl">
+<div class="upload">
+  {%=o.name%}
+  <div class="progress"><div class="bar" style="width: 0%;"></div></div>
+</div>
+</script>

@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <%= image_tag @profile_pic.image_url(:thumb).to_s %>
+  <strong>Image:</strong>
+  <%= @profile_pic.image %>
+</p>
+
+<%= link_to 'Edit', edit_profile_pic_path(@profile_pic) %> |
+<%= link_to 'Back', profile_pics_path %>

@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+    background: url("connect-collaborate-create.png") no-repeat 50% 0%, url("startup-social-logo.png") no-repeat 50% -73%, url("la-startup-community.png");
+    font-family: 'lucida grande', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body.signed_in {
+    background:rgb(237, 240, 241) !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*h2 {*/
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*position: relative;*/
+    /*left: 580px;*/
+/*}*/
+
+header {
+    background: rgb(188, 192, 196);
+    height: 93px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: -22px;
+    float: left;
+    display: inline-block;
+}
+
+#headerpictitle {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 26px;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+.logo {
+    position:absolute;
+    left:50%;
+    top:10%;
+
+}
+
+@media only screen and (max-width : 400px) and (orientation: portrait) {
+    .logo {
+        position:absolute;
+        left:41%;
+        top:10%;
+    }
+}
+
+
+#headerpictitle img {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.sidebar {
+    display: inline;
+    width: 20px;
+}
+
+.fui-list {
+    position: absolute;
+    top: 32px;
+    left: -15px;
+}
+
+.notification-center {
+    display: none;
+}
+
+.notification-center-float {
+    float: left;
+}

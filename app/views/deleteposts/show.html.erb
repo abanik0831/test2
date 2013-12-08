@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @deletepost.post_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @deletepost.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_deletepost_path(@deletepost) %> |
+<%= link_to 'Back', deleteposts_path %>

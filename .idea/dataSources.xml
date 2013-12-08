@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1075118417">
+    <data-source source="LOCAL" name="Rails StartupSocial: development" uuid="cec7ea1e-dd7a-49fd-be99-14589595f42a">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/startupsocialmtest</jdbc-url>
+      <user-name>raja</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails StartupSocial: test" uuid="f5624d1b-39f9-40fc-8d19-baf561fe8a16">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:startupsocialmtest</jdbc-url>
+      <user-name>raja</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails StartupSocial: production" uuid="fe30cfe8-2770-4b43-94b0-d9811063d637">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/startupsocialmtest</jdbc-url>
+      <user-name>raja</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

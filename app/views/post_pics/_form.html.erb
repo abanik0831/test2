@@ -1,0 +1,40 @@
+<%= form_for(@post_pic) do |f| %>
+  <% if @post_pic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post_pic.errors.count, "error") %> prohibited this post_pic from being saved:</h2>
+
+      <ul>
+      <% @post_pic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :post_id %><br>
+    <%= f.number_field :post_id %>
+  </div>
+    <div class="field">
+      <%= f.label :picture %><br>
+      <%= f.text_field :picture %>
+    </div>
+
+    <div id="paintings">
+      <%= render @post_pic %>
+    </div>
+
+    <div>
+      <%= f.file_field :picture %>
+    </div>
+    <script id="template-upload" type="text/x-tmpl">
+<div class="upload">
+  {%=o.name%}
+  <div class="progress"><div class="bar" style="width: 0%;"></div></div>
+</div>
+</script>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

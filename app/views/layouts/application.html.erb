@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StartupSocial - <%= yield(:title) || "Welcome" %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+
+  <%= csrf_meta_tags %>
+</head>
+<body class="bdy">
+<% if user_signed_in? %>
+<script>
+  $(".bdy").addClass("signed_in");
+</script>
+<header>
+
+  <div class="demo-content demo-icons sidebar">
+    <span class="fui-list"></span>
+  </div>
+
+  <h2 class="logo"><%= link_to image_tag("logo.png", :border => 0), {:controller => "/splash_screen", :action => "index"}%>  </h2>
+
+  <div id="headerpictitle">
+    <% if user_signed_in? && !@profpic.nil? %>
+        <%= image_tag @profpic.image_url(:thumb).to_s %>
+    <% end %>
+  </div>
+</header>
+
+<div class="demo-content notification-center notification-center-float">
+  <div class="iconbar">
+    <ul>
+      <li class="active"><a href="#fakelink" class="fui-user"></a></li>
+      <li><a href="#fakelink" class="fui-calendar"></a></li>
+      <li><a href="#fakelink" class="fui-chat"></a></li>
+      <li><a href="#fakelink" class="fui-mail"></a></li>
+      <li>
+        <a href="#fakelink" class="fui-gear">
+          <span class="iconbar-unread">1</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="user_nav">
+    Signed in as <%= current_user.username %>. Not you?
+      <%= link_to("Sign Out", destroy_user_session_path, :method => :delete) %>
+      <% else %>
+      <%= link_to("Sign Up", new_user_registration_path) %> or <%= link_to("Sign In", new_user_session_path) %>
+      or
+      <% end %>
+</div>
+
+<h1><%= yield(:title) %></h1>
+
+<%= yield %>
+
+</body>
+</html>

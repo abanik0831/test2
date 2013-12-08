@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'follow_form' if signed_in? %>
+
+<%= link_to "Messages", {:controller => "/conversations", :action => "new"}, {:class=>" messageuser btn btn-large btn-primary"}%>
+
+<form method="post" action="http://localhost:3000/conversations/new" id="f">
+  <input type="hidden" name="current_user" value="10">
+  <noscript><button type="submit">Continue</button></noscript> /* see below */
+</form>
+
+
+<p class="picprofile">
+  <%= image_tag @profpic.image_url(:thumb).to_s %>
+</p>
+
+<p>
+  <strong>F name:</strong>
+  <%= @profile.f_name %>
+</p>
+
+<p>
+  <strong>L name:</strong>
+  <%= @profile.l_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @profile.title %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @profile.area %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @profile.skills %>
+</p>
+
+<p>
+  <strong>Fb url:</strong>
+  <%= @profile.fb_url %>
+</p>
+
+<p>
+  <strong>Linkedin url:</strong>
+  <%= @profile.linkedin_url %>
+</p>
+
+<p>
+  <strong>Meetup url:</strong>
+  <%= @profile.meetup_url %>
+</p>
+
+<p>
+  <strong>Twitter url:</strong>
+  <%= @profile.twitter_url %>
+</p>
+
+<p class="current_user_email">
+  <%= current_user.email %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
