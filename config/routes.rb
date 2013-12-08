@@ -11,7 +11,9 @@ StartupSocial::Application.routes.draw do
 
   resources :post_pics
 
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
 
   resources :conversations, only: [:index, :show, :new, :create] do
     member do
@@ -21,7 +23,7 @@ StartupSocial::Application.routes.draw do
     end
   end
 
- # post '/posts/143'
+  # post '/posts/143'
 
   get "flatuipro_demo/index"
   resources :profile_pics
@@ -85,7 +87,7 @@ StartupSocial::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
