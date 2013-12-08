@@ -110,6 +110,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_unfollow.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_unfollow.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin_user.rb" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -252,7 +253,34 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="21" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
+            <state line="39" column="30" selection-start="807" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131128054955_add_user_name_to_admin_user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="109" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131128054643_devise_create_admin_users.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -285,10 +313,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="2.134063" vertical-offset="0" max-vertical-offset="1650">
+            <state line="104" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="active_admin.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="12" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -313,7 +359,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
-        <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
         <option value="$PROJECT_DIR$/app/admin/admin_user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
@@ -363,11 +408,12 @@
         <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
+    <option name="x" value="206" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="802" />
@@ -428,7 +474,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,7 +687,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="22" width="1440" height="802" extended-state="0" />
+    <frame x="206" y="22" width="1440" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -603,7 +695,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20277777" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27083334" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25296444" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -667,11 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="23" selection-start="2721" selection-end="2721" vertical-scroll-proportion="-18.076923" vertical-offset="430" max-vertical-offset="3135" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="0" selection-end="3255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290" />
@@ -697,13 +784,6 @@
         <state line="235" column="3" selection-start="11799" selection-end="11799" vertical-scroll-proportion="0.33147633" vertical-offset="3287" max-vertical-offset="4005" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="21" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131004024228_create_posts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
@@ -727,7 +807,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="2.134063" vertical-offset="0" max-vertical-offset="1650">
+        <state line="104" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="30" selection-start="807" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="109" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
           <folding />
         </state>
       </provider>
