@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def index
-    @pst = Post.find(params[:id])
+   # @pst = Post.find(params[:id])
   end
 
   def after_sign_in_path_for(resource)

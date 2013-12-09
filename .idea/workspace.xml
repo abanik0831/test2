@@ -2,227 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/linkedin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131206012235_add_profile_id_to_comments.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131207005752_add_type_to_profiles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile_pics/_profile_pic.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profile_pics/create.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/comments/index.js.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/comments/index.json.jbuilder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/splash_screen/index.js.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/.keep" afterPath="$PROJECT_DIR$/app/models/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/.keep" afterPath="$PROJECT_DIR$/app/models/concerns/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/.name" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/angel-list.png" afterPath="$PROJECT_DIR$/app/assets/images/angel-list.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/bg.png" afterPath="$PROJECT_DIR$/app/assets/images/bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/business.png" afterPath="$PROJECT_DIR$/app/assets/images/business.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/camera.png" afterPath="$PROJECT_DIR$/app/assets/images/camera.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/collab.png" afterPath="$PROJECT_DIR$/app/assets/images/collab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/connect-collaborate-create.png" afterPath="$PROJECT_DIR$/app/assets/images/connect-collaborate-create.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/design.png" afterPath="$PROJECT_DIR$/app/assets/images/design.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/authentications/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/deleteposts/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/post_pics/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/profile_pics/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/profiles/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/requests/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/javascripts.iml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/javascripts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/la-startup-community.png" afterPath="$PROJECT_DIR$/app/assets/images/la-startup-community.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/left-arrow.png" afterPath="$PROJECT_DIR$/app/assets/images/left-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/logo.png" afterPath="$PROJECT_DIR$/app/assets/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/meetup.png" afterPath="$PROJECT_DIR$/app/assets/images/meetup.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/messages.png" afterPath="$PROJECT_DIR$/app/assets/images/messages.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/notifications.png" afterPath="$PROJECT_DIR$/app/assets/images/notifications.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/right-arrow.png" afterPath="$PROJECT_DIR$/app/assets/images/right-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/settings.png" afterPath="$PROJECT_DIR$/app/assets/images/settings.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/authentications/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/comments/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/deleteposts/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/post_pics/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/profile_pics/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/profiles/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/requests/show.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sign-out.png" afterPath="$PROJECT_DIR$/app/assets/images/sign-out.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/social-graph.png" afterPath="$PROJECT_DIR$/app/assets/images/social-graph.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/startup-social-logo.png" afterPath="$PROJECT_DIR$/app/assets/images/startup-social-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/technology.png" afterPath="$PROJECT_DIR$/app/assets/images/technology.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/top-of-page.png" afterPath="$PROJECT_DIR$/app/assets/images/top-of-page.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130915010415_devise_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20130915010415_devise_create_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130915013434_add_username_to_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20130915013434_add_username_to_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130915025755_create_requests.rb" afterPath="$PROJECT_DIR$/db/migrate/20130915025755_create_requests.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130916222707_create_profiles.rb" afterPath="$PROJECT_DIR$/db/migrate/20130916222707_create_profiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130916222752_add_title_to_profiles.rb" afterPath="$PROJECT_DIR$/db/migrate/20130916222752_add_title_to_profiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130921210026_add_email_to_requests.rb" afterPath="$PROJECT_DIR$/db/migrate/20130921210026_add_email_to_requests.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130922010342_add_user_id_to_profiles.rb" afterPath="$PROJECT_DIR$/db/migrate/20130922010342_add_user_id_to_profiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130927051257_create_profile_pics.rb" afterPath="$PROJECT_DIR$/db/migrate/20130927051257_create_profile_pics.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130927052659_add_image_to_profile_pic.rb" afterPath="$PROJECT_DIR$/db/migrate/20130927052659_add_image_to_profile_pic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130927073743_add_profilepicid_to_profiles.rb" afterPath="$PROJECT_DIR$/db/migrate/20130927073743_add_profilepicid_to_profiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130929052357_add_profileid_to_profile_pic.rb" afterPath="$PROJECT_DIR$/db/migrate/20130929052357_add_profileid_to_profile_pic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131004024228_create_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131004024228_create_posts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131004030610_add_postid_to_profiles.rb" afterPath="$PROJECT_DIR$/db/migrate/20131004030610_add_postid_to_profiles.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131005225716_create_post_pics.rb" afterPath="$PROJECT_DIR$/db/migrate/20131005225716_create_post_pics.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131005230641_add_profile_id_to_post_pics.rb" afterPath="$PROJECT_DIR$/db/migrate/20131005230641_add_profile_id_to_post_pics.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131025010126_create_relationships.rb" afterPath="$PROJECT_DIR$/db/migrate/20131025010126_create_relationships.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050729_create_mailboxer.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050729_create_mailboxer.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050730_add_notified_object.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050730_add_notified_object.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050731_add_notification_code.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050731_add_notification_code.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050732_add_attachments.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050732_add_attachments.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050733_rename_receipts_read.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050733_rename_receipts_read.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131031050734_add_global_notification_support.mailboxer_engine.rb" afterPath="$PROJECT_DIR$/db/migrate/20131031050734_add_global_notification_support.mailboxer_engine.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131102031051_add_visibility_profileid_del_to_posts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131102031051_add_visibility_profileid_del_to_posts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103041545_create_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103041545_create_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103042026_add_post_id_to_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103042026_add_post_id_to_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131103044705_add_user_id_and_flag_to_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20131103044705_add_user_id_and_flag_to_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131110030722_create_deleteposts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131110030722_create_deleteposts.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131110205455_create_authentications.rb" afterPath="$PROJECT_DIR$/db/migrate/20131110205455_create_authentications.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131128054204_create_active_admin_comments.rb" afterPath="$PROJECT_DIR$/db/migrate/20131128054204_create_active_admin_comments.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb" afterPath="$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205093942_add_username_to_authentication.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205093942_add_username_to_authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205095822_remove_create_from_authentication.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205095822_remove_create_from_authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205095851_remove_index_from_authentication.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205095851_remove_index_from_authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205095917_remove_destroy_from_authentication.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205095917_remove_destroy_from_authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205100119_add_token_to_authentication.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205100119_add_token_to_authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conversations/_conversation.html.haml" afterPath="$PROJECT_DIR$/app/views/conversations/_conversation.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_follow.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_follow.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_follow_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_follow_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/deleteposts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profile_pics/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/requests/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conversations/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/conversations/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/messages/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/messages/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/_post_pic.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/_post_pic.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_unfollow.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_unfollow.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin_user.rb" afterPath="$PROJECT_DIR$/app/models/admin_user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/AUTOMOBI.TTF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/AUTOMOBI.TTF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-book-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-bookoblique-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-heavy-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-heavyoblique-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-light-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/fonts/avenirltstd-lightoblique-webfont.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/authentication.rb" afterPath="$PROJECT_DIR$/app/models/authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/authentications.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/authentications.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/authentications.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/authentications.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/authentications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/comments.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/comments.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/conversations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/conversations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/create.js.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/create.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/relationships/create.js.erb" afterPath="$PROJECT_DIR$/app/views/relationships/create.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/deletepost.rb" afterPath="$PROJECT_DIR$/app/models/deletepost.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/deleteposts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/deleteposts.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/deleteposts.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/deleteposts.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deleteposts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/deleteposts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/relationships/destroy.js.erb" afterPath="$PROJECT_DIR$/app/views/relationships/destroy.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/deleteposts/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/profile_pics/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/requests/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/encodings.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/flatuipro-demo.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/flatuipro-demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/flatuipro-demo.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/flatuipro-demo.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/flatuipro.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/flatuipro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/flatuipro.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/flatuipro.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/flatuipro_demo_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/flatuipro_demo_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/index.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/deleteposts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/flatuipro_demo/index.html.erb" afterPath="$PROJECT_DIR$/app/views/flatuipro_demo/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/index.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profile_pics/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/index.html.erb" afterPath="$PROJECT_DIR$/app/views/requests/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" afterPath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conversations/index.html.haml" afterPath="$PROJECT_DIR$/app/views/conversations/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/misc.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/modules.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/new.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/new.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/deleteposts/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" afterPath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/new.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/new.html.erb" afterPath="$PROJECT_DIR$/app/views/profile_pics/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/new.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/new.html.erb" afterPath="$PROJECT_DIR$/app/views/requests/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conversations/new.html.haml" afterPath="$PROJECT_DIR$/app/views/conversations/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/omniauth_callbacks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/omniauth_callbacks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post_pic.rb" afterPath="$PROJECT_DIR$/app/models/post_pic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/post_pics.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/post_pics.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/post_pics.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/post_pics.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/post_pics_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/post_pics_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/posts.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/posts.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile_pic.rb" afterPath="$PROJECT_DIR$/app/models/profile_pic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profile_pics.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profile_pics.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/profile_pics.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/profile_pics.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profile_pics_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profile_pics_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/profiles.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/profiles.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/relationship.rb" afterPath="$PROJECT_DIR$/app/models/relationship.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/relationships_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/request.rb" afterPath="$PROJECT_DIR$/app/models/request.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/requests.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/requests.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/requests.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/requests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/requests_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/authentications/show.html.erb" afterPath="$PROJECT_DIR$/app/views/authentications/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/show.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deleteposts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/deleteposts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/post_pics/show.html.erb" afterPath="$PROJECT_DIR$/app/views/post_pics/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profile_pics/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profile_pics/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/requests/show.html.erb" afterPath="$PROJECT_DIR$/app/views/requests/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/conversations/show.html.haml" afterPath="$PROJECT_DIR$/app/views/conversations/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/splash_screen.rb" afterPath="$PROJECT_DIR$/app/models/splash_screen.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/splash_screen_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/splash_screen_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/vcs.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/.idea/workspace.xml" afterPath="$PROJECT_DIR$/app/assets/javascripts/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -250,91 +45,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="807" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
+            <state line="20" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="-4.409091" vertical-offset="106" max-vertical-offset="2385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131128054955_add_user_name_to_admin_user.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb">
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+            <state line="38" column="10" selection-start="643" selection-end="643" vertical-scroll-proportion="-6.0" vertical-offset="270" max-vertical-offset="5580">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="109" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3165">
+            <state line="24" column="25" selection-start="816" selection-end="821" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131128054643_devise_create_admin_users.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131004024228_create_posts.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131004024228_create_posts.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="15" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="31" selection-start="4393" selection-end="4393" vertical-scroll-proportion="-20.625" vertical-offset="945" max-vertical-offset="2340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="active_admin.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="12" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state line="10" column="37" selection-start="446" selection-end="446" vertical-scroll-proportion="0.21216407" vertical-offset="0" max-vertical-offset="707">
               <folding />
             </state>
           </provider>
@@ -358,9 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
-        <option value="$PROJECT_DIR$/app/admin/admin_user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
@@ -375,7 +113,6 @@
         <option value="$PROJECT_DIR$/app/controllers/post_pics_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/post_pics.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/post_pics.js.coffee" />
-        <option value="$PROJECT_DIR$/app/controllers/splash_screen_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/create.js.erb" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/_post_pic.html.erb" />
@@ -390,11 +127,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
         <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131110205455_create_authentications.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/social_keys.yml" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
@@ -409,11 +144,17 @@
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/initializers/active_admin.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/splash_screen_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
+    <option name="x" value="-13" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="802" />
@@ -444,8 +185,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -461,38 +202,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -523,6 +232,156 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial-fa22b1ca51eae4db91c88cc3a950c09054d3549e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -536,11 +395,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/assets/fonts" />
       <recent name="$PROJECT_DIR$/db" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/db/migrate" />
-      <recent name="$PROJECT_DIR$/app/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images" />
@@ -687,7 +546,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="22" width="1440" height="802" extended-state="0" />
+    <frame x="-13" y="22" width="1440" height="802" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -695,7 +554,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27083334" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17847222" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25296444" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -727,6 +586,109 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="59" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/splash_screen_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/splash_screen.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="27" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5220" />
@@ -786,23 +748,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131004024228_create_posts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="15" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="14" column="15" selection-start="587" selection-end="587" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="31" selection-start="4393" selection-end="4393" vertical-scroll-proportion="-20.625" vertical-offset="945" max-vertical-offset="2340">
-          <folding />
-        </state>
+        <state line="96" column="31" selection-start="4393" selection-end="4393" vertical-scroll-proportion="-20.625" vertical-offset="945" max-vertical-offset="2340" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -814,42 +770,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/active_admin.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3615">
-          <folding />
-        </state>
+        <state line="9" column="12" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3615" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin_user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="807" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="39" column="30" selection-start="807" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="109" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3165">
-          <folding />
-        </state>
+        <state line="13" column="109" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="3165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810">
-          <folding />
-        </state>
+        <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/profile.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/splash_screen_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/splash_screen.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/admin_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="27" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="59" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="25" selection-start="816" selection-end="821" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="-4.409091" vertical-offset="106" max-vertical-offset="2385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="10" selection-start="643" selection-end="643" vertical-scroll-proportion="-6.0" vertical-offset="270" max-vertical-offset="5580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="37" selection-start="446" selection-end="446" vertical-scroll-proportion="0.21216407" vertical-offset="0" max-vertical-offset="707">
           <folding />
         </state>
       </provider>

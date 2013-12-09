@@ -48,7 +48,7 @@ class SplashScreenController < ApplicationController
         gb = Gibbon::API.new("e944455757266e34f5fff9d53f2c6e8c-us3")
         @lists = gb.lists.list({:start => 0, :limit=> 100})
         #@post.profile_id = current_user.id
-       #@pst = Post.all
+       #@pst = Postpost_pics
         @post = Post.joins(:comments).where("posts.id = comments.post_id").first
       end
     end

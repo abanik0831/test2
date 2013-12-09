@@ -12,11 +12,13 @@
  *= require_tree .
  */
 
+@font-face {
+    font-family: 'automobi';
+    src: url('AUTOMOBI.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*@font-face {*/
-    /*font-family: 'automobi';*/
-    /*src: font-url('AUTOMOBI.TTF', font)  format('truetype');*/
-/*}*/
 
 body.homepage {
     background: url("connect-collaborate-create.png") no-repeat 50% 0%, url("startup-social-logo.png") no-repeat 50% -73%, url("la-startup-community.png");
@@ -25,8 +27,22 @@ body.homepage {
     padding: 0;
 }
 
-h1 {
-    font: 'automobi';
+h1.signin {
+    font-family: 'automobi' !important;
+    /*text-align: center;*/
+}
+
+
+.signin_username {
+    position: relative;
+    left: 16%;
+    top: 22px;
+}
+
+.signin_password {
+    position: relative;
+    left: 16%;
+    top: 13px;
 }
 
 body.not_homepage, body.signed_in {
@@ -36,10 +52,10 @@ body.not_homepage, body.signed_in {
 }
 
 /*h2 {*/
-    /*display: inline-block;*/
-    /*float: left;*/
-    /*position: relative;*/
-    /*left: 580px;*/
+/*display: inline-block;*/
+/*float: left;*/
+/*position: relative;*/
+/*left: 580px;*/
 /*}*/
 
 header {
@@ -80,6 +96,31 @@ h2 a {
         position:absolute;
         left:41%;
         top:10%;
+    }
+
+    h1.signin {
+        font-family: 'automobi' !important;
+        font-size: 38px;
+        /*text-align: center;*/
+        position: relative;
+        top: 20px;
+    }
+
+
+    .signin_username {
+        width: 64% !important;
+        height: 34px !important;
+        position: relative;
+        left: 16%;
+        top: 22px;
+    }
+
+    .signin_password {
+        width: 64% !important;
+        height: 34px !important;
+        position: relative;
+        left: 16%;
+        top: 13px;
     }
 }
 

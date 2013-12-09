@@ -36,8 +36,13 @@
   margin: 0 auto;
   border-radius: 10px;
   position: relative;
-  top: 30px;
+  top: 190px;
   margin-bottom: 93px;
+}
+
+#dash_content {
+  position: relative;
+  top: 150px;
 }
 
 .name_position {
@@ -219,10 +224,9 @@ input[type="file"] {
 }
 
 #skill_section{
-  position:relative;
-  left: 34%;
-  top: -84px;
-
+  position:absolute;
+  left: 32%;
+  top: 74px;
 }
 
 .skill_text{
