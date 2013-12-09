@@ -29,7 +29,7 @@ body.homepage {
 
 h1.signin {
     font-family: 'automobi' !important;
-    /*text-align: center;*/
+    text-align: center;
 }
 
 
@@ -101,7 +101,7 @@ h2 a {
     h1.signin {
         font-family: 'automobi' !important;
         font-size: 38px;
-        /*text-align: center;*/
+        text-align: center;
         position: relative;
         top: 20px;
     }
