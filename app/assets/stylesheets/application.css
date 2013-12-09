@@ -91,7 +91,7 @@ h2 a {
 
 }
 
-@media only screen and (max-width : 400px) and (orientation: portrait) {
+@media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
     .logo {
         position:absolute;
         left:41%;
