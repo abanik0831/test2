@@ -21,6 +21,8 @@
           <a class="profilepic_upload btn btn-mini btn-primary btn-embossed mlm">
             UPLOAD
           </a>
+          <%= f.hidden_field :profilepicid, :value => current_user.id %>
+
         </div>
     <% end %>
 

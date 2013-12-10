@@ -11,7 +11,16 @@
 
 <div class="profile_info">
     <p class="picprofile">
-        <%= image_tag @profpic.image_url(:thumb).to_s %>
+
+
+      <% ProfilePic.all.each do |f| %>
+        <% if @profiles.profilepicid == f.id %>
+              <%= image_tag f.image_url(:thumb).to_s %>
+
+          <% end %>
+
+      <% end %>
+
     </p>
 
   <p class="username_profile_page">
@@ -126,66 +135,6 @@
     <% end %>
   </ul>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-  <strong>F name:</strong>
-  <%= @profile.f_name %>
-</p>
-
-<p>
-  <strong>L name:</strong>
-  <%= @profile.l_name %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @profile.title %>
-</p>
-
-<p>
-  <strong>Area:</strong>
-  <%= @profile.area %>
-</p>
-
-<p>
-  <strong>Skills:</strong>
-  <%= @profile.skills %>
-</p>
-
-<p>
-  <strong>Fb url:</strong>
-  <%= @profile.fb_url %>
-</p>
-
-<p>
-  <strong>Linkedin url:</strong>
-  <%= @profile.linkedin_url %>
-</p>
-
-<p>
-  <strong>Meetup url:</strong>
-  <%= @profile.meetup_url %>
-</p>
-
-<p>
-  <strong>Twitter url:</strong>
-  <%= @profile.twitter_url %>
-</p>
-
-<p class="current_user_email">
-  <%= current_user.email %>
-</p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
