@@ -2,7 +2,7 @@
 
 <%= render 'follow_form' if signed_in? %>
 
-<%= link_to "MESSAGES", {:controller => "/conversations", :action => "new"}, {:class=>" messageuser btn btn-large btn-primary"}%>
+<%= link_to "MESSAGES", {:controller => "/conversations", :action => "new"}, {:class=>"msguser_hide messageuser btn btn-large btn-primary"}%>
 
 <form method="post" action="http://localhost:3000/conversations/new" id="f">
   <input type="hidden" name="current_user" value="10">
@@ -40,9 +40,9 @@
   </div>
 
   <div class="social_links">
-    <%= link_to image_tag("twitter.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("linkedin.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("angel-list.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("twitter.png"), "http://www.twitter.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("linkedin.png"), "http://www.linkedin.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
   </div>
 
 </div>

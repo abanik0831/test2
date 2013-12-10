@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131208120925) do
+ActiveRecord::Schema.define(version: 20131210044825) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -146,6 +146,7 @@ ActiveRecord::Schema.define(version: 20131208120925) do
     t.integer  "profilepicid"
     t.integer  "post_id"
     t.string   "type"
+    t.string   "angellist_url"
   end
 
   create_table "receipts", force: true do |t|

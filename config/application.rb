@@ -23,5 +23,8 @@ module StartupSocial
 
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
+    config.time_zone = "Pacific Time (US & Canada)"
+
+
   end
 end

@@ -21,10 +21,11 @@
           <a class="profilepic_upload btn btn-mini btn-primary btn-embossed mlm">
             UPLOAD
           </a>
-          <%= f.hidden_field :profilepicid, :value => current_user.id %>
 
         </div>
     <% end %>
+
+    <%= f.hidden_field :profilepicid, :value => current_user.id %>
 
   <div class="field">
     <%= f.label :First_Name, :class => "label_field" %><br>
@@ -47,6 +48,11 @@
      <div class="content_field">
     <%= f.select :skills, options_for_select(["Design", "Technology", "Business"]) %>
      </div>
+  </div>
+
+  <div class="field">
+    <%= image_tag("angel-list.png", :alt => "Show Group", :class => "picture_field") %><br>
+    <%= f.text_field :angellist_url, :class => "content_field" %>
   </div>
 
   <div class="field">

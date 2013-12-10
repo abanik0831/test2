@@ -61,12 +61,24 @@
   margin-bottom: -14px !important;
 }
 
+.msguser_hide {
+  visibility: hidden;
+}
+
 .messageuser {
   width: 7% !important;
   position: relative;
   top: 429px;
   left: 47%;
   background: rgb(71, 75, 84) !important;
+}
+
+.follow_user {
+  position: relative;
+  top: 489px;
+  left: 47%;
+  width: 10% !important;
+
 }
 
 #dash_profile_page {

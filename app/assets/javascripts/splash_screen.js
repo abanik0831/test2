@@ -30,6 +30,20 @@
 //}
 
 $(document).ready(function(){
+
+
+
+
+    $(".btnremove").on("click", function(e){
+        alert(1);
+        $(".messageuser").addClass("msguser_hide");
+    });
+
+
+    $(".follow_user").on("click", function(e){
+        $(".messageuser").removeClass("msguser_hide");
+    });
+
     //e.preventDefault();
     // if($(".container").length > 0) {
        // setTimeout(updateComments, 500000000);
