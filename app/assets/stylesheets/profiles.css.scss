@@ -3,12 +3,47 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .picprofile img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   -webkit-border-radius: 50%;
   position: relative;
-  left: 48%;
+  left: 47%;
 
+}
+
+.user_title {
+  position: relative;
+  left: 39%;
+  width: 26%;
+  text-align: center;
+}
+
+.user_area_pic {
+  position: relative;
+  left: 47%;
+  font-weight: bold;
+}
+
+.location_user_area {
+  float: left;
+  font-size: 20px;
+  width: 30px;
+  color: rgb(191, 195, 198);
+}
+
+.social_links {
+  position: relative;
+  left: 43%;
+  margin-right: 20px;
+}
+
+.social_link_spacing {
+  margin-right: 40px;
+}
+
+.user_area {
+  position: relative;
+  top: -5px;
 }
 
 .label_field {
@@ -24,6 +59,24 @@
   position: relative;
   top: -47px;
   margin-bottom: -14px !important;
+}
+
+.messageuser {
+  width: 7% !important;
+  position: relative;
+  top: 429px;
+  left: 47%;
+  background: rgb(71, 75, 84) !important;
+}
+
+#dash_profile_page {
+  position: relative;
+  top: 51px;
+}
+
+.profile_info {
+  position: relative;
+  top: -71px;
 }
 
 .profile_submit {

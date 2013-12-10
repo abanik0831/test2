@@ -2,20 +2,51 @@
 
 <%= render 'follow_form' if signed_in? %>
 
-<%= link_to "Messages", {:controller => "/conversations", :action => "new"}, {:class=>" messageuser btn btn-large btn-primary"}%>
+<%= link_to "MESSAGES", {:controller => "/conversations", :action => "new"}, {:class=>" messageuser btn btn-large btn-primary"}%>
 
 <form method="post" action="http://localhost:3000/conversations/new" id="f">
   <input type="hidden" name="current_user" value="10">
-  <noscript><button type="submit">Continue</button></noscript> /* see below */
+  <noscript><button type="submit">Continue</button></noscript>
 </form>
 
+<div class="profile_info">
+    <p class="picprofile">
+        <%= image_tag @profpic.image_url(:thumb).to_s %>
+    </p>
 
-<p class="picprofile">
-    <%= image_tag @profpic.image_url(:thumb).to_s %>
-</p>
+  <p class="username_profile_page">
+    <%=  @profiles.f_name %>
+    <%= @profiles.l_name %>
+  </p>
+
+  <p class="user_title">
+    <%= @profiles.title %>
+  </p>
+
+  <div class="user_area_pic">
+    <span class="location_user_area fui-location"></span>
+    <p class="user_area">
+      <%= @profiles.area %>
+    </p>
+  </div>
+
+  <div class="social_links">
+    <%= link_to image_tag("twitter.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("linkedin.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("angel-list.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+  </div>
 
 
-<div id = "dash_content">
+  <div class="social_links">
+    <%= link_to image_tag("updates.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("linkedin.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("angel-list.png"), "http://www.cnn.com", :class => "social_link_spacing" %>
+  </div>
+
+</div>
+
+
+<div id = "dash_profile_page">
 
   <ul id = "post_container">
 

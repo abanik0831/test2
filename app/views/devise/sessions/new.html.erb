@@ -5,14 +5,27 @@
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <%= f.text_field :username, :autofocus => true, :placeholder => "Username", :class => "signin_username" %></div>
 
+   <span class="signin_user fui-user"></span>
+
   <%= f.password_field :password, :placeholder => "Password", :class => "signin_password" %></div>
+      <span class="signin_user_lock fui-lock"></span>
 
   <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+
+          <label class="checkbox checked" for="checkbox2">
+            <span class="icons">
+              <span class="icon_color first-icon fui-checkbox-unchecked"></span>
+              <span class="icon_color second-icon fui-checkbox-checked"></span>
+            </span>
+
+            <div><%= f.check_box :remember_me, :data => {:toggle => "checkbox"}, :checked => "checked", :id => "checkbox2" %> Keep me signed In</div>
+
+
+          </label>
 
       <% end -%>
 
-  <div><%= f.submit "Sign in" %></div>
+  <div><%= f.submit "ENTER", :class => "signin_btn btn btn-small btn-primary btn-embossed mlm" %></div>
 <% end %>
 
 <%= render "devise/shared/links" %>

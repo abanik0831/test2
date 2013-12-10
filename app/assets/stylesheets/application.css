@@ -30,19 +30,64 @@ body.homepage {
 h1.signin {
     font-family: 'automobi' !important;
     text-align: center;
+    position: relative;
+    top: 20px;
 }
 
 
 .signin_username {
     position: relative;
-    left: 16%;
-    top: 22px;
+    left: 40%;
+    top: 72px;
+    width: 20%;
+}
+
+.signin_btn {
+    position: relative;
+    top: 104px;
+    left: 46%;
+    width: 8% !important;
+    background: rgb(52, 58, 66) !important;
+}
+
+.rememberme {
+    position: relative;
+    top: 120px;
+    left: 46%;
+    color: rgb(52, 58, 67);
+    font-weight: bold;
+}
+
+.icon_color {
+    background: rgb(52, 58, 67) !important;
+}
+
+.username_profile_page {
+    position: relative;
+    left: 46%;
+    top: 10px;
+    font-family: automobi;
+    font-size: 35px;
+}
+
+.signin_user {
+    color: rgb(191, 195, 198);
+    position: relative;
+    left: 59%;
+}
+
+.signin_user_lock {
+    color: rgb(191, 195, 198);
+    position: relative;
+    left: 37%;
+    top: 99px;
 }
 
 .signin_password {
     position: relative;
-    left: 16%;
-    top: 13px;
+    left: 39%;
+    top: 100px;
+    width: 20%;
 }
 
 body.not_homepage, body.signed_in {
@@ -50,13 +95,6 @@ body.not_homepage, body.signed_in {
     margin: 0 auto;
     padding: 0;
 }
-
-/*h2 {*/
-/*display: inline-block;*/
-/*float: left;*/
-/*position: relative;*/
-/*left: 580px;*/
-/*}*/
 
 header {
     background: rgb(188, 192, 196);
@@ -66,6 +104,7 @@ header {
     font-weight: bold;
     display: inline-block;
     width: 100%;
+
     position: relative;
     top: -22px;
     float: left;
