@@ -29,7 +29,6 @@
 
 $(document).ready(function(){
 
-
 //    $(document).ready(function(){
 //        var faye = new Faye.Client('http://localhost:9292/faye');
 //        faye.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
