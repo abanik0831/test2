@@ -41,6 +41,8 @@ class SplashScreenController < ApplicationController
       @dash_post_array_sorted = @dash_post_array.sort_by { |obj| obj.created_at }
       @dash_post_array_sorted_reverse = @dash_post_array_sorted.reverse!
 
+      @limitcomments =  Comment.where(post_id: 1).limit(2).order("id DESC").reverse
+
       @crntuser = Profile.where("profiles.id" => current_user.id).first
       @commentdisplay = Comment.all
       @deleteposts = @postnew.deleteposts.build

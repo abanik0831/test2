@@ -102,12 +102,12 @@
                           </li>
                           <li class="form_post">
                             <%= form_for [f, @comment], remote: true do |commentpost| %>
-                                <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1", :placeholder => "Add a comment..." %>
+                                <%= commentpost.text_area :cmtpost, :class => "comment_field", :placeholder => "Add a comment..." %>
                                 <%= commentpost.hidden_field :user_id, :value => current_user.id, :class => "user_id_comment" %>
                                 <%= commentpost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
                                 <%= commentpost.hidden_field :profile_id, :value => current_user.id, :class => "profile_id_comment" %>
                                 <%= commentpost.hidden_field :comment_visibility, :value => "true", :class => "comment_visibility" %>
-                                <%= commentpost.submit "POST", :value => f.id, :class => " comment_splash btn btn-large btn-primary"%>
+                                <%= commentpost.submit "POST", :value => "POST", :class => "comment_splash btn btn-large btn-primary", :disabled => true%>
 
                             <% end %>
                           </li>

@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
 
   def index
     @comments = @post.comments
+    @limitcomments = Comment.where(post_id: 1).limit(2).order("id DESC").reverse
   end
 
   def create

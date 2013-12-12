@@ -49,10 +49,10 @@ $(document).ready(function(){
 //
 //    });
 
-    $(".follow_user").on("click", function(e){
-        alert(1);
-        $(".messageuser").toggleClass("msguser_hide");
-    });
+//    $(".follow_user").on("click", function(e){
+//        alert(1);
+//        $(".messageuser").toggleClass("msguser_hide");
+//    });
 
 
     //if ($('#comments').length > 0) {
@@ -76,10 +76,15 @@ $(document).ready(function(){
             url: "/deleteposts",
             data: {deletepost : {post_id: post_id_dlt, user_id: user_id_dlt}},
             success: function(){
-                that.parent().parent().parent().parent().parent().remove();
+                that.parent().parent().parent().parent().parent().fadeTo("slow", 0.00, function(){ //fade
+                    $(this).slideUp("slow", function() { //slide up
+                        $(this).remove(); //then remove from the DOM
+                    });
+                });
+
             },
-            error: function(){
-                console.log(10);
+            error: function(error){
+                console.log(error);
             }
         });
         if(profile_id == user_id_dlt) {
@@ -99,6 +104,23 @@ $(document).ready(function(){
         else {
             return false;
         }
+    });
+
+    $(".comment_field").on("keyup", function(e){
+        var x = $(this).find(".comment_field").val();
+        var y = $(this).val();
+        if(y.length > 0) {
+            $(this).parent().find(".comment_splash").removeAttr("disabled");
+        }
+
+        if(y.length <= 0) {
+            $(this).parent().find(".comment_splash").attr("disabled", true);
+        }
+    });
+
+    $(".new_comment").on("ajax:complete", function(event,xhr,status){
+        $(this).find(".comment_field").val('');
+        $(this).find(".comment_splash").attr("disabled", true);
     });
 
 //    $('#new_post').fileupload({
