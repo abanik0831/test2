@@ -13,10 +13,10 @@
   position: relative;
   left: 9%;
 }
-
-.comment:nth-last-of-type(-n+2) {
-  background: green;
-}
+//
+//.comment:nth-last-of-type(-n+2) {
+//  background: green;
+//}
 
 .comment:not(:nth-last-of-type(-n+2)) {
   display: none;
@@ -48,7 +48,6 @@
 }
 
 .commentsheight {
-  border: 1px solid #000000;
   max-height: 400px;
   overflow: scroll;
 }
@@ -187,9 +186,9 @@ input[type="file"] {
 
 .comment_field {
   position: relative;
-  left: 21px;
+  left: -6px;
   top: 16px;
-  width: 305px;
+  width: 289px;
   height: 36px;
 }
 

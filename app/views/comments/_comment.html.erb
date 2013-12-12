@@ -3,13 +3,19 @@
         <% if comment.post_id == f.id %>
             <% ProfilePic.all.each do |cmtpict| %>
                 <% if comment.profile_id == cmtpict.id && !cmtpict.image.blank? %>
-                    <li>
-                      <%= comment.id %>
+                    <li class="comment_image">
                       <%= image_tag cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic" %>
                     </li>
                 <% end %>
             <% end %>
-            <%= simple_format comment.cmtpost %>
+            <li>
+              <%= comment.cmtpost %>
+            </li>
+
+            <li class="comment_created_time">
+              <%= time_ago_in_words(comment.created_at) %> ago
+            </li>
+
         <% end %>
     <% end %>
 <% end %>
