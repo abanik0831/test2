@@ -89,11 +89,14 @@
                                   <li>
                                     <%= image_tag pict.picture_url(:thumb).to_s, :class => "dashpost_commentpic" %>
                                   </li>
-
                               <% end %>
                           <% end %>
 
-                          <%= content_tag :div, id: f.id, data: {url: post_comments_url(f.id)} do %>
+                          <li class="view_all_comments">
+                            View all <%= Comment.where(post_id: f.id).count %> comments
+                          </li>
+
+                          <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
                               <%= render f.comments %>
                           <% end %>
 

@@ -123,6 +123,12 @@ $(document).ready(function(){
         $(this).find(".comment_splash").attr("disabled", true);
     });
 
+
+    $(".view_all_comments").on("click", function(e){
+        e.preventDefault();
+        $(this).parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
+    });
+
 //    $('#new_post').fileupload({
 //        dataType: "script",
 //        add: function(e, data) {
