@@ -20,32 +20,9 @@
   z-index: 1;
 }
 
-
-.scroller {
-//  position: absolute;
-  z-index: 1;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  width: 100%;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  -o-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
 #dashboard-post {
   background: white;
-  width: 500px;
+  width: 550px;
   height: 200px;
   //margin-left: 32%;
   //position: absolute;
@@ -60,11 +37,6 @@
 #dash_content {
   position: relative;
   top: 150px;
-}
-
-.commentsheight {
-  max-height: 400px;
-  overflow: scroll;
 }
 
 .name_position {
@@ -144,7 +116,7 @@ input[type="file"] {
   background: #34495e;
   position: relative;
   top: 24px;
-  left: 291px;
+  left: 340px;
   height: 36px;
   width: 95px;
 }
@@ -157,7 +129,7 @@ input[type="file"] {
 
 #post_container .container {
   list-style: none;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   //height: 100px;
   background: white;
@@ -203,7 +175,7 @@ input[type="file"] {
   position: relative;
   left: -18px;
   top: 16px;
-  width: 289px;
+  width: 339px;
   height: 36px;
 }
 
@@ -214,7 +186,6 @@ input[type="file"] {
   height: 55px;
   position: relative;
   top: 12px;
-  left: -21px;
   float: left;
 }
 

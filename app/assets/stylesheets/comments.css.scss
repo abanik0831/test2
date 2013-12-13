@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.commentsheight {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+//.comment:not(:nth-last-of-type(-n+2)) {
+//  display: none;
+//}
+
 .comment {
   padding-top: 28px;
   padding-bottom: 18px;
@@ -37,6 +47,10 @@
   font-size: 24px;
 }
 
+.cmtpostdisplay {
+  overflow: auto;
+}
+
 .comment_time {
   color: rgb(178, 184, 189);
   position: relative;
@@ -60,4 +74,5 @@
   border-top: 1px solid #bdc3c7;
   border-bottom: 1px solid #bdc3c7;
   margin-top: 30px;
+  width: 432px;
 }

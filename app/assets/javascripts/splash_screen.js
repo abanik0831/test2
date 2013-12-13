@@ -110,7 +110,7 @@ $(document).ready(function(){
         }
     });
 
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+   // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
     $(".comment_field").on("keyup", function(e){
         var x = $(this).find(".comment_field").val();
@@ -133,14 +133,15 @@ $(document).ready(function(){
 
     $(".comment_splash").on("click", function(){
         if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') === 'block') {
-            var height = $(this).parent().parent().parent().find(".commentsheight");
-            lastElementTop = $('.comment:last-child').position().top;
-
-            scrollAmount = lastElementTop - 200 ;
-
-            height.animate({scrollTo: scrollAmount},1000);
-            console.log(lastElementTop);
-            $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
+            $(this).parent().parent().parent().find(".comment:nth-last-child(2)").css("border-bottom", "5px solid gray", "important");
+//            var height = $(this).parent().parent().parent().find(".commentsheight");
+//            lastElementTop = $('.comment:last-child').position().top;
+//
+//            scrollAmount = lastElementTop - 200 ;
+//
+//            height.animate({scrollTo: scrollAmount},1000);
+//            console.log(lastElementTop);
+          //  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").show();
         }
 
     });

@@ -101,11 +101,9 @@
                               </li>
                           <% end %>
 
-                          <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
-                             <div class="scroller">
-                               <%= render f.comments %>
-                             </div>
 
+                          <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
+                               <%= render f.comments %>
                           <% end %>
 
                           <li>
