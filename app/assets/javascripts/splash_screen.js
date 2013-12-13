@@ -131,18 +131,21 @@ $(document).ready(function(){
 
     $(".comment:not(:nth-last-of-type(-n+2))").css("display", "none");
 
-    $(".comment_splash").on("click", function(){
-        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') === 'block') {
-            $(this).parent().parent().parent().find(".comment:nth-last-child(2)").css("border-bottom", "5px solid gray", "important");
-//            var height = $(this).parent().parent().parent().find(".commentsheight");
-//            lastElementTop = $('.comment:last-child').position().top;
-//
-//            scrollAmount = lastElementTop - 200 ;
-//
-//            height.animate({scrollTo: scrollAmount},1000);
-//            console.log(lastElementTop);
-          //  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").show();
-        }
+    $(".comment_splash").on("click", ".comments", function(){
+
+        alert(1);
+        console.log(this);
+//        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') === 'block') {
+//            $(this).parent().parent().parent().find(".comment:nth-last-child(2)").css("border-bottom", "5px solid gray", "important");
+////            var height = $(this).parent().parent().parent().find(".commentsheight");
+////            lastElementTop = $('.comment:last-child').position().top;
+////
+////            scrollAmount = lastElementTop - 200 ;
+////
+////            height.animate({scrollTo: scrollAmount},1000);
+////            console.log(lastElementTop);
+//          //  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").show();
+//        }
 
     });
 

@@ -7,21 +7,20 @@
   height: 150px;
   -webkit-border-radius: 50%;
   position: relative;
-  left: 47%;
+  left: 45%;
 
 }
 
 .user_title {
-  position: relative;
-  left: 39%;
-  width: 26%;
+  margin: 0 auto;
+  width: 60%;
   text-align: center;
 }
 
 .user_area_pic {
   position: relative;
-  left: 47%;
   font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .location_user_area {
@@ -29,11 +28,14 @@
   font-size: 20px;
   width: 30px;
   color: rgb(191, 195, 198);
+  position: absolute;
+  left: 45%;
 }
 
 .social_links {
   position: relative;
-  left: 43%;
+  left: 41%;
+  top: -25px;
   margin-right: 20px;
 }
 
@@ -42,7 +44,9 @@
 }
 
 .user_area {
-  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
   top: -5px;
 }
 
@@ -119,4 +123,54 @@
   left: 44%;
   top: -41px;
   background-color: rgb(71, 75, 84) !important;
+}
+
+#post_container_profile {
+  position: relative;
+  top: -51px;
+}
+
+#post_container_profile .container {
+  list-style: none;
+  width: 550px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 125px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 2px;
+
+}
+
+@media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
+
+  .picprofile img {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    position: relative;
+    left: 35%;
+    margin-top: 20px;
+
+  }
+
+  .location_user_area {
+    float: left;
+    font-size: 20px;
+    width: 30px;
+    color: rgb(191, 195, 198);
+    position: absolute;
+    left: 30%;
+    top: 3px;
+  }
+
+
+  .social_links {
+    position: relative;
+    left: 9%;
+    top: -25px;
+    margin-right: 0;
+  }
+
 }

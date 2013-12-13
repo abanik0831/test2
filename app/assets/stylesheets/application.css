@@ -63,8 +63,9 @@ h1.signin {
 }
 
 .username_profile_page {
-    position: relative;
-    left: 46%;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
     top: 10px;
     font-family: automobi;
     font-size: 35px;
@@ -125,7 +126,7 @@ h2 a {
 
 .logo {
     position:absolute;
-    left:50%;
+    left:48%;
     top:10%;
 
 }
@@ -194,6 +195,15 @@ h2 a {
         position: absolute;
         left: 72%;
         top: 182px;
+    }
+
+    .username_profile_page {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        top: 10px;
+        font-family: automobi;
+        font-size: 30px;
     }
 }
 

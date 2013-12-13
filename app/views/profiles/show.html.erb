@@ -50,7 +50,7 @@
 
 <div id = "dash_profile_page">
 
-  <ul id = "post_container">
+  <ul id = "post_container_profile">
 
     <% @dash_post_array_sorted_reverse.each do |f| %>
 
@@ -132,7 +132,7 @@
                             <%= commentpost.hidden_field :post_id, :value => f.id %>
                             <%= commentpost.hidden_field :profile_id, :value => current_user.id %>
                             <%= commentpost.hidden_field :comment_visibility, :value => "true" %>
-                            <%= commentpost.submit "Post", :class => " comment_splash btn btn-large btn-primary"%>
+                            <%= commentpost.submit "Post", :class => " comment_splash btn btn-large btn-primary", :disabled => true %>
                         <% end %>
                       </li>
                     </div>
