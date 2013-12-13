@@ -50,6 +50,13 @@
      </div>
   </div>
 
+    <div class="field">
+      <%= f.label :Area, :class => "label_field" %><br>
+      <div class="content_field">
+        <%= f.select :area, options_for_select(["Downtown", "Greater Los Angeles", "Santa Monica"]) %>
+      </div>
+    </div>
+
   <div class="field">
     <%= image_tag("angel-list.png", :alt => "Show Group", :class => "picture_field") %><br>
     <%= f.text_field :angellist_url, :class => "content_field" %>
