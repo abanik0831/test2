@@ -158,8 +158,42 @@ h2 a {
         width: 64% !important;
         height: 34px !important;
         position: relative;
-        left: 16%;
+        left: 10%;
         top: 13px;
+    }
+
+    .signin_btn {
+        position: relative;
+        top: 24px;
+        left: 31%;
+        width: 29% !important;
+        background: rgb(52, 58, 66) !important;
+    }
+
+    .signin.checkbox {
+       position: relative;
+        left: 25%;
+        top: 15px;
+    }
+
+    .rememberme {
+        position: relative;
+        top: 33px;
+        left: 24%;
+    }
+
+    .signin_user.fui-user {
+        font-size: 17px;
+        position: relative;
+        left: 72%;
+        top: -46px;
+    }
+
+    .signin_user_lock.fui-lock {
+        font-size: 17px;
+        position: absolute;
+        left: 72%;
+        top: 182px;
     }
 }
 
