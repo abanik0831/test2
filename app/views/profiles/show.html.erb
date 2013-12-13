@@ -108,15 +108,25 @@
                           <% end %>
                       <% end %>
 
-                      <%= content_tag :div, id: "comments", data: {url: post_comments_url(f.id)} do %>
-                          <%= render f.comments %>
+                      <% if Comment.where(post_id: f.id).count > 2 %>
+                          <li class="view_all_comments">
+                            <span class="fui-eye commentcolor"></span>
+                            View all <%= Comment.where(post_id: f.id).count %> comments
+                          </li>
+                      <% end %>
+
+                      <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
+                          <div class="scroller">
+                            <%= render f.comments %>
+                          </div>
+
                       <% end %>
 
                       <li>
                         <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
                       </li>
                       <li class="form_post">
-                        <%= form_for [f,@comment] do |commentpost| %>
+                        <%= form_for [f,@comment], :remote => true do |commentpost| %>
                             <%= commentpost.text_area :cmtpost, :class => "comment_field", :size => "300x1", :placeholder => "Add a comment..." %>
                             <%= commentpost.hidden_field :user_id, :value => current_user.id %>
                             <%= commentpost.hidden_field :post_id, :value => f.id %>

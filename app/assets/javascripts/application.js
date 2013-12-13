@@ -53,29 +53,5 @@ $(document).ready(function(){
     });
 
 
-    $(".profile_submit").click(function(e){
-        var fileName = $(".file1").val();
-        console.log(fileName);
-        if(fileName=== "")    {
-            console.log(fileName);
-            var id = $(".userpic_profile").val();
-        $.ajax({
-            type: "POST",
-            url:"/profile_pics",
-            data: {profile_pic: {image: "hello.png", profile_id: id}},
-            success: function(data){
-                console.log(data);
-            },
-            error: function(data){
-                console.log(data);
-                //alert("error");
-            }
-        });
-       }
-        else
-            alert("PNG");
-    });
-
-
 
 });
