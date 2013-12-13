@@ -29,6 +29,10 @@
 //    console.log("hiii");
 //}
 
+$.fn.scrollBottom = function() {
+    return $(document).height() - this.scrollTop() - this.height();
+};
+
 $(document).ready(function(){
     //e.preventDefault();
     // if($(".container").length > 0) {
@@ -106,6 +110,8 @@ $(document).ready(function(){
         }
     });
 
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
     $(".comment_field").on("keyup", function(e){
         var x = $(this).find(".comment_field").val();
         var y = $(this).val();
@@ -126,17 +132,18 @@ $(document).ready(function(){
     $(".comment:not(:nth-last-of-type(-n+2))").css("display", "none");
 
     $(".comment_splash").on("click", function(){
-        console.log($(this).parent().parent().parents());
+        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') === 'block') {
+            var height = $(this).parent().parent().parent().find(".commentsheight");
+            lastElementTop = $('.comment:last-child').position().top;
 
-        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') == 'block') {
+            scrollAmount = lastElementTop - 200 ;
+
+            height.animate({scrollTo: scrollAmount},1000);
+            console.log(lastElementTop);
             $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
-//            var objdiv =  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))");
-//            console.log("hi " + $(this).parent().parent().parent().find(".comment").scrollHeight);
-           //objdiv.scrollTop = objdiv.scrollHeight;
         }
 
     });
-
 
     $(".view_all_comments").on("click", function(e){
         e.preventDefault();

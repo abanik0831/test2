@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/iscroll-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" afterPath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
@@ -40,16 +38,28 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="65" selection-start="66" selection-end="68" vertical-scroll-proportion="-0.5769231" vertical-offset="0" max-vertical-offset="2970">
+            <state line="4" column="73" selection-start="197" selection-end="198" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="2970">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="65" selection-start="4443" selection-end="4455" vertical-scroll-proportion="-21.833334" vertical-offset="916" max-vertical-offset="3495">
+            <state line="60" column="58" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.2635659" vertical-offset="730" max-vertical-offset="3570">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#center#0;n#body#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#center#0;n#body#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="230" column="11" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-5.58" vertical-offset="3171" max-vertical-offset="6000">
               <folding />
             </state>
           </provider>
@@ -58,7 +68,16 @@
       <file leaf-file-name="splash_screen.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="52" selection-start="3309" selection-end="3309" vertical-scroll-proportion="-3.75" vertical-offset="1140" max-vertical-offset="3675">
+            <state line="140" column="36" selection-start="4341" selection-end="4341" vertical-scroll-proportion="-4.681818" vertical-offset="1519" max-vertical-offset="3780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iscroll-min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/iscroll-min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -67,16 +86,16 @@
       <file leaf-file-name="_comment.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="48" selection-start="634" selection-end="646" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
+            <state line="16" column="62" selection-start="670" selection-end="718" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="comments.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="26" selection-start="915" selection-end="915" vertical-scroll-proportion="0.69162995" vertical-offset="309" max-vertical-offset="1005">
+            <state line="33" column="31" selection-start="630" selection-end="630" vertical-scroll-proportion="-2.66" vertical-offset="362" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -146,17 +165,16 @@
         <option value="$PROJECT_DIR$/app/controllers/splash_screen_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
-        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/comments/_comment.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="29" />
+    <option name="y" value="22" />
     <option name="width" value="1433" />
     <option name="height" value="802" />
   </component>
@@ -295,68 +313,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartupSocial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -374,11 +330,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="$PROJECT_DIR$/app/views/comments" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/app/assets/fonts" />
       <recent name="$PROJECT_DIR$/db" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/assets/images" />
@@ -525,7 +481,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="29" width="1433" height="802" extended-state="6" />
+    <frame x="0" y="22" width="1433" height="802" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -566,16 +522,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131128054643_devise_create_admin_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131128054955_add_user_name_to_admin_user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335" />
@@ -808,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="310" selection-end="310" vertical-scroll-proportion="0.2081448" vertical-offset="72" max-vertical-offset="5625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="956" selection-end="956" vertical-scroll-proportion="0.53351575" vertical-offset="0" max-vertical-offset="1290">
@@ -836,38 +775,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/iscroll-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="52" selection-start="3309" selection-end="3309" vertical-scroll-proportion="-3.75" vertical-offset="1140" max-vertical-offset="3675">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="718">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="634" selection-end="646" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="65" selection-start="4443" selection-end="4455" vertical-scroll-proportion="-21.833334" vertical-offset="916" max-vertical-offset="3495">
+        <state line="1714" column="3" selection-start="27479" selection-end="27479" vertical-scroll-proportion="2.34887" vertical-offset="24047" max-vertical-offset="57195">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="66" selection-end="68" vertical-scroll-proportion="-0.5769231" vertical-offset="0" max-vertical-offset="2970">
+        <state line="4" column="73" selection-start="197" selection-end="198" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="2970">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="26" selection-start="915" selection-end="915" vertical-scroll-proportion="0.69162995" vertical-offset="309" max-vertical-offset="1005">
+        <state line="33" column="31" selection-start="630" selection-end="630" vertical-scroll-proportion="-2.66" vertical-offset="362" max-vertical-offset="1020">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="36" selection-start="4341" selection-end="4341" vertical-scroll-proportion="-4.681818" vertical-offset="1519" max-vertical-offset="3780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_comment.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="62" selection-start="670" selection-end="718" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="11" selection-start="3502" selection-end="3502" vertical-scroll-proportion="-5.58" vertical-offset="3171" max-vertical-offset="6000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="58" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.2635659" vertical-offset="730" max-vertical-offset="3570">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#center#0;n#body#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#center#0;n#body#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

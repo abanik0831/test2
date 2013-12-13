@@ -19,8 +19,6 @@
             <%= post.text_area :post, :class => "post_field", :size => "300x3", :placeholder => "Share something startup related" %>
             <%= post.hidden_field :profile_id, :value => current_user.id, :class => "user_id" %>
             <%= post.hidden_field :visibility, :value => "true" %>
-
-
             <%=  post.fields_for :post_pics do |pic| %>
                 <div class="form_field">
                   <%= pic.file_field :picture,:class => "input img_up" %>
@@ -63,7 +61,11 @@
                         </li>
 
                         <li class="dashpost_time">
-                          <%= f.created_at.strftime("%B %d, %Y")  %>
+                          <% if f.created_at > Time.now.beginning_of_day %>
+                              <%= time_ago_in_words(f.created_at) %> ago
+                          <% else %>
+                              <%= f.created_at.strftime("%B %d, %Y")  %>
+                          <% end %>
                         </li>
                         <div class="container_content" data-id="<%= f.id %>">
                           <li>
@@ -100,7 +102,10 @@
                           <% end %>
 
                           <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
-                              <%= render f.comments %>
+                             <div class="scroller">
+                               <%= render f.comments %>
+                             </div>
+
                           <% end %>
 
                           <li>
