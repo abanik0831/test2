@@ -123,10 +123,25 @@ $(document).ready(function(){
         $(this).find(".comment_splash").attr("disabled", true);
     });
 
+    $(".comment:not(:nth-last-of-type(-n+2))").css("display", "none");
+
+    $(".comment_splash").on("click", function(){
+        console.log($(this).parent().parent().parents());
+
+        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') == 'block') {
+            $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
+//            var objdiv =  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))");
+//            console.log("hi " + $(this).parent().parent().parent().find(".comment").scrollHeight);
+           //objdiv.scrollTop = objdiv.scrollHeight;
+        }
+
+    });
+
 
     $(".view_all_comments").on("click", function(e){
         e.preventDefault();
         $(this).parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
+        $(this).parent().find(".comment:nth-last-child(2)").css("border-top", "1px solid gray");
     });
 
 //    $('#new_post').fileupload({

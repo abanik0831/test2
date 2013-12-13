@@ -5,12 +5,17 @@
 .comment {
   padding-top: 28px;
   padding-bottom: 18px;
-  border-bottom: 1px solid gray;
   position: relative;
+  width: 97%;
 }
 
-.comment:first-child {
+.comment:not(:first-child):not(:nth-last-child(2)) {
   border-top: 1px solid gray;
+}
+
+
+.comment:last-child {
+  border-bottom: 1px solid gray;
 }
 
 .comment_image {
@@ -24,6 +29,20 @@
   margin-right: 30px;
 }
 
+.commentcolor {
+  color: rgb(178, 184, 189);
+  position: relative;
+  left: -3px;
+  top: 2px;
+}
+
+.comment_time {
+  color: rgb(178, 184, 189);
+  position: relative;
+  left: -2px;
+  top: 1px;
+}
+
 .comment_created_time {
   position: relative;
 //  left: 312px;
@@ -31,4 +50,13 @@
   text-align: right;
   font-weight: normal;
   font-size: 11px;
+  color: rgb(178, 184, 189);
+}
+
+.view_all_comments {
+  text-align: center;
+  padding: 6px 0 6px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-top: 30px;
 }

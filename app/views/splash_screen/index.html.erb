@@ -92,9 +92,12 @@
                               <% end %>
                           <% end %>
 
-                          <li class="view_all_comments">
-                            View all <%= Comment.where(post_id: f.id).count %> comments
-                          </li>
+                          <% if Comment.where(post_id: f.id).count > 2 %>
+                              <li class="view_all_comments">
+                                <span class="fui-eye commentcolor"></span>
+                                View all <%= Comment.where(post_id: f.id).count %> comments
+                              </li>
+                          <% end %>
 
                           <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
                               <%= render f.comments %>

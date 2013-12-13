@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 #gem 'debugger'
 #gem 'faye'
 #gem 'thin'
+gem "jquery-scrollto-rails"
 gem 'private_pub'
 gem 'carrierwave'
 gem 'gibbon', git: 'git://github.com/amro/gibbon.git'

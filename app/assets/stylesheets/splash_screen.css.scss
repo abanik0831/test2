@@ -13,14 +13,6 @@
   position: relative;
   left: 9%;
 }
-//
-//.comment:nth-last-of-type(-n+2) {
-//  background: green;
-//}
-
-.comment:not(:nth-last-of-type(-n+2)) {
-  display: none;
-}
 
 #headerpic {
   position: absolute;
