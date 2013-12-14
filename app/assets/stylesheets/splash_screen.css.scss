@@ -322,13 +322,15 @@ input[type="file"] {
     font-size: 12px;
     position: relative;
     top: 31px;
-    left: -7px;
+    left: 12px;
   }
 
   #skill_section{
     position:relative;
-    left: 11%;
+    left: 6%;
     top: -42px;
+    text-align: center;
+    width: 94%;
   }
 
   .camera-image {
@@ -343,7 +345,7 @@ input[type="file"] {
   .skill_img{
     width: 23%;
     position: relative;
-    left: -23%
+    left: -19%
   }
 
   .post_splash.btn.btn-primary {

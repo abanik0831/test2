@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<%= render 'follow_form' if signed_in? %>
-
 <%= link_to "MESSAGES", {:controller => "/conversations", :action => "new"}, {:class=>"msguser_hide messageuser btn btn-large btn-primary"}%>
 
 <form method="post" action="http://localhost:3000/conversations/new" id="f">
@@ -44,6 +42,9 @@
     <%= link_to image_tag("linkedin.png"), "http://www.linkedin.com", :class => "social_link_spacing" %>
     <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
   </div>
+
+  <%= render 'follow_form' if signed_in? %>
+
 
 </div>
 

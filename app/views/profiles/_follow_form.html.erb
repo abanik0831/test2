@@ -4,7 +4,6 @@
       <% if current_user.following?(@profile) %>
         <%= render 'unfollow' %>
       <% else %>
-          bye
         <%= render 'follow' %>
       <% end %>
     </div>
