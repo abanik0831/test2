@@ -98,6 +98,15 @@
   }
 
 
+  .name_position {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    top: -85px;
+    font-size: 17px;
+  }
+
+
   .requestbutton {
     background: rgb(0,0,0) !important;
     position: relative;
@@ -415,11 +424,6 @@ input[type="file"] {
     position: relative;
     top: -45px;
     left: 0%;
-  }
-
-  .dashpost_commentpic {
-    width: 250px;
-    height: 250px;
   }
 }
 

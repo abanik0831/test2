@@ -149,6 +149,12 @@
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
 
+  #post_container_profile {
+    position: relative;
+    top: -51px;
+    left: -13px;
+  }
+
   #post_container_profile .container {
     width: 100%;
   }
@@ -185,7 +191,7 @@
   .social_link_spacing {
     margin-right: 40px;
     position: relative;
-    left: 47px;
+    left: 36px;
   }
 
 }
