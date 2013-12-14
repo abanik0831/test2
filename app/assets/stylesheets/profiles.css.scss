@@ -131,6 +131,7 @@
 #post_container_profile {
   position: relative;
   top: -51px;
+  left: -18px;
 }
 
 #post_container_profile .container {
@@ -147,6 +148,10 @@
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
+
+  #post_container_profile .container {
+    width: 100%;
+  }
 
   .picprofile img {
     width: 100px;
