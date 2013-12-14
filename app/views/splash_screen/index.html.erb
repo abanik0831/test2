@@ -3,16 +3,6 @@
 <div class="inner_welcome">
 <% if user_signed_in? %>
 
-
-    <div id = "skill_section">
-      <p class="skill_text">Design</p>
-      <%= image_tag("design.png" , :class => "skill_img")%>
-      <p class="skill_text">Technology</p>
-      <%= image_tag("technology.png" , :class => "skill_img") %>
-      <p class="skill_text">Business</p>
-      <%= image_tag("business.png", :class => "skill_img") %>
-    </div>
-
     <div id="dashboard-post">
       <%= form_for @postnew, :html => {:multipart => true} do |post| %>
           <div class="dashboard-post_containter">
@@ -187,32 +177,38 @@
       <br />
       <br />
       <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-          #mc_embed_signup{width: 400px; background: #FFFFFF; border: 0px solid #e1e1e1; font:18px Helvetica,Arial,sans-serif; color: #999; margin-bottom: 25px; padding: 13px 13px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 0px 0px #ccc; -moz-box-shadow: 0 0px 0px #ccc; -webkit-box-shadow: 0 0px 0px #ccc; }
-      </style>
 
-      <style type="text/css">
-          #optin input {width: 400px; background: #FFFFFF; border: 0px solid #e1e1e1; font:18px Helvetica,Arial,sans-serif; color: #999; margin-bottom: 25px; padding: 13px 13px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; box-shadow: 0 0px 0px #ccc; -moz-box-shadow: 0 0px 0px #ccc; -webkit-box-shadow: 0 0px 0px #ccc; }
-      </style>
-
-      <style type="text/css">
-          #optin input[type="submit"] {width: 400; background: #000; border: 0px solid #FFF; font:18px Helvetica,Arial,sans-serif; color:#FFF; cursor: pointer; margin-right: 60px; margin-bottom: 25px; padding: 18px 18px; border-radius: 10px; -moz-border-radius: 9px; -webkit-border-radius: 9px;  box-shadow: 0 0px 0px #000; -moz-box-shadow: 0 0px 0px #000; -webkit-box-shadow: 0 0px 0px #000; }
-      </style>
 
       <div id="optin">
         <form action="http://startupsocial.us7.list-manage.com/subscribe/post?u=b16068ebe51a564027c62b54f&amp;id=f25c5257b9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="text" value="ENTER YOUR NAME" name="MMERGE4" class="" id="mce-MMERGE4" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
           <br />
-          <input type="email" value="ENTER YOUR EMAIL" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          <div class="control-group large">
+            <input type="text" value="" name="MMERGE4"  placeholder="Enter Your Name" class="span3 signinpage_name" id="mce-MMERGE4" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+
+
+          <div class="control-group large">
+            <input type="text" value="" name="EMAIL"  placeholder="Enter Your Email" class="required email span3 signinpage_email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+          </div>
+
           <div class="response" id="mce-error-response" style="display:none"></div>
           <div class="response" id="mce-success-response" style="display:none"></div>
-          <input type="submit" value="REQUEST A BETA INVITE" name="subscribe" id="mc-embedded-subscribe" class="button">
+          <input type="submit" value="SEND ME AN INVITE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block btn-inverse requestbutton">
         </form>
+
+        <div class="sign_in_btn">
+          <p class="accountexist">Already have an account ?</p>
+          <%= link_to("SIGN IN", new_user_session_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
+        </div>
+
+
+
       </div>
 
       <br />
       <br />
-      <a href="https://angel.co/startup-social" target="_blank"><img src="assets/angel-list-white.png" width="100" height="100" border="0" /></a><a href="http://facebook.com/startupsocial" target="_blank"><img src="assets/facebook-white.png" width="100" height="100" border="0" /></a><a href="https://twitter.com/startupsocial" target="_blank"><img src="assets/twitter-white.png" width="100" height="100" border="0" /></a><br />
+      <a href="https://angel.co/startup-social" target="_blank"><img src="assets/angel-list-1.png" width="60" height="60" border="0" /></a>
+      <br />
       <br />
       <br />
       <br />
