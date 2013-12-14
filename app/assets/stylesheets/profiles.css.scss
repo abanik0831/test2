@@ -177,9 +177,15 @@
 
   .social_links {
     position: relative;
-    left: 9%;
+    left: 0%;
     top: -25px;
-    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .social_link_spacing {
+    margin-right: 40px;
+    position: relative;
+    left: 47px;
   }
 
 }
