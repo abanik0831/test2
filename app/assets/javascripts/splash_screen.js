@@ -92,7 +92,6 @@ $(document).ready(function(){
             }
         });
         if(profile_id == user_id_dlt) {
-            console.log("h1");
             $.ajax({
                type: "PUT",
                 url: "/posts/"+ post_id_dlt,
@@ -112,7 +111,7 @@ $(document).ready(function(){
 
    // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-    $(".comment_field").on("keyup", function(e){
+    $(".comment_field").on("input keyup", function(e){
         var y = $(this).val();
         console.log(y);
         if(y.length > 0) {
@@ -124,7 +123,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".post_field").on("keyup", function(e){
+    $(".post_field").on("input keyup", function(e){
         var y = $(this).val();
         console.log(y);
         if(y.length > 0) {

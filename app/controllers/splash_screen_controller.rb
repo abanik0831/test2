@@ -51,6 +51,10 @@ class SplashScreenController < ApplicationController
         #@post.profile_id = current_user.id
        #@pst = Postpost_pics
         @post = Post.joins(:comments).where("posts.id = comments.post_id").first
+
+        @useragent = request.env["HTTP_USER_AGENT"]
+
+
       end
     end
       #@post.save
