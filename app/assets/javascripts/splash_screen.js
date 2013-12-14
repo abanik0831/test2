@@ -113,14 +113,26 @@ $(document).ready(function(){
    // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
     $(".comment_field").on("keyup", function(e){
-        var x = $(this).find(".comment_field").val();
         var y = $(this).val();
+        console.log(y);
         if(y.length > 0) {
             $(this).parent().find(".comment_splash").removeAttr("disabled");
         }
 
         if(y.length <= 0) {
             $(this).parent().find(".comment_splash").attr("disabled", true);
+        }
+    });
+
+    $(".post_field").on("keyup", function(e){
+        var y = $(this).val();
+        console.log(y);
+        if(y.length > 0) {
+            $(this).parent().find(".post_splash").removeAttr("disabled");
+        }
+
+        if(y.length <= 0) {
+            $(this).parent().find(".post_splash").attr("disabled", true);
         }
     });
 

@@ -29,7 +29,7 @@
                   <%= pic.hidden_field :profile_id, :value => current_user.id, :class => "input user_id" %>
                 </div>
             <% end %>
-            <%= post.submit "POST", :class => " post_splash btn btn-large btn-primary"%>
+            <%= post.submit "POST", :class => " post_splash btn btn-large btn-primary", :disabled => true %>
           </div>
       <% end %>
     </div>

@@ -9,6 +9,9 @@ class Post < ActiveRecord::Base
   has_many :comments
   attr_accessible :cmtpost, :post_id, :comment_visibility, :user_id
 
+  validates :post, :presence => true
+
+
   has_many :deleteposts
   attr_accessible :post_id, :user_id
 
