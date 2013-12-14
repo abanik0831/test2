@@ -18,9 +18,10 @@
 }
 
 .user_area_pic {
-  position: relative;
+  margin: 0 auto;
   font-weight: bold;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .location_user_area {
@@ -28,8 +29,9 @@
   font-size: 20px;
   width: 30px;
   color: rgb(191, 195, 198);
-  position: absolute;
-  left: 45%;
+  position: relative;
+  left: 615px;
+  top: 3px;
 }
 
 .social_links {
@@ -45,7 +47,7 @@
 
 .user_area {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   text-align: center;
   top: -5px;
 }
@@ -92,7 +94,7 @@
 
 .profile_info {
   position: relative;
-  top: -71px;
+  top: -134px;
 }
 
 .profile_submit {
@@ -155,13 +157,14 @@
 
   }
 
+
   .location_user_area {
     float: left;
     font-size: 20px;
     width: 30px;
     color: rgb(191, 195, 198);
-    position: absolute;
-    left: 30%;
+    position: relative;
+    left: 52px;
     top: 3px;
   }
 

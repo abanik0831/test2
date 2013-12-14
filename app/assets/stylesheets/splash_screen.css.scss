@@ -30,13 +30,13 @@
   margin: 0 auto;
   border-radius: 10px;
   position: relative;
-  top: 190px;
+  top: 230px;
   margin-bottom: 93px;
 }
 
 #dash_content {
   position: relative;
-  top: 150px;
+  top: 190px;
 }
 
 .name_position {
@@ -53,13 +53,10 @@
 
 }
 
-.view_all_comments {
-  cursor: pointer;
-}
-
 @media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
   #dashboard-post {
-    width: 80%;
+    width: 95%;
+    top: 90px;
   }
   .post_field {
     width: 220px;
@@ -68,6 +65,11 @@
   .post_field:focus {
     width: 220px;
     height: 75px;
+  }
+
+  #dash_content {
+    position: relative;
+    top: 50px;
   }
 }
 
@@ -241,10 +243,10 @@ input[type="file"] {
 
 @media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
   #post_container .container {
-    width: 80%;
+    width: 100%;
   }
   .post_field {
-    width: 77%;
+    width: 82%;
     height: 75px;
     position: relative;
     left: 9%;
@@ -260,8 +262,8 @@ input[type="file"] {
 
   #skill_section{
     position:relative;
-    left: 14%;
-    top: -57px;
+    left: 11%;
+    top: -42px;
   }
 
   .camera-image {
@@ -274,7 +276,7 @@ input[type="file"] {
   }
 
   .skill_img{
-    width: 25%;
+    width: 23%;
     position: relative;
     left: -23%
   }
@@ -283,7 +285,7 @@ input[type="file"] {
     background: #34495e;
     position: relative;
     top: -50px;
-    left: 56%;
+    left: 65%;
     height: 32px;
     width: 79px;
   }
@@ -298,14 +300,14 @@ input[type="file"] {
     width: 70px;
     height: 70px;
     position: relative;
-    left: 28%;
-    top: -54px;
+    left: 38%;
+    top: -74px;
   }
 
   .dashpost_time {
     position: relative;
-    top: -50px;
-    left: 13%;
+    top: -69px;
+    left: 30%;
   }
 
   .container_text {
@@ -314,7 +316,7 @@ input[type="file"] {
   }
   .comment_field {
     position: relative;
-    left: 24px;
+    left: 61px;
     top: -26px;
     width: 169px;
   }
@@ -325,8 +327,8 @@ input[type="file"] {
     width: 40px;
     height: 40px;
     position: relative;
-    top: 22px;
-    left: -24px;
+    top: 19px;
+    left: 6px;
     float: left;
   }
 
