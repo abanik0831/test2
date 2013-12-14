@@ -104,6 +104,8 @@
     width: 90%;
     top: -85px;
     font-size: 22px;
+    position: relative;
+    left: 4%;
   }
 
 
@@ -323,7 +325,7 @@ input[type="file"] {
     width: 100%;
   }
   .post_field {
-    width: 82%;
+    width: 82% !important;
     height: 75px;
     position: relative;
     left: 9%;
