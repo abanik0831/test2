@@ -153,7 +153,7 @@ $(document).ready(function(){
 ////
 ////            scrollAmount = lastElementTop - 200 ;
 ////
-////            height.animate({scrollTo: scrollAmount},1000);
+////            height.animate({scrollTop: scrollAmount},1000);
 ////            console.log(lastElementTop);
 //          //  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").show();
 //        }
