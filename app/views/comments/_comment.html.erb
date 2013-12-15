@@ -4,7 +4,7 @@
             <% ProfilePic.all.each do |cmtpict| %>
                 <% if comment.profile_id == cmtpict.id && !cmtpict.image.blank? %>
                     <li class="comment_image">
-                      <%= image_tag cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic" %>
+                      <%= link_to image_tag(cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic"), profile_path(id: comment.profile_id)  %>
                     </li>
                 <% end %>
             <% end %>
@@ -14,7 +14,8 @@
 
             <li class="comment_created_time">
               <span class="fui-time comment_time"></span>
-              <%= time_ago_in_words(comment.created_at) %> ago
+              <%= time_ago_in_words(comment.created_at) %> ago via
+
             </li>
 
         <% end %>

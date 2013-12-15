@@ -55,7 +55,7 @@
                         <li>
                           <% @profilepic.each do |pic| %>
                               <% if (f.profile_id == pic.profile_id) %>
-                                  <%= image_tag pic.image_url(:thumb).to_s, :class => "dashpost_profilepic" %>
+                                  <%= link_to image_tag(pic.image_url(:thumb).to_s, :class => 'dashpost_profilepic'), profile_path(id: f.profile_id)  %>
                               <% end %>
                           <% end %>
                         </li>
@@ -108,7 +108,7 @@
                           <% end %>
 
                           <li>
-                            <%= image_tag @profpic.image_url(:thumb).to_s, :class => "comment_profilepic" %>
+                            <%= link_to image_tag(@profpic.image_url(:thumb).to_s, :class => 'comment_profilepic'), profile_path(id: current_user.id)  %>
                           </li>
                           <li class="form_post">
                             <%= form_for [f, @comment], remote: true do |commentpost| %>

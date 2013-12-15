@@ -11,9 +11,12 @@ class CommentsController < ApplicationController
   def index
     @comments = @post.comments
     @limitcomments = Comment.where(post_id: 1).limit(2).order("id DESC").reverse
+
   end
 
   def create
+    @useragent = request.env["HTTP_USER_AGENT"]
+
     @postsall = Post.all
     # @comment = @post.comments.build(params[:comment])
     @comment = @post.comments.create(params[:comment])
