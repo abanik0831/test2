@@ -156,20 +156,18 @@
     left: -13px;
   }
 
+  .picprofile img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    position: relative;
+    left: 28%;
+
+  }
+
   #post_container_profile .container {
     width: 100%;
   }
-
-  .picprofile img {
-    width: 100px;
-    height: 100px;
-    -webkit-border-radius: 50%;
-    position: relative;
-    left: 35%;
-    margin-top: 20px;
-
-  }
-
 
   .location_user_area {
     float: left;
@@ -196,3 +194,39 @@
   }
 
 }
+//
+//@media only screen and (min-width : 400px)  {
+//
+////  #post_container_profile .container {
+////    width: 100%;
+////  }
+////
+////  #post_container_profile {
+////    width: 95%;
+////    //    top: 90px;
+////  }
+////
+////  .post_field {
+////    width: 82% !important;
+////    height: 75px;
+////    position: relative;
+////    left: 9%;
+////  }
+//
+//  //  .comment_splash.btn.btn-primary {
+//  //    background: #34495e;
+//  //    position: relative;
+//  //    top: 24px;
+//  //    left: 45%;
+//  //    height: 36px;
+//  //    width: 95px;
+//  //  }
+//  //
+//  //  .comment_field {
+//  //    position: relative;
+//  //    left: -18px;
+//  //    top: 16px;
+//  //    width: 76%;
+//  //    height: 36px;
+//  //  }
+//}

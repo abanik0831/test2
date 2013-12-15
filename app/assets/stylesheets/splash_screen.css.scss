@@ -320,12 +320,58 @@ input[type="file"] {
   margin-right: -33px;
 }
 
-@media only screen and (min-aspect-ratio: 13/9) {
+@media only screen and (max-width : 480px) and  (min-aspect-ratio: 13/9) {
+
+  #post_container .container {
+    width: 100%;
+  }
+
+  #dashboard-post {
+    width: 95%;
+//    top: 90px;
+  }
+
+  .picprofile img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    position: relative;
+    left: 39%;
+
+  }
+
+  .location_user_area {
+    float: left;
+    font-size: 20px;
+    width: 30px;
+    color: rgb(191, 195, 198);
+    position: relative;
+    left: 28%;
+    top: 3px;
+  }
+
+    #post_container_profile .container {
+      width: 100%;
+    }
+
+    #post_container_profile {
+      width: 95%;
+      //    top: 90px;
+    }
+
+  .post_field {
+    width: 82% !important;
+    height: 75px;
+    position: relative;
+    left: 9%;
+  }
+
 
   #skill_section{
     position:absolute;
     top: 74px;
     left: 0%;
+    width: 100%;
   }
 
   .skill_text{
@@ -333,20 +379,20 @@ input[type="file"] {
     font-size: 12px;
     position: relative;
     top: 10px;
-    left: 110px;
+    left: 18%;
   }
 
   .skill_img{
-    width: 28%;
+    width: 24%;
     position: relative;
-    left: 2%
+    left: 0%
   }
 
   .comment_splash.btn.btn-primary {
     background: #34495e;
     position: relative;
     top: 24px;
-    left: 246px;
+    left: 45%;
     height: 36px;
     width: 95px;
   }
@@ -355,7 +401,7 @@ input[type="file"] {
     position: relative;
     left: -18px;
     top: 16px;
-    width: 357px;
+    width: 76%;
     height: 36px;
   }
 }
@@ -449,7 +495,7 @@ input[type="file"] {
     position: relative;
     left: -4px;
     top: 12px;
-    width: 202px;
+    width: 70%;
   }
 
 
