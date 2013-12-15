@@ -320,7 +320,7 @@ input[type="file"] {
   margin-right: -33px;
 }
 
-@media only screen and (max-width : 480px) and  (min-aspect-ratio: 13/9) {
+@media only screen and (max-width : 600px) and  (min-aspect-ratio: 13/9) {
 
   #post_container .container {
     width: 100%;
@@ -338,6 +338,16 @@ input[type="file"] {
     position: relative;
     left: 39%;
 
+  }
+
+  .social_links {
+    position: relative;
+    left: 0%;
+  }
+
+  .social_link_spacing {
+    position: relative;
+    left: 29%;
   }
 
   .location_user_area {

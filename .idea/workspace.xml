@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
     </list>
     <ignored path="StartupSocial.iws" />
@@ -49,19 +48,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="338" column="12" selection-start="4961" selection-end="4961" vertical-scroll-proportion="-7.16" vertical-offset="4712" max-vertical-offset="8175">
+            <state line="349" column="12" selection-start="5092" selection-end="5092" vertical-scroll-proportion="0.7492401" vertical-offset="4742" max-vertical-offset="8325">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profiles.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="39" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.7720365" vertical-offset="2852" max-vertical-offset="3570">
+            <state line="224" column="39" selection-start="3590" selection-end="3590" vertical-scroll-proportion="-10.16" vertical-offset="2852" max-vertical-offset="3570">
               <folding />
             </state>
           </provider>
@@ -134,8 +133,8 @@
         <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
       </list>
     </option>
   </component>
@@ -886,16 +885,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="338" column="12" selection-start="4961" selection-end="4961" vertical-scroll-proportion="-7.16" vertical-offset="4712" max-vertical-offset="8175">
+        <state line="224" column="39" selection-start="3590" selection-end="3590" vertical-scroll-proportion="-10.16" vertical-offset="2852" max-vertical-offset="3570">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="39" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.7720365" vertical-offset="2852" max-vertical-offset="3570">
+        <state line="349" column="12" selection-start="5092" selection-end="5092" vertical-scroll-proportion="0.7492401" vertical-offset="4742" max-vertical-offset="8325">
           <folding />
         </state>
       </provider>
