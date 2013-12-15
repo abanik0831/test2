@@ -21,6 +21,10 @@
 
     </p>
 
+  <p class="profileedit">
+    <%= image_tag("edit-profile.png", :class => "editprofile_image") %>
+  </p>
+
   <p class="username_profile_page">
     <%=  @profiles.f_name %>
     <%= @profiles.l_name %>
@@ -44,11 +48,7 @@
   </div>
 
   <%= render 'follow_form' if signed_in? %>
-
-
 </div>
-
-
 <div id = "dash_profile_page">
 
   <ul id = "post_container_profile">

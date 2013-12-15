@@ -54,6 +54,10 @@
 <h1><%= yield(:title) %></h1>
 
 <%= yield %>
-
+    <% if user_signed_in? %>
+      <div class="topofpage">
+        <%= image_tag("top-of-page.png", :size => "50x50", :class => "pagetop")  %>
+      </div>
+    <% end %>
 </body>
 </html>

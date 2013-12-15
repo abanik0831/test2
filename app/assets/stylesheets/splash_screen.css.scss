@@ -20,6 +20,13 @@
   z-index: 1;
 }
 
+.profileedit {
+  position: relative;
+  display: inline-block;
+  left: 60%;
+  top: -162px;
+}
+
 .requestbutton {
   background: rgb(0,0,0) !important;
   position: relative;
@@ -27,6 +34,13 @@
   left: -35px;
   top: 15px;
   width: 19% !important;
+}
+
+.topofpage {
+  position: relative;
+  margin:0 auto;
+  text-align: center;
+  top: 155px;
 }
 
 #dashboard-post {
@@ -91,6 +105,14 @@
       -webkit-background-size: 80% auto;
       background-size: 80% auto;
   }
+
+  .profileedit {
+    position: relative;
+    display: inline-block;
+    left: 72%;
+    top: -162px;
+  }
+
 
 
   .signinpage_name, .signinpage_email {
@@ -329,6 +351,13 @@ input[type="file"] {
   #dashboard-post {
     width: 95%;
 //    top: 90px;
+  }
+
+  .profileedit {
+    position: relative;
+    display: inline-block;
+    left: 72%;
+    top: -162px;
   }
 
   .follow_user {

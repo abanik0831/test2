@@ -144,7 +144,6 @@ $(document).ready(function(){
 
     $(".comment_splash").on("click", ".comments", function(){
 
-        alert(1);
         console.log(this);
 //        if($(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").css('display') === 'block') {
 //            $(this).parent().parent().parent().find(".comment:nth-last-child(2)").css("border-bottom", "5px solid gray", "important");
@@ -158,6 +157,11 @@ $(document).ready(function(){
 //          //  $(this).parent().parent().parent().find(".comment:not(:nth-last-of-type(-n+2))").show();
 //        }
 
+    });
+
+    $(".pagetop").on("click", function(){
+        //$('body').scrollTop(0);
+        $('body').animate({scrollTop: 0}, 1000);
     });
 
     $(".view_all_comments").on("click", function(e){
