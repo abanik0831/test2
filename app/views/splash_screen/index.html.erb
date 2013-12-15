@@ -3,10 +3,6 @@
 <div class="inner_welcome">
 <% if user_signed_in? %>
 
-    <% if @useragent.downcase.match(/macintosh/) %>
-        ok hi
-    <% end %>
-
     <div id = "skill_section">
     <p class="skill_text">Design</p>
     <%= image_tag("design.png" , :class => "skill_img")%>
