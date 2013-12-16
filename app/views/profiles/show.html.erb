@@ -20,10 +20,11 @@
       <% end %>
 
     </p>
-
-  <p class="profileedit">
-    <%= image_tag("edit-profile.png", :class => "editprofile_image") %>
-  </p>
+  <% if @profile.id == current_user.id %>
+      <p class="profileedit">
+        <%= link_to image_tag("edit-profile.png", :class => "editprofile_image"), edit_profile_path(@profile) %>
+      </p>
+  <% end %>
 
   <p class="username_profile_page">
     <%=  @profiles.f_name %>
@@ -146,5 +147,4 @@
   </ul>
 </div>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
