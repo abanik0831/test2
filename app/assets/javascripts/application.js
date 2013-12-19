@@ -29,13 +29,10 @@
 
 $(document).ready(function(){
 
-//    $(document).ready(function(){
-//        var faye = new Faye.Client('http://localhost:9292/faye');
-//        faye.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-//        faye.subscribe('/', function(data) {
-//            alert(data);
-//        })
-//    });
+    var faye = new Faye.Client('http://localhost:9292/faye');
+    faye.subscribe('/profiles/1', function (data) {
+        eval(data);
+    });
 
     $(".sidebar").on("click", function(){
        $(".notification-center").toggle();

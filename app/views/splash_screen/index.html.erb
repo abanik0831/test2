@@ -190,24 +190,11 @@
 
 
       <div id="optin">
-        <form action="http://startupsocial.us7.list-manage.com/subscribe/post?u=b16068ebe51a564027c62b54f&amp;id=f25c5257b9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <br />
-          <div class="control-group large">
-            <input type="text" value="" name="MMERGE4"  placeholder="Enter Your Name" class="span3 signinpage_name" id="mce-MMERGE4" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-          </div>
-
-
-          <div class="control-group large">
-            <input type="text" value="" name="EMAIL"  placeholder="Enter Your Email" class="required email span3 signinpage_email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-          </div>
-
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
-          <input type="submit" value="SEND ME AN INVITE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large btn-block btn-inverse requestbutton">
-        </form>
+        <div class="sign_up_btn">
+          <%= link_to("SIGN UP", new_user_session_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
+        </div>
 
         <div class="sign_in_btn">
-          <p class="accountexist">Already have an account ?</p>
           <%= link_to("SIGN IN", new_user_session_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
         </div>
 
@@ -224,7 +211,6 @@
       <br />
     </center>
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://startupsocial.com/jquery.backstretch.min.js"></script><script type="text/javascript">
         $.backstretch("http://startupsocial.com/la-startup-community.png", {speed: 150});
     </script>
