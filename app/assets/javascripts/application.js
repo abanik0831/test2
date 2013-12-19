@@ -29,7 +29,7 @@
 
 $(document).ready(function(){
 
-    var faye = new Faye.Client('http://localhost:9292/faye');
+    var faye = new Faye.Client('http://startupsocialmvp.herokuapp.com/faye');
     faye.subscribe('/profiles/1', function (data) {
         eval(data);
     });
