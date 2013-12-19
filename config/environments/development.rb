@@ -27,6 +27,12 @@ StartupSocial::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  require 'pusher'
+
+  Pusher.app_id = '62109'
+  Pusher.key = 'aca54fb083a2df5c96f7'
+  Pusher.secret = '91e9e01ecd24c065ba5e'
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
 end
