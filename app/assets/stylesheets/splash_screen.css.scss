@@ -4,7 +4,7 @@
 
 .welcome {
   .inner_welcome p {
-     font-weight: bold;
+//     font-weight: bold;
   }
 }
 
@@ -26,6 +26,18 @@
   left: 60%;
   top: -162px;
   float: left;
+}
+
+.orcls {
+  position: relative;
+  top: 33px;
+  color: white;
+  font-weight: normal !important;
+}
+
+.angelmargin {
+  position: relative;
+  top: 53px;
 }
 
 .requestbutton {
@@ -67,9 +79,10 @@
   position: relative;
   left: -4px;
   top: 40px;
-  height: 28px;
+  padding-top: 11px;
+  height: 26px;
   font-size: 17px;
-  width: 17% !important;
+  width: 284px !important;
   background: rgb(0,0,0) !important;
   margin-bottom: 20px;
 }
@@ -344,6 +357,11 @@ input[type="file"] {
   margin-right: -33px;
 }
 
+.signin_btn.signup_btn {
+  position: relative;
+  top: 36px;
+}
+
 @media only screen and (max-width : 600px) and  (min-aspect-ratio: 13/9) {
 
   #post_container .container {
@@ -458,6 +476,12 @@ input[type="file"] {
     width: 76%;
     height: 36px;
   }
+}
+
+.signup {
+  margin-bottom: 31px !important;
+  position: relative;
+  top: 27px;
 }
 
 @media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {

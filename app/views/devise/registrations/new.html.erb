@@ -1,23 +1,31 @@
-<% title "Sign Up" %>
+<div id="signup_users">
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+  <h1 class="signup">Sign Up</h1>
 
-    <div>
-      <%= f.label :username %><br>
-      <%= f.text_field :username %>
-    </div>
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-    <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+      <div>
+        <%= f.text_field :username, :autofocus => true, :placeholder => "Username", :class => "signup_password signup" %>
+        <span class="signup_user fui-user"></span>
+      </div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+      <div>
+        <%= f.email_field :email, :placeholder => "Email", :class => "signup_password signup" %>
+        <span class="signup_user fui-mail"></span>
+      </div>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+      <div>
+        <%= f.password_field :password, :placeholder => "Password", :class => "signup_password signup" %>
+        <span class="signup_user_lock fui-lock"></span>
+      </div>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+      <div>
+        <%= f.password_field :password_confirmation, :placeholder => "Password Confirmation", :class => "signup_password signup" %>
+        <span class="signup_user_lock fui-lock"></span>
+      </div>
 
-<%= render "devise/shared/links" %>
+      <div><%= f.submit "ENTER", :class => "signin_btn signup_btn btn btn-small btn-primary btn-embossed mlm" %></div>
+  <% end %>
+
+</div>

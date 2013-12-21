@@ -193,8 +193,12 @@
 
       <div id="optin">
         <div class="sign_up_btn">
-          <%= link_to("SIGN UP", new_user_session_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
+          <%= link_to("SIGN UP", new_user_registration_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
         </div>
+
+        <p class="orcls">
+          or
+        </p>
 
         <div class="sign_in_btn">
           <%= link_to("SIGN IN", new_user_session_path, :class => "homepage signin_btn btn btn-small btn-primary btn-embossed mlm") %>
@@ -204,7 +208,7 @@
 
       </div>
 
-      <a href="https://angel.co/startup-social" target="_blank"><img src="assets/angel-list-1.png" width="60" height="60" border="0" /></a>
+      <a class="angelmargin" href="https://angel.co/startup-social" target="_blank"><img src="assets/angel-list-1.png" width="60" height="60" border="0" /></a>
       <br />
     </center>
 
