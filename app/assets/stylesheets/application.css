@@ -37,15 +37,26 @@ h1.signin {
     position: relative;
     font-weight: normal;
     top: 20px;
+    display: table;
+    margin: 0 auto;
 }
 
 h1.signup {
     font-family: 'automobi' !important;
     text-align: center;
     position: relative;
-    top: 0;
+    top: -24px;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    display: table;
+}
+
+.checkbox.checked .second-icon, .radio.checked .second-icon {
+    color: rgb(52, 58, 66) !important;
+}
+
+.checkbox.checked, .radio.checked {
+    color: rgb(24, 29, 34) !important;
 }
 
 
@@ -107,14 +118,14 @@ h1.signup {
     color: rgb(191, 195, 198);
     position: relative;
     left: 33%;
-    top: 12px;
+    top: -13px;
 }
 
 .signup_user_lock {
     color: rgb(191, 195, 198);
     position: relative;
     left: 33%;
-    top: 12px;
+    top: -13px;
 }
 
 .signin_password {
@@ -207,44 +218,56 @@ h2 a {
         width: 54px;
     }
 
+    .logonotlogged {
+        position:absolute;
+        left:41%;
+        top:-4%;
+        width: 54px;
+    }
+
+
     h1.signin {
         font-family: 'automobi' !important;
-        font-size: 38px;
+        font-size: 28px;
         text-align: center;
         position: relative;
         top: 20px;
     }
 
+    h1.signup {
+        font-weight: normal;
+        font-size: 34px;
+    }
 
     .signin_username {
-        width: 64% !important;
+        width: 77% !important;
         height: 34px !important;
         position: relative;
-        left: 16%;
+        left: 11%;
         top: 22px;
     }
 
     .signin_password {
-        width: 64% !important;
+        width: 77% !important;
         height: 34px !important;
         position: relative;
-        left: 10%;
+        left: 6%;
         top: 13px;
     }
 
     .signup_password  {
-        width: 64% !important;
+        width: 77% !important;
         height: 34px !important;
         position: relative;
-        left: 19%;
-        top: 13px;
+        left: 12%;
+        top: -20px !important;
     }
 
     .signin_btn {
         position: relative;
         top: 24px;
-        left: 31%;
-        width: 29% !important;
+        left: 26%;
+        width: 38% !important;
         background: rgb(52, 58, 66) !important;
     }
 
@@ -257,35 +280,35 @@ h2 a {
     .rememberme {
         position: relative;
         top: 33px;
-        left: 24%;
+        left: 26%;
     }
 
     .signin_user.fui-user {
         font-size: 14px;
         position: relative;
-        left: 72%;
+        left: 80%;
         top: -46px;
     }
 
     .signin_user_lock.fui-lock {
         font-size: 14px;
         position: absolute;
-        left: 72%;
-        top: 167px;
+        left: 80%;
+        top: 222px;
     }
 
     .signup_user {
         font-size: 14px;
         position: relative;
-        left: 9%;
-        top: 19px;
+        left: 4%;
+        top: -24px;
     }
 
     .signup_user_lock.fui-lock {
         font-size: 14px;
         position: relative;
-        left: 9%;
-        top: 19px;
+        left: 4%;
+        top: -24px;
     }
 
     .username_profile_page {

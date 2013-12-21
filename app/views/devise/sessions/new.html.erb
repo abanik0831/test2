@@ -1,6 +1,6 @@
 <div id="sign_in_devise">
 
-<h1 class="signin">Sign In</h1>
+<h1 class="signin">Welcome Back</h1>
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <%= f.text_field :username, :autofocus => true, :placeholder => "Username", :class => "signin_username" %></div>
@@ -14,8 +14,8 @@
 
           <label class="signin checkbox checked" for="checkbox2">
             <span class="icons">
-              <span class="icon_color first-icon fui-checkbox-unchecked"></span>
-              <span class="icon_color second-icon fui-checkbox-checked"></span>
+              <span class="icon_color first-icon signin fui-checkbox-unchecked"></span>
+              <span class="icon_color second-icon signin fui-checkbox-checked"></span>
             </span>
 
             <div><%= f.check_box :remember_me, :data => {:toggle => "checkbox"}, :checked => "checked", :id => "checkbox2" %> Keep me signed In</div>

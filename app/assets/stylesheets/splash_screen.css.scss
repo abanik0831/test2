@@ -359,7 +359,7 @@ input[type="file"] {
 
 .signin_btn.signup_btn {
   position: relative;
-  top: 36px;
+  top: 15px;
 }
 
 @media only screen and (max-width : 600px) and  (min-aspect-ratio: 13/9) {
@@ -481,7 +481,7 @@ input[type="file"] {
 .signup {
   margin-bottom: 31px !important;
   position: relative;
-  top: 27px;
+  top: 0;
 }
 
 @media only screen and (max-width : 380px) and (max-aspect-ratio: 13/9) {
@@ -493,6 +493,17 @@ input[type="file"] {
     height: 75px;
     position: relative;
     left: 9%;
+  }
+
+  .signup {
+    margin-bottom: 22px !important;
+  }
+
+  .signin_btn.signup_btn {
+    position: relative;
+    top: -2px;
+    left: 26%;
+    width: 38% !important;
   }
 
   .dashpost_commentpic {
