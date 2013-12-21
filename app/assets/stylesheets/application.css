@@ -42,6 +42,11 @@ h1.signin {
     width: 20%;
 }
 
+#optin {
+    position: relative;
+    top: -41px;
+}
+
 .signin_btn {
     position: relative;
     top: 104px;
