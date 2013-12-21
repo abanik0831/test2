@@ -39,6 +39,7 @@ h1.signin {
     top: 20px;
     display: table;
     margin: 0 auto;
+    width: 80%;
 }
 
 h1.signup {
@@ -273,8 +274,14 @@ h2 a {
 
     .signin.checkbox {
        position: relative;
-        left: 25%;
         top: 15px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .second-icon {
+        position: relative !important;
+        left: 474% !important;
     }
 
     .rememberme {

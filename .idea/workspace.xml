@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" afterPath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="361" column="9" selection-start="5202" selection-end="5202" vertical-scroll-proportion="0.38255033" vertical-offset="5187" max-vertical-offset="9570">
+            <state line="361" column="9" selection-start="5202" selection-end="5202" vertical-scroll-proportion="-4.56" vertical-offset="5187" max-vertical-offset="9570">
               <folding />
             </state>
           </provider>
@@ -87,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="12" selection-start="2553" selection-end="2553" vertical-scroll-proportion="-14.115385" vertical-offset="1538" max-vertical-offset="5340">
+            <state line="283" column="17" selection-start="5212" selection-end="5212" vertical-scroll-proportion="0.55518943" vertical-offset="3908" max-vertical-offset="5445">
               <folding />
             </state>
           </provider>
@@ -172,8 +169,8 @@
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -946,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="12" selection-start="2553" selection-end="2553" vertical-scroll-proportion="-14.115385" vertical-offset="1538" max-vertical-offset="5340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="215" column="88" selection-start="10051" selection-end="10074" vertical-scroll-proportion="-7.16" vertical-offset="2867" max-vertical-offset="3450">
@@ -962,7 +952,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="9" selection-start="5202" selection-end="5202" vertical-scroll-proportion="0.38255033" vertical-offset="5187" max-vertical-offset="9570">
+        <state line="361" column="9" selection-start="5202" selection-end="5202" vertical-scroll-proportion="-4.56" vertical-offset="5187" max-vertical-offset="9570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="283" column="17" selection-start="5212" selection-end="5212" vertical-scroll-proportion="0.55518943" vertical-offset="3908" max-vertical-offset="5445">
           <folding />
         </state>
       </provider>
