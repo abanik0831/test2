@@ -186,6 +186,7 @@ header.logged {
     text-align: right;
     position: relative;
     top: 26px;
+    left: -2%;
 }
 
 h2 a {
@@ -215,7 +216,7 @@ h2 a {
     .logo {
         position:absolute;
         left:41%;
-        top:10%;
+        top:7%;
         width: 54px;
     }
 
@@ -335,6 +336,29 @@ h2 a {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+
+}
+
+
+.notifications {
+    display: inline-block;
+    position: relative;
+    left: -40%;
+    top: 16px;
+}
+
+.msgs {
+    display: inline-block;
+    position: relative;
+    left: -22%;
+    top: 15px;
+}
+
+.settingsheader {
+    display: inline-block;
+    position: relative;
+    left: 20%;
+    top: 14px;
 }
 
 .sidebar {

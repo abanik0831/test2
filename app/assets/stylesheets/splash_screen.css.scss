@@ -87,6 +87,7 @@
   margin-bottom: 20px;
 }
 
+
 .signinpage_name {
   margin-bottom: 20px !important;
 }
@@ -494,6 +495,28 @@ input[type="file"] {
     position: relative;
     left: 9%;
   }
+
+  .notifications {
+    display: inline-block;
+    position: relative;
+    left: -12%;
+    top: 16px;
+  }
+
+  .msgs {
+    display: inline-block;
+    position: relative;
+    left: -12%;
+    top: 15px;
+  }
+
+  .settingsheader {
+    display: inline-block;
+    position: relative;
+    left: 3%;
+    top: 14px;
+  }
+
 
   .signup {
     margin-bottom: 22px !important;
