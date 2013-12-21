@@ -18,12 +18,6 @@ class ProfilesController < ApplicationController
   def show
 
     @postnew = Post.new
-
-   # @dash_post = Post.joins("INNER JOIN relationships ON relationships.followed_id = Posts.profile_id").where(:relationships => {:follower_id => current_user.id})
-
-   # @dash_pic = ProfilePic.joins("INNER JOIN relationships ON relationships.followed_id = profile_pics.profile_id").where(:relationships => {:follower_id => current_user.id})
-
-
     @dash_post = Post.all
     @dash_pic = ProfilePic.all
 
@@ -68,14 +62,18 @@ class ProfilesController < ApplicationController
   def following
     @title = "Following"
     @user = User.find(params[:id])
-   # @users = @user.followed_users.paginate(page: params[:page])
+    @users = @user.followed_users
+    @profiles = Profile.find(params[:id])
+    #.paginate(page: params[:page])
     render 'show_follow'
   end
 
   def followers
     @title = "Followers"
     @user = User.find(params[:id])
-   # @users = @user.followed_users.paginate(page: params[:page])
+    @users = @user.followers
+    @profiles = Profile.find(params[:id])
+    #.paginate(page: params[:page])
     render 'show_follow'
   end
 

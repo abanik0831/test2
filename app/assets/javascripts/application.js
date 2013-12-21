@@ -29,15 +29,15 @@
 
 $(document).ready(function(){
 
-    var faye = new Faye.Client('http://fayeredis.herokuapp.com/faye');
-   // client.setHeader('Access-Control-Allow-Origin', '*');
-    faye.setHeader('Access-Control-Allow-Origin', '*');
-    faye.connect();
-    Faye.Transport.WebSocket.isUsable = function(_,c) { c(false) }
-    faye.subscribe('/profiles/1', function (data) {
-        eval(data);
-        alert(data);
-    });
+//    var faye = new Faye.Client('http://fayeredis.herokuapp.com/faye');
+//   // client.setHeader('Access-Control-Allow-Origin', '*');
+////    faye.setHeader('Access-Control-Allow-Origin', '*');
+////    faye.connect();
+////    Faye.Transport.WebSocket.isUsable = function(_,c) { c(false) }
+//    faye.subscribe('/profiles/1', function (data) {
+//        eval(data);
+//        alert(data);
+//    });
 
     $(".sidebar").on("click", function(){
        $(".notification-center").toggle();

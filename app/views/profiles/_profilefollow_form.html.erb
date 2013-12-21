@@ -1,0 +1,18 @@
+<% @users.each  do |user| %>
+    <% ProfilePic.all.each do |pic| %>
+        <% if pic.id == user.profilepicid %>
+            <%= link_to image_tag(pic.image_url(:thumb).to_s, :class => 'dashpost_profilepic'), profile_path(id: user.id)  %>
+            <%= user.f_name %>
+            <%= user.l_name %>
+            <div class="profilefollow_form<%= user.id %>" >
+                <% if current_user.following?(user) %>
+                    <%= form_for(current_user.relationships.find_by(followed_id: user),
+                                 html: { method: :delete }, remote: true) do |f| %>
+                        <%= f.submit "Unfollow", :class => "follow_user btn btn-large" %>
+                    <% end %>
+                <% end %>
+             </div>
+
+        <% end %>
+    <% end %>
+<% end %>

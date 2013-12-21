@@ -24,7 +24,6 @@ gem 'protected_attributes'
 gem 'linkedin'
 gem 'omniauth'
 gem 'omniauth-linkedin'
-gem 'pusher'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem "therubyracer"
@@ -47,6 +46,7 @@ gem 'simple_form'
 gem 'carrierwave_direct'
 gem 'sidekiq'
 gem 'haml-rails'
+gem 'friendly_id'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 group :development, :test do
