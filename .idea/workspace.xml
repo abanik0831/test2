@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" afterPath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
@@ -47,29 +45,34 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="111" selection-start="880" selection-end="880" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="555">
+            <state line="0" column="21" selection-start="9" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="555">
-              <folding>
-                <marker date="1387622707000" expanded="true" signature="24:265" placeholder="..." />
-                <marker date="1387622707000" expanded="true" signature="575:961" placeholder="..." />
-                <marker date="1387622707000" expanded="true" signature="608:789" placeholder="..." />
-              </folding>
+            <state line="30" column="12" selection-start="1097" selection-end="1133" vertical-scroll-proportion="0.77186966" vertical-offset="0" max-vertical-offset="583">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.43288592" vertical-offset="957" max-vertical-offset="9405">
+            <state line="81" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-5.16" vertical-offset="957" max-vertical-offset="9405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="30" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-9.08" vertical-offset="86" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -87,7 +90,7 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="21" selection-start="4225" selection-end="4225" vertical-scroll-proportion="-4.6153846" vertical-offset="3300" max-vertical-offset="4470">
+            <state line="66" column="12" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-9.5" vertical-offset="743" max-vertical-offset="4995">
               <folding />
             </state>
           </provider>
@@ -96,7 +99,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="27" selection-start="9710" selection-end="9721" vertical-scroll-proportion="-15.375" vertical-offset="2781" max-vertical-offset="3450">
+            <state line="215" column="88" selection-start="10051" selection-end="10074" vertical-scroll-proportion="-28.5" vertical-offset="2541" max-vertical-offset="3450">
               <folding />
             </state>
           </provider>
@@ -158,7 +161,6 @@
         <option value="$PROJECT_DIR$/app/views/profiles/_follow_form.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_profileunfollow.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/show_follow.html.erb" />
         <option value="$PROJECT_DIR$/app/views/relationships/create.js.erb" />
@@ -166,11 +168,12 @@
         <option value="$PROJECT_DIR$/app/views/relationships/destroy.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/backstretch.js" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
       </list>
     </option>
   </component>
@@ -262,6 +265,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -721,11 +746,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="299" selection-end="299" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="1050" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.3323217" vertical-offset="171" max-vertical-offset="1215">
@@ -898,24 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="555">
-          <folding>
-            <marker date="1387622707000" expanded="true" signature="24:265" placeholder="..." />
-            <marker date="1387622707000" expanded="true" signature="575:961" placeholder="..." />
-            <marker date="1387622707000" expanded="true" signature="608:789" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="111" selection-start="880" selection-end="880" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="55" selection-start="538" selection-end="538" vertical-scroll-proportion="-3.38" vertical-offset="266" max-vertical-offset="3705">
@@ -923,23 +925,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="21" selection-start="4225" selection-end="4225" vertical-scroll-proportion="-4.6153846" vertical-offset="3300" max-vertical-offset="4470">
+        <state line="81" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-5.16" vertical-offset="957" max-vertical-offset="9405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="27" selection-start="9710" selection-end="9721" vertical-scroll-proportion="-15.375" vertical-offset="2781" max-vertical-offset="3450">
+        <state line="215" column="88" selection-start="10051" selection-end="10074" vertical-scroll-proportion="-28.5" vertical-offset="2541" max-vertical-offset="3450">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="17" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.43288592" vertical-offset="957" max-vertical-offset="9405">
+        <state line="36" column="30" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-9.08" vertical-offset="86" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="9" selection-end="21" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="12" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-9.5" vertical-offset="743" max-vertical-offset="4995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="1097" selection-end="1133" vertical-scroll-proportion="0.77186966" vertical-offset="0" max-vertical-offset="583">
           <folding />
         </state>
       </provider>

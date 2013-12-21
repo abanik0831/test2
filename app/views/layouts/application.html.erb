@@ -14,13 +14,9 @@
 <script>
   $(".bdy").addClass("signed_in");
 </script>
-<header>
+<header class="logged">
 
-  <div class="demo-content demo-icons sidebar">
-    <span class="fui-list"></span>
-  </div>
-
-  <h2 class="logo"><%= link_to image_tag("logo.png", :border => 0), {:controller => "/splash_screen", :action => "index"}%>  </h2>
+  <h2 class="logo"><%= link_to image_tag("startup-social-logo.png", :border => 0), {:controller => "/splash_screen", :action => "index"}%>  </h2>
 
   <div id="headerpictitle">
     <% if user_signed_in? && !@profpic.nil? %>
@@ -30,27 +26,18 @@
   </div>
 </header>
 
-<div class="demo-content notification-center notification-center-float">
-  <div class="iconbar">
-    <ul>
-      <li class="active"><a href="#fakelink" class="fui-user"></a></li>
-      <li><a href="#fakelink" class="fui-calendar"></a></li>
-      <li><a href="#fakelink" class="fui-chat"></a></li>
-      <li><a href="#fakelink" class="fui-mail"></a></li>
-      <li>
-        <a href="#fakelink" class="fui-gear">
-          <span class="iconbar-unread">1</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
 <div id="user_nav">
     Signed in as <%= current_user.username %>. Not you?
       <%= link_to("Sign Out", destroy_user_session_path, :method => :delete) %>
-      <% end %>
 </div>
+<% else %>
+
+    <header class="not_logged <%= @home_page ? 'rvmheader' : ''%>">
+
+      <h2 class="logonotlogged"><%= link_to image_tag("startup-social-logo.png", :border => 0), {:controller => "/splash_screen", :action => "index"}%>  </h2>
+    </header>
+
+<% end %>
 
 <h1><%= yield(:title) %></h1>
 
