@@ -7,7 +7,7 @@ class Profile < ActiveRecord::Base
   accepts_nested_attributes_for :profile_pic
   attr_accessible :profile_pic_attributes
 
-  extend FriendlyId
-  friendly_id :f_name
+  #extend FriendlyId
+  #friendly_id :f_name
 
 end

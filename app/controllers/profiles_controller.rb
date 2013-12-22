@@ -86,6 +86,10 @@ class ProfilesController < ApplicationController
   # POST /profiles.json
   def create
     @profile = Profile.new(profile_params)
+
+    if @profile.profile_pic.nil?
+      @profile.profile_pic = ProfilePic.new
+    end
     #@profilepic = ProfilePic.new(params[:id])
     #@profiledefault = @profilepic.image.blank?
     #if @profiledefault
