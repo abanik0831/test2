@@ -228,6 +228,15 @@ h2 a {
     }
 
 
+    #headerpictitle {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        position: relative;
+        top: 26px;
+        left: -2%;
+    }
+
     h1.signin {
         font-family: 'automobi' !important;
         font-size: 28px;
