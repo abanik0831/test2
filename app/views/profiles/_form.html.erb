@@ -1,84 +1,78 @@
-<%= form_for @profile, :html => {:multipart => true}  do |f| %>
-  <% if @profile.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+<div id="profilecreate">
+  <%= form_for @profile, :html => {:multipart => true}  do |f| %>
+      <% if @profile.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
 
-      <ul>
-      <% @profile.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+            <ul>
+              <% @profile.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-    <%= f.fields_for :profile_pic do |pic| %>
-        <div class = "field">
-          <%= pic.label :Photo, :class => "label_field" %><br>
-        </div>
-        <div>
-          <%= pic.file_field :image,:class => "file1 content_field input img_up" %>
-          <!--, multiple: true, name: "post[post_pic][picture]",-->
-          <a class="profilepic_upload btn btn-mini btn-primary btn-embossed mlm">
-            UPLOAD
-          </a>
+      <%= f.fields_for :profile_pic do |pic| %>
+          <div id="profilepicupload">
+            <%= pic.file_field :image,:class => "file1 content_field input img_up" %>
+            <!--, multiple: true, name: "post[post_pic][picture]",-->
+            <a class="profilepic_upload btn btn-mini btn-primary btn-embossed mlm">
+              UPLOAD
+            </a>
 
-        </div>
-    <% end %>
+          </div>
+      <% end %>
 
-    <%= f.hidden_field :profilepicid, :value => current_user.id %>
+      <%= f.hidden_field :profilepicid, :value => current_user.id %>
 
-  <div class="field">
-    <%= f.label :First_Name, :class => "label_field" %><br>
-    <%= f.text_field :f_name, :class => "content_field" %>
-  </div>
-  <div class="field">
-    <%= f.label :Last_Name, :class => "label_field" %><br>
-    <%= f.text_field :l_name, :class => "content_field" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :title, :class => "label_field" %><br>
-    <%= f.text_area :title, :class => "content_field" %>
-  </div>
-
-   <%= f.hidden_field :user_id, :value => current_user.id, :class => "userpic_profile" %>
-
-  <div class="field">
-    <%= f.label :skills, :class => "label_field" %><br>
-     <div class="content_field">
-    <%= f.select :skills, options_for_select(["Design", "Technology", "Business"]) %>
-     </div>
-  </div>
-
-    <div class="field">
-      <%= f.label :Area, :class => "label_field" %><br>
-      <div class="content_field">
-        <%= f.select :area, options_for_select(["Downtown", "Greater Los Angeles", "Santa Monica"]) %>
+      <div class="field">
+        <%= f.text_field :f_name, :class => "content_field", :placeholder => "First Name" %>
       </div>
-    </div>
+      <div class="field">
+        <%= f.text_field :l_name, :class => "content_field", :placeholder => "Last Name" %>
+      </div>
 
-  <div class="field">
-    <%= image_tag("angel-list.png", :alt => "Show Group", :class => "picture_field") %><br>
-    <%= f.text_field :angellist_url, :class => "content_field" %>
-  </div>
+      <div class="field">
+        <%= f.text_area :title, :class => "content_field", :placeholder => "Headline" %>
+      </div>
 
-  <div class="field">
-    <%= image_tag("facebook.png", :alt => "Show Group", :class => "picture_field") %><br>
-    <%= f.text_field :fb_url, :class => "content_field" %>
-  </div>
-  <div class="field">
-    <%= image_tag("linkedin.png", :alt => "Show Group", :class => "picture_field") %><br>
-    <%= f.text_field :linkedin_url, :class => "content_field" %>
-  </div>
-  <div class="field">
-    <%= image_tag("meetup.png", :alt => "Show Group", :class => "picture_field") %><br>
-    <%= f.text_field :meetup_url, :class => "content_field" %>
-  </div>
-  <div class="field">
-    <%= image_tag("twitter.png", :alt => "Show Group", :class => "picture_field") %><br>
-    <%= f.text_field :twitter_url, :class => "content_field" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "ENTER" , :class => "profile_submit btn btn-small btn-primary btn-embossed mlm" %>
-  </div>
-<% end %>
+      <%= f.hidden_field :user_id, :value => current_user.id, :class => "userpic_profile" %>
+
+      <div class="field">
+        <div class="content_field">
+          <%= f.select :skills, options_for_select(["Design", "Technology", "Business"]) %>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="content_field">
+          <%= f.select :area, options_for_select(["Downtown", "Greater Los Angeles", "Santa Monica"]) %>
+        </div>
+      </div>
+
+      <div class="field">
+        <%= image_tag("angel-list.png", :alt => "Show Group", :class => "picture_field") %><br>
+        <%= f.text_field :angellist_url, :class => "content_field", :placeholder => "https://" %>
+      </div>
+
+      <div class="field">
+        <%= image_tag("facebook.png", :alt => "Show Group", :class => "picture_field") %><br>
+        <%= f.text_field :fb_url, :class => "content_field", :placeholder => "https://" %>
+      </div>
+      <div class="field">
+        <%= image_tag("linkedin.png", :alt => "Show Group", :class => "picture_field") %><br>
+        <%= f.text_field :linkedin_url, :class => "content_field", :placeholder => "https://" %>
+      </div>
+      <div class="field">
+        <%= image_tag("meetup.png", :alt => "Show Group", :class => "picture_field") %><br>
+        <%= f.text_field :meetup_url, :class => "content_field", :placeholder => "https://" %>
+      </div>
+      <div class="field">
+        <%= image_tag("twitter.png", :alt => "Show Group", :class => "picture_field") %><br>
+        <%= f.text_field :twitter_url, :class => "content_field", :placeholder => "https://" %>
+      </div>
+      <div class="actions">
+        <%= f.submit "ENTER" , :class => "profile_submit btn btn-small btn-primary btn-embossed mlm" %>
+      </div>
+  <% end %>
+</div>

@@ -61,10 +61,8 @@
 }
 .content_field {
   position: relative;
-  left: 48%;
-  position: relative;
   top: -47px;
-  margin-bottom: -14px !important;
+//  margin-bottom: -14px !important;
 }
 
 .msguser_hide {
@@ -101,8 +99,8 @@
 
 .profile_submit {
   position: relative;
-  left: 50%;
-  width: 9% !important;
+  width: 70% !important;
+  top: -20px;
 }
 
 .btn.btn-primary.profile_submit {
@@ -111,21 +109,37 @@
 
 .picture_field {
   position: relative;
-  left: 42%;
+  top: -60px;
+}
+
+#profilepicupload {
+  position: relative;
+  left: 5%;
 }
 
 .welcome_profile {
   position: relative;
-  left: 41%;
-  color: rgb(146, 148, 149);
+  color: rgb(0,0,0);
+  font-family: automobi;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+
+  p {
+    font-size: 32px !important;
+  }
+}
+
+.field {
+  margin-bottom: 20px;
 }
 
 .profilepic_upload {
   position: relative;
   pointer-events: none;
   z-index: 1;
-  left: 44%;
-  top: -41px;
+  left: -40%;
+  top: -44px;
   background-color: rgb(71, 75, 84) !important;
 }
 
@@ -146,6 +160,12 @@
   padding-top: 20px;
   padding-bottom: 2px;
 
+}
+
+#profilecreate {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {

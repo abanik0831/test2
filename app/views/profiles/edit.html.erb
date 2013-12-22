@@ -1,9 +1,6 @@
-<h1>Editing profile</h1>
-
-
 <% if current_user.id == @profile.id %>
-<%= render 'form' %>
+    <div class="welcome_profile">
+      <p>Edit Profile<p>
+    </div>
+    <%= render 'form' %>
 <% end %>
-
-<%= link_to 'Show', @profile %> |
-<%= link_to 'Back', profiles_path %>
