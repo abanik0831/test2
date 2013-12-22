@@ -52,6 +52,15 @@
   top: -5px;
 }
 
+.defaultnew {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 21%;
+  top: -37px;
+}
+
 .label_field {
   text-align: right;
   position: relative;
@@ -61,7 +70,7 @@
 }
 .content_field {
   position: relative;
-  top: -47px;
+  top: 40px;
 //  margin-bottom: -14px !important;
 }
 
@@ -100,7 +109,7 @@
 .profile_submit {
   position: relative;
   width: 70% !important;
-  top: -20px;
+  top: 69px;
 }
 
 .btn.btn-primary.profile_submit {
@@ -109,7 +118,7 @@
 
 .picture_field {
   position: relative;
-  top: -60px;
+  top: 25px;
 }
 
 #profilepicupload {
@@ -138,8 +147,8 @@
   position: relative;
   pointer-events: none;
   z-index: 1;
-  left: -40%;
-  top: -44px;
+  left: -43%;
+  top: 76px;
   background-color: rgb(71, 75, 84) !important;
 }
 
@@ -211,6 +220,7 @@
 
   .social_links {
     position: relative;
+    display: inline-block;
     left: 0%;
     top: -25px;
     margin: 0 auto;

@@ -219,8 +219,11 @@ input[type="file"] {
 }
 
 .file1 {
-  height: 50px;
-  width: 75px;
+  height: 50px !important;
+  width: 75px !important;
+  position: relative;
+  left: -15%;
+  top: 73px;
 }
 
 .post_splash.btn.btn-primary {

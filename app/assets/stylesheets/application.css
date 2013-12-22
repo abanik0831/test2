@@ -186,7 +186,7 @@ header.logged {
     text-align: right;
     position: relative;
     top: 26px;
-    left: -2%;
+    left: -29%;
 }
 
 h2 a {
@@ -343,21 +343,21 @@ h2 a {
 .notifications {
     display: inline-block;
     position: relative;
-    left: -40%;
+    left: -12%;
     top: 16px;
 }
 
 .msgs {
     display: inline-block;
     position: relative;
-    left: -22%;
+    left: -8%;
     top: 15px;
 }
 
 .settingsheader {
     display: inline-block;
     position: relative;
-    left: 20%;
+    left: 6%;
     top: 14px;
 }
 
