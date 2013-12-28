@@ -122,6 +122,41 @@ h1.signup {
     top: -13px;
 }
 
+.resetpassword {
+    display: table;
+    font-family: automobi;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.resetfield, .resetbutton {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resetproperty {
+    position: relative;
+    top: 100px;
+    width: 35% !important;
+}
+
+.resetbtn {
+    position: relative;
+    top: 150px;
+    width: 10% !important;
+    background: rgb(37, 40, 46) !important;
+}
+
+.reset_user {
+    color: rgb(191, 195, 198) !important;
+    position: relative;
+    top: 96px;
+    left: -28px;
+}
+
 .signup_user_lock {
     color: rgb(191, 195, 198);
     position: relative;
@@ -235,6 +270,33 @@ h2 a {
         position: relative;
         top: 26px;
         left: -2%;
+    }
+
+
+    .resetpassword {
+       font-size: 32px;
+    }
+
+    .resetproperty {
+        position: relative;
+        top: 100px;
+        width: 80% !important;
+        left: 5px;
+    }
+
+    .resetbtn {
+        position: relative;
+        top: 150px;
+        width: 44% !important;
+        background: rgb(37, 40, 46) !important;
+        left: -4%;
+    }
+
+    .reset_user {
+        color: rgb(191, 195, 198) !important;
+        position: relative;
+        top: 102px;
+        left: -28px;
     }
 
     h1.signin {
