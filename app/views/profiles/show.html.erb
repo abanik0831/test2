@@ -31,6 +31,14 @@
     <%= @profiles.l_name %>
   </p>
 
+  <div class="social_links">
+    <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
+    <%= link_to image_tag("facebook.png"), "http://www.twitter.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("linkedin.png"), "http://www.linkedin.com", :class => "social_link_spacing" %>
+    <%= link_to image_tag("meetup.png"), "https://angel.co/", :class => "social_link_spacing" %>
+    <%= link_to image_tag("twitter.png"), "https://angel.co/", :class => "social_link_spacing" %>
+  </div>
+
   <p class="user_title">
     <%= @profiles.title %>
   </p>
@@ -40,12 +48,6 @@
     <p class="user_area">
       <%= @profiles.area %>
     </p>
-  </div>
-
-  <div class="social_links">
-    <%= link_to image_tag("twitter.png"), "http://www.twitter.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("linkedin.png"), "http://www.linkedin.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
   </div>
 
   <%= render 'follow_form' if signed_in? %>

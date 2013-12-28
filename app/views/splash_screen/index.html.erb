@@ -4,12 +4,14 @@
 <% if user_signed_in? %>
 
     <div id = "skill_section">
-    <p class="skill_text">Design</p>
-    <%= image_tag("design.png" , :class => "skill_img")%>
-    <p class="skill_text">Technology</p>
-    <%= image_tag("technology.png" , :class => "skill_img") %>
-    <p class="skill_text">Business</p>
-    <%= image_tag("business.png", :class => "skill_img") %>
+      <div class="textinline">
+         <p class="skill_text design">Design</p>
+         <p class="skill_text technology">Technology</p>
+         <p class="skill_text business">Business</p>
+      </div>
+      <%= image_tag("design.png" , :class => "skill_img design_mobile")%>
+      <%= image_tag("technology.png" , :class => "skill_img technology") %>
+      <%= image_tag("business.png", :class => "skill_img business_mobile") %>
     </div>
 
 

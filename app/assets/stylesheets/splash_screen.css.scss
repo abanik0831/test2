@@ -49,6 +49,12 @@
   width: 19% !important;
 }
 
+.textinline {
+  display: block;
+  position: relative;
+  top: 20px;
+}
+
 .topofpage {
   position: relative;
   margin:0 auto;
@@ -66,13 +72,13 @@
   margin: 0 auto;
   border-radius: 10px;
   position: relative;
-  top: 230px;
+  top: 80px;
   margin-bottom: 93px;
 }
 
 #dash_content {
   position: relative;
-  top: 190px;
+  top: 60px;
 }
 
 .homepage.signin_btn {
@@ -101,7 +107,6 @@
 
 .name_position {
   position: relative;
-  left: 4%;
   text-align: center;
   top: -85px;
   font-size: 25px;
@@ -111,6 +116,12 @@
   position: relative;
   top: 45px;
 
+}
+
+#imagesheader {
+  position: relative;
+  left: -5px;
+  top: 4px;
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
@@ -129,6 +140,11 @@
     float: left;
   }
 
+  #imagesheader {
+    position: relative;
+    left: 0px;
+  }
+
 
 
   .signinpage_name, .signinpage_email {
@@ -143,7 +159,6 @@
     top: -85px;
     font-size: 22px;
     position: relative;
-    left: 2%;
   }
 
 
@@ -271,7 +286,7 @@ input[type="file"] {
   width: 70px;
   height: 70px;
   position: relative;
-  left: 46%;
+  left: 42%;
   top: -73px;
 }
 
@@ -280,7 +295,6 @@ input[type="file"] {
 .dashpost_time {
   position: relative;
   top: -69px;
-  left: 4%;
   margin: 0 auto;
   text-align: center;
   width: 32%;
@@ -350,21 +364,38 @@ input[type="file"] {
 }
 
 #skill_section{
-  position:absolute;
-  left: 32%;
-  top: 74px;
+//  position:absolute;
+//  left: 32%;
+//  top: 10px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .skill_text{
-  display: inline-block;
+  display: inline;
+  position: relative;
+  top: 40px;
 }
 
-.skill_img{
+.design {
   position: relative;
-//  top: 16px;
-  top: 85px;
-  left: -113px;
-  margin-right: -33px;
+  left: -50px;
+}
+
+.business {
+  position: relative;
+  left: 65px;
+}
+//
+.technology {
+  margin-right: 90px;
+  margin-left: 90px;
+}
+
+.skill_img {
+  position: relative;
+  top: 45px;
 }
 
 .signin_btn.signup_btn {
@@ -386,8 +417,13 @@ input[type="file"] {
   .profileedit {
     position: relative;
     display: inline-block;
-    left: 72%;
+    left: 76%;
     top: -162px;
+  }
+
+  .technology {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .follow_user {
@@ -450,25 +486,25 @@ input[type="file"] {
 
 
   #skill_section{
-    position:absolute;
-    top: 74px;
-    left: 0%;
-    width: 100%;
+//    position:absolute;
+//    top: 10px;
+//    left: 0%;
+//    width: 100%;
   }
 
   .skill_text{
-    display: inline-block;
     font-size: 12px;
     position: relative;
-    top: 10px;
-    left: 18%;
+    top: 40px;
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .skill_img{
-    width: 24%;
-    position: relative;
-    left: 0%
-  }
+//  .skill_img{
+//    width: 24%;
+//    position: relative;
+//    left: 0%
+//  }
 
   .comment_splash.btn.btn-primary {
     background: #34495e;
@@ -550,19 +586,48 @@ input[type="file"] {
   }
 
   .skill_text{
-    display: inline-block;
-    font-size: 12px;
+//    display: inline-block;
+    font-size: 17px;
+//    position: relative;
+//    top: -27px;
+//    left: 12px;
+  }
+
+  .technology {
+    margin-left: -23px;
+    margin-right: -23px;
+  }
+
+  .skill_img {
+    height: 115px;
+  }
+
+  .design_mobile {
     position: relative;
-    top: -27px;
-    left: 12px;
+    left: -41px;
+  }
+
+  .business_mobile {
+    position: relative;
+    left: 29px;
+  }
+
+  .design {
+    position: relative;
+    left: -66px;
+  }
+
+  .business {
+    position: relative;
+    left: 62px;
   }
 
   #skill_section{
     position:relative;
-    left: 6%;
-    top: 33px;
-    text-align: center;
-    width: 94%;
+//    left: 6%;
+    top: 17px;
+//    text-align: center;
+//    width: 94%;
   }
 
   .camera-image {
@@ -574,11 +639,11 @@ input[type="file"] {
     top: -9px;
   }
 
-  .skill_img{
-    width: 23%;
-    position: relative;
-    left: -19%
-  }
+//  .skill_img{
+//    width: 23%;
+//    position: relative;
+//    left: -19%
+//  }
 
   .post_splash.btn.btn-primary {
     background: #34495e;
@@ -599,14 +664,13 @@ input[type="file"] {
     width: 70px;
     height: 70px;
     position: relative;
-    left: 38%;
+    left: 36%;
     top: -74px;
   }
 
   .dashpost_time {
     position: relative;
     top: -62px;
-    left: 9px;
     text-align: center;
     width: 75%;
     margin: 0 auto;

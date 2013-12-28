@@ -15,6 +15,8 @@
   margin: 0 auto;
   width: 60%;
   text-align: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .user_area_pic {
@@ -35,9 +37,10 @@
 }
 
 .social_links {
+  display: table;
   position: relative;
-  left: 41%;
-  top: -25px;
+  left: 34%;
+  top: -10px;
   margin-right: 20px;
 }
 
@@ -97,13 +100,12 @@
 
 #dash_profile_page {
   position: relative;
-  top: 51px;
-  left: -9px;
+  top: 116px;
 }
 
 .profile_info {
   position: relative;
-  top: -54px;
+  top: 10px;
 }
 
 .profile_submit {
@@ -222,14 +224,20 @@
     position: relative;
     display: inline-block;
     left: 0%;
-    top: -25px;
+    top: -3px;
     margin: 0 auto;
   }
 
   .social_link_spacing {
-    margin-right: 40px;
+    margin-right: 20px;
     position: relative;
-    left: 38px;
+    left: 17px;
+
+  }
+
+  .social_link_spacing img {
+    height: 40px !important;
+    width: 40px !important;
   }
 
 }
