@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,30 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="62" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.63054186" vertical-offset="591" max-vertical-offset="1200">
-              <folding>
-                <element signature="tag#div#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profiles.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-22.625" vertical-offset="2877" max-vertical-offset="5055">
+            <state line="18" column="67" selection-start="542" selection-end="542" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
+      <file leaf-file-name="profiles.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+            <state line="41" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.40771812" vertical-offset="372" max-vertical-offset="5025">
               <folding />
             </state>
           </provider>
@@ -162,8 +153,8 @@
         <option value="$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
         <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
       </list>
     </option>
   </component>
@@ -199,6 +190,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,6 +338,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -391,9 +387,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,7 +576,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23104435" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23390558" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05298913" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -571,12 +584,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.054018445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -853,19 +866,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-22.625" vertical-offset="2877" max-vertical-offset="5055">
+        <state line="18" column="67" selection-start="542" selection-end="542" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="62" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.63054186" vertical-offset="591" max-vertical-offset="1200">
-          <folding>
-            <element signature="tag#div#1" expanded="false" />
-          </folding>
+        <state line="41" column="0" selection-start="719" selection-end="719" vertical-scroll-proportion="0.40771812" vertical-offset="372" max-vertical-offset="5025">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,14 @@
 </form>
 
 <div class="profile_info">
-    <p class="picprofile">
+
+
+  <p class="username_profile_page">
+    <%=  @profiles.f_name %>
+    <%= @profiles.l_name %>
+  </p>
+
+  <p class="picprofile">
 
 
       <% ProfilePic.all.each do |f| %>
@@ -24,10 +31,6 @@
       </p>
   <% end %>
 
-  <p class="username_profile_page">
-    <%=  @profiles.f_name %>
-    <%= @profiles.l_name %>
-  </p>
 
   <div class="social_links">
     <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
