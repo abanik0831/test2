@@ -203,6 +203,34 @@
   margin-right: 100px;
 }
 
+#updatefollowfollowing, #updatefollowfollowingcount {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.personalprofileinfo {
+  margin-right: 20px;
+}
+
+#followeduserlisting, #followinguserlisting {
+  display: none;
+}
+
+.personalprofileinfoupdatescount {
+  display: inline-block;
+
+  &.updates {
+    position: relative;
+    left: -62px;
+  }
+
+  &.followers {
+    position: relative;
+    left: 65px;
+  }
+
+}
+
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
 
   #post_container_profile {

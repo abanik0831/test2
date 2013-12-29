@@ -45,6 +45,12 @@ class ProfilesController < ApplicationController
     @comment = @postnew.comments.build
 
     @profiles = Profile.find(params[:id])
+
+    @user = User.find(params[:id])
+    @usersfollowed = @user.followed_users
+    @usersfollowing = @user.followers
+
+    @profiles = Profile.find(params[:id])
     #@relationships = @crntuser.relationships.build(followed_id: @profiles.id)
   end
 
