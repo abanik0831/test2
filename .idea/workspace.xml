@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/followers-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/followers-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/following-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/following-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/updates-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/updates-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/profiles.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="54" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-14.125" vertical-offset="591" max-vertical-offset="1200">
+            <state line="65" column="62" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.63054186" vertical-offset="591" max-vertical-offset="1200">
               <folding>
                 <element signature="tag#div#1" expanded="false" />
               </folding>
@@ -62,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profiles.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="0.87299037" vertical-offset="2877" max-vertical-offset="5055">
+            <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-22.625" vertical-offset="2877" max-vertical-offset="5055">
               <folding />
             </state>
           </provider>
@@ -174,8 +162,8 @@
         <option value="$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
-        <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
       </list>
     </option>
   </component>
@@ -865,19 +853,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="54" selection-start="2349" selection-end="2349" vertical-scroll-proportion="-14.125" vertical-offset="591" max-vertical-offset="1200">
-          <folding>
-            <element signature="tag#div#1" expanded="false" />
-          </folding>
+        <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-22.625" vertical-offset="2877" max-vertical-offset="5055">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="12" selection-start="3392" selection-end="3392" vertical-scroll-proportion="0.87299037" vertical-offset="2877" max-vertical-offset="5055">
-          <folding />
+        <state line="65" column="62" selection-start="2396" selection-end="2396" vertical-scroll-proportion="0.63054186" vertical-offset="591" max-vertical-offset="1200">
+          <folding>
+            <element signature="tag#div#1" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
