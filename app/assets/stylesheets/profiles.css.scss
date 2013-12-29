@@ -93,7 +93,16 @@
   position: relative;
   top: -3px;
   left: 45%;
-  width: 10% !important;
+  width: 12% !important;
+  background: rgb(0, 0, 0) !important;
+
+}
+
+.follow_userlist {
+  position: relative;
+  top: 12px;
+  left: 6px;
+  width: 95% !important;
   background: rgb(0, 0, 0) !important;
 
 }
@@ -177,6 +186,21 @@
   display: table;
   margin: 0 auto;
   text-align: center;
+}
+
+#usersfollowlist {
+  margin: 0 auto;
+  width: 55%;
+}
+
+.nameuser {
+  margin:0 auto;
+  text-align: center;
+}
+
+.profilefloat {
+  display: inline-block;
+  margin-right: 100px;
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
