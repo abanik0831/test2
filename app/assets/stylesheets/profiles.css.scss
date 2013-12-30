@@ -206,6 +206,71 @@
   text-align: center;
 }
 
+#techskillset, #businessskillset {
+  display: none;
+}
+
+#designskillset, #techskillset, #businessskillset {
+  position: relative;
+  top: 47px;
+}
+
+.designskill  {
+  position: relative !important;
+  top: -24px !important;
+  left: 116px;
+}
+
+.designusersskills {
+  position: relative;
+  top: 21px;
+  left: 190px;
+
+}
+
+.techskill {
+  position: relative ;
+  top: -24px ;
+  left: 190px;
+}
+
+.techusersskills {
+  position: relative;
+  top: 27px;
+  left: 336px;
+  display: table;
+}
+
+.skillspagesearch {
+  display: inline-block;
+  position: relative;
+  left: 36.5%;
+}
+
+.skillspagesearchtech {
+  display: inline-block;
+  position: relative;
+  left: 26.5%;
+}
+
+.leftarrowtech {
+  position: relative;
+  top: 39px;
+  left: 33%;
+}
+
+.rightarrowdesign {
+  position: relative;
+  top: 37px;
+  left: 121%;
+}
+
+.rightarrowtech {
+  position: relative;
+  top: 37px;
+  left: 87%;
+}
+
 .personalprofileinfo {
   margin-right: 20px;
 }

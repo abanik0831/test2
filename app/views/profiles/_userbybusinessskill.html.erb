@@ -1,6 +1,6 @@
 <div id="usersfollowlist">
   <% Profile.all.each  do |user| %>
-      <% if user.id != current_user.id && user.skills == "Design"%>
+      <% if user.id != current_user.id && user.skills == "Business"%>
           <% ProfilePic.all.each do |pic| %>
               <% if pic.id == user.profilepicid %>
                   <div class="profilefloat profilefollow_form<%= user.id %>" >

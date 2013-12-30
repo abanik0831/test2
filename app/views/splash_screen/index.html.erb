@@ -9,14 +9,26 @@
          <p class="skill_text technology">Technology</p>
          <p class="skill_text business">Business</p>
       </div>
-      <%= image_tag("design.png" , :class => "skill_img design_mobile")%>
-      <%= image_tag("technology.png" , :class => "skill_img technology") %>
-      <%= image_tag("business.png", :class => "skill_img business_mobile") %>
+      <a class="designclick" href="<%= usersearch_profile_path(current_user.id) %>">
+        <%= image_tag("design.png" , :class => "skill_img design_mobile")%>
+      </a>
+      <a class="techclick" href="<%= usersearch_profile_path(current_user.id) %>">
+        <%= image_tag("technology.png" , :class => "skill_img technology") %>
+      </a>
+      <a class="businessclick" href="<%= usersearch_profile_path(current_user.id) %>">
+        <%= image_tag("business.png", :class => "skill_img business_mobile") %>
+      </a>
 
       <div id="skillcount">
-        <p class="designusers"><%= Profile.where(:skills => "Design").count %></p>
-        <p class="techusers"><%= Profile.where(:skills => "Technology").count %></p>
-        <p class="businessusers"><%= Profile.where(:skills => "Business").count %></p>
+        <a class="designclick" href="<%= usersearch_profile_path(current_user.id) %>">
+            <p class="designusers"><%= Profile.where(:skills => "Design").count %></p>
+        </a>
+        <a class="techclick" href="<%= usersearch_profile_path(current_user.id) %>">
+            <p class="techusers"><%= Profile.where(:skills => "Technology").count %></p>
+        </a>
+        <a class="techclick" href="<%= usersearch_profile_path(current_user.id) %>">
+            <p class="businessusers"><%= Profile.where(:skills => "Business").count %></p>
+        </a>
       </div>
     </div>
 

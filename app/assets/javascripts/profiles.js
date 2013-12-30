@@ -34,4 +34,43 @@ $(document).ready(function(){
         $("#followeduserlisting").hide();
         $("#dash_profile_page").show();
     });
+
+    $(".designclick").on("click mousedown", function(){
+        $("#designskillset").show();
+        $("#techskillset").hide();
+        $("#businessskillset").hide();
+    });
+
+    $(".techclick").on("click mousedown", function(e){
+        $("#designskillset").hide();
+//        $("#techskillset").show();
+//        $("#businessskillset").hide();
+    });
+
+    $(".businessclick").on("click mousedown", function(){
+        $("#designskillset").hide();
+        $("#techskillset").hide();
+        $("#businessskillset").show();
+    });
+
+    $(".rightarrowdesign").on("click", function(){
+        $("#designskillset").hide();
+        $("#techskillset").show();
+    });
+
+    $(".leftarrowtech").on("click", function(){
+        $("#designskillset").show();
+        $("#techskillset").hide();
+    });
+
+    $(".rightarrowtech").on("click", function(){
+        $("#techskillset").hide();
+        $("#businessskillset").show();
+    });
+
+    $(".leftarrowbusiness").on("click", function(){
+        $("#techskillset").show();
+        $("#businessskillset").hide();
+    });
+
 });
