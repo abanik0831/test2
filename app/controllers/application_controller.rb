@@ -15,9 +15,4 @@ class ApplicationController < ActionController::Base
    # @pst = Post.find(params[:id])
   end
 
-  def after_sign_in_path_for(resource)
-    if (resource.sign_in_count <= 1)
-      '/profiles/new'
-    end
-  end
 end

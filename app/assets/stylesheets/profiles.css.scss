@@ -91,7 +91,7 @@
   position: relative;
   top: -3px;
   left: 45%;
-  width: 12% !important;
+  width: 107px !important;
   background: rgb(0, 0, 0) !important;
 
 }
@@ -100,7 +100,7 @@
   position: relative;
   top: 12px;
   left: 6px;
-  width: 95% !important;
+  width: 107px !important;
   background: rgb(0, 0, 0) !important;
 
 }
@@ -199,11 +199,14 @@
 .profilefloat {
   display: inline-block;
   margin-right: 100px;
+  position: relative;
+  left: 17%;
 }
 
 #updatefollowfollowing, #updatefollowfollowingcount {
   margin: 0 auto;
   text-align: center;
+  display: table;
 }
 
 #techskillset, #businessskillset {
@@ -245,6 +248,7 @@
   display: inline-block;
   position: relative;
   left: 36.5%;
+  margin-bottom: 50px;
 }
 
 .skillspagesearchtech {
@@ -262,13 +266,19 @@
 .rightarrowdesign {
   position: relative;
   top: 37px;
-  left: 121%;
+  left: 128.5%;
 }
 
 .rightarrowtech {
   position: relative;
   top: 37px;
   left: 87%;
+}
+
+.leftarrowbusiness {
+  position: relative;
+  top: 39px;
+  left: 18px;
 }
 
 .personalprofileinfo {

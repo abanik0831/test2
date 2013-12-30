@@ -40,7 +40,9 @@ StartupSocial::Application.routes.draw do
 
   resources :requests, only: [:create, :destroy]
 
-  devise_for :users , :path_names => {:sign_up => "register"}, controllers: { omniauth_callbacks: "omniauth_callbacks" }
+  devise_for :users , :path_names => {:sign_up => "register"}, :controllers => {:registrations => "registrations"}
+  #resources :users, only: [:index, :new, :create, :show, :destroy, :edit, :update]
+  #controllers: { omniauth_callbacks: "omniauth_callbacks" }
 
   get '/profiles/:id', :to => 'users#show', :as => :user
 
