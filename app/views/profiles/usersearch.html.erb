@@ -25,7 +25,7 @@
     <%= image_tag("arrow-left.png" , :class => "leftarrowbusiness") %>
     <p class="skill_text designskill">Business</p>
       <%= image_tag("business.png", :class => "skill_img business_mobile") %>
-      <p class="businessusers"><%= Profile.where(:skills => "Business").count %></p>
+      <p class="businessuserskills"><%= Profile.where(:skills => "Business").count %></p>
   </div>
   <%= render 'userbybusinessskill' %>
 </div>
