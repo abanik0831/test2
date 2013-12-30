@@ -33,9 +33,8 @@ StartupSocial::Application.routes.draw do
   resources :relationships
 
   resources :profiles do
-    get 'usersearch'
     member do
-      get :following, :followers
+      get :following, :followers, :usersearch
     end
   end
 

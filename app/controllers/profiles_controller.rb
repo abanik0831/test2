@@ -86,9 +86,9 @@ class ProfilesController < ApplicationController
 
   def usersearch
     @user = User.find(params[:id])
+    @usersfollowed = @user.followed_users
     @profiles = Profile.find(params[:id])
     #.paginate(page: params[:page])
-    render 'show_follow'
   end
 
   # GET /profiles/1/edit
