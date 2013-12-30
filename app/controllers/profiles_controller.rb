@@ -85,6 +85,9 @@ class ProfilesController < ApplicationController
 
 
   def usersearch
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
     @user = User.find(params[:id])
     @usersfollowed = @user.followed_users
     @profiles = Profile.find(params[:id])
@@ -93,6 +96,9 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/1/edit
   def edit
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
   end
 
   # POST /profiles
@@ -153,7 +159,7 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:f_name, :l_name,:title, :area, :skills, :fb_url, :user_id, :profilepicid, :linkedin_url, :meetup_url, :twitter_url,  profile_pic_attributes: [:id, :image])
+      params.require(:profile).permit(:f_name, :l_name,:title, :area, :skills, :fb_url, :angellist_url, :user_id, :profilepicid, :linkedin_url, :meetup_url, :twitter_url,  profile_pic_attributes: [:id, :image])
     end
 
 

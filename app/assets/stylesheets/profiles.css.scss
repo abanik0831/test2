@@ -245,11 +245,27 @@
   top: 21px;
 }
 
+.personalprofileinfofollowing {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 .techusersskills {
   position: relative;
   top: 27px;
   left: 383px;
   display: table;
+}
+
+.textprofileupdate {
+  display: inline-block;
+  position: relative;
+  &.updates {
+    left: -17%;
+  }
+  &.followers {
+    left: 19%;
+  }
 }
 
 .skillspagesearch {
@@ -302,14 +318,29 @@
 
   &.updates {
     position: relative;
-    left: -62px;
+    left: -3%;
+    top: 25px;
   }
 
   &.followers {
     position: relative;
-    left: 65px;
+    left: 85px;
+    top: 25px;
   }
 
+  &.followed {
+    position: relative;
+    left: 18%;
+    top: 25px;
+  }
+
+}
+
+.editprofiletext {
+  position: relative;
+  display: inline;
+  left: 55.5%;
+  top: -100px;
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {

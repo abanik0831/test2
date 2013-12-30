@@ -41,13 +41,13 @@
 
       <div class="field">
         <div class="content_field">
-          <%= f.select :skills, options_for_select(["Design", "Technology", "Business"]) %>
+          <%= f.select :skills, options_for_select(["Design", "Technology", "Business"], "Skill Set") %>
         </div>
       </div>
 
       <div class="field">
         <div class="content_field">
-          <%= f.select :area, options_for_select(["Santa Monica", "Venice Beach", "Culver City", "Beverly Hills", "Hollywood", "Downtown", "Pasadena", "Burbank", "San Fernando Valley"]) %>
+          <%= f.select :area, options_for_select(["Santa Monica", "Venice Beach", "Culver City", "Beverly Hills", "Hollywood", "Downtown", "Pasadena", "Burbank", "San Fernando Valley"], "Location") %>
         </div>
       </div>
 

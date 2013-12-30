@@ -29,16 +29,18 @@
       <p class="profileedit">
         <%= link_to image_tag("edit-profile.png", :class => "editprofile_image"), edit_profile_path(@profile) %>
       </p>
+      <p class="editprofiletext">
+        Edit Profile
+      </p>
   <% end %>
 
-
-  <div class="social_links">
-    <%= link_to image_tag("angel-list.png"), "https://angel.co/", :class => "social_link_spacing" %>
-    <%= link_to image_tag("facebook.png"), "http://www.twitter.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("linkedin.png"), "http://www.linkedin.com", :class => "social_link_spacing" %>
-    <%= link_to image_tag("meetup.png"), "https://angel.co/", :class => "social_link_spacing" %>
-    <%= link_to image_tag("twitter.png"), "https://angel.co/", :class => "social_link_spacing" %>
-  </div>
+      <div class="social_links">
+        <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
+        <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
+        <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
+        <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
+        <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
+      </div>
 
   <p class="user_title">
     <%= @profiles.title %>
@@ -62,8 +64,11 @@
 
   <div id="updatefollowfollowingcount">
    <p class="personalprofileinfoupdatescount updates"> <%= Post.where(:profile_id => current_user.id).count  %> </p>
+    <p class="textprofileupdate updates">updates</p>
    <p class="personalprofileinfoupdatescount followed"> <%= @usersfollowing.count %> </p>
+    <p class="textprofileupdate following">following</p>
    <p class="personalprofileinfoupdatescount followers"> <%= @usersfollowed.count %> </p>
+    <p class="textprofileupdate followers">followers</p>
   </div>
 
 
@@ -165,9 +170,10 @@
   </ul>
 </div>
 
-<div id="followeduserlisting">
-  <%= render 'profilefollow_form' %>
-</div>
 <div id="followinguserlisting">
 <%= render 'usersfollowing' %>
+</div>
+
+<div id="followeduserlisting">
+  <%= render 'profilefollow_form' %>
 </div>
