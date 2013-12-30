@@ -227,34 +227,42 @@
 .designusersskills {
   position: relative;
   top: 21px;
-  left: 190px;
+  left: 214px;
 
 }
 
 .techskill {
   position: relative ;
-  top: -24px ;
-  left: 190px;
+  top: -24px !important;
+  left: 34%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.businessusers {
+  position: relative;
+  left: 73%;
+  top: 21px;
 }
 
 .techusersskills {
   position: relative;
   top: 27px;
-  left: 336px;
+  left: 383px;
   display: table;
 }
 
 .skillspagesearch {
   display: inline-block;
   position: relative;
-  left: 36.5%;
+  left: 34.5%;
   margin-bottom: 50px;
 }
 
 .skillspagesearchtech {
   display: inline-block;
   position: relative;
-  left: 26.5%;
+  left: 23%;
 }
 
 .leftarrowtech {
@@ -266,19 +274,19 @@
 .rightarrowdesign {
   position: relative;
   top: 37px;
-  left: 128.5%;
+  left: 119.5%;
 }
 
 .rightarrowtech {
   position: relative;
   top: 37px;
-  left: 87%;
+  left: 81%;
 }
 
 .leftarrowbusiness {
   position: relative;
   top: 39px;
-  left: 18px;
+  left: 13px;
 }
 
 .personalprofileinfo {
