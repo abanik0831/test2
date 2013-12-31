@@ -211,6 +211,7 @@ class ProfilesController < ApplicationController
     if user_signed_in?
       @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
     end
+    @prof = Profile.where("profiles.id" => current_user.id).first
   end
 
   # POST /profiles
