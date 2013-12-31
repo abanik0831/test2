@@ -34,7 +34,7 @@ StartupSocial::Application.routes.draw do
 
   resources :profiles do
     member do
-      get :following, :followers, :usersearch
+      get :following, :followers, :usersearch, :beverlyhillsuser, :burbank, :downtown, :hollywoodusers, :culvercityusers, :santamonicausers, :pasadenausers, :sanfernandovalleyusers, :venicebeachuser
     end
   end
 

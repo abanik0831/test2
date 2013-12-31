@@ -207,6 +207,15 @@
   width: 110px;
 }
 
+.imgarea {
+  display: inherit;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 75px;
+  margin-bottom: 100px;
+}
+
 #updatefollowfollowing, #updatefollowfollowingcount {
   margin: 0 auto;
   text-align: center;

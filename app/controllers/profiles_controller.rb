@@ -16,7 +16,6 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
-
     @postnew = Post.new
     @dash_post = Post.all
     @dash_pic = ProfilePic.all
@@ -51,6 +50,45 @@ class ProfilesController < ApplicationController
     @usersfollowing = @user.followers
 
     @profiles = Profile.find(params[:id])
+
+    @areafind = @profiles.area
+
+    if @areafind == "Downtown"
+      @areafindanswer = downtown_profile_path(@profiles)
+    end
+
+    if @areafind == "Santa Monica"
+      @areafindanswer = santamonicausers_profile_path(@profiles)
+    end
+
+    if @areafind == "Venice Beach"
+      @areafindanswer = venicebeachuser_profile_path(@profiles)
+    end
+
+    if @areafind == "Culver City"
+      @areafindanswer = culvercityusers_profile_path(@profiles)
+    end
+
+    if @areafind == "San Fernando Valley"
+      @areafindanswer = sanfernandovalleyusers_profile_path(@profiles)
+    end
+
+    if @areafind == "Burbank"
+      @areafindanswer = burbank_profile_path(@profiles)
+    end
+
+    if @areafind == "Beverly Hills"
+      @areafindanswer = beverlyhillsuser_profile_path(@profiles)
+    end
+
+    if @areafind == "Hollywood"
+      @areafindanswer = hollywoodusers_profile_path(@profiles)
+    end
+
+    if @areafind == "Pasadena"
+      @areafindanswer = pasadenausers_profile_path(@profiles)
+    end
+
     #@relationships = @crntuser.relationships.build(followed_id: @profiles.id)
   end
 
@@ -89,9 +127,83 @@ class ProfilesController < ApplicationController
       @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
     end
     @user = User.find(params[:id])
-    @usersfollowed = @user.followed_users
     @profiles = Profile.find(params[:id])
     #.paginate(page: params[:page])
+  end
+
+
+  #:beverlyhillsuser, :burbank, :downtown, :hollywoodusers, :culvercityusers, :santamonicausers, :pasadenausers, :sanfernandovalleyusers, :venicebeachuser
+
+  def beverlyhillsuser
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def burbank
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def downtown
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def hollywoodusers
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def culvercityusers
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def santamonicausers
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def pasadenausers
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def sanfernandovalleyusers
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+  end
+
+  def venicebeachuser
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
   end
 
   # GET /profiles/1/edit

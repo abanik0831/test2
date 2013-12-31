@@ -1,0 +1,33 @@
+<div class="imgarea">
+  <%= image_tag("san-fernando-valley.png", :class => "imgareaclass") %>
+</div>
+<div id="usersfollowlist">
+  <% Profile.all.each  do |user| %>
+      <% if user.id != current_user.id && user.area == "San Fernando Valley"%>
+          <% ProfilePic.all.each do |pic| %>
+              <% if pic.id == user.profilepicid %>
+                  <div class="profilefloat profilefollow_form<%= user.id %>" >
+                    <p class="nameuser">
+                      <%= user.f_name %>
+                      <%= user.l_name %>
+                    </p>
+                    <%= link_to image_tag(pic.image_url(:thumb).to_s, :class => 'dashpost_profilepiclist'), profile_path(id: user.id)  %>
+                    <% if current_user.following?(user) %>
+                        <%= form_for(current_user.relationships.find_by(followed_id: user),
+                                     html: { method: :delete }, remote: true) do |f| %>
+                            <%= f.submit "Unfollow", :class => "follow_userlist btn btn-large" %>
+                        <% end %>
+                    <% else %>
+                        <% if user.id != current_user.id %>
+                            <%= form_for(current_user.relationships.build(followed_id: user.id), remote: true) do |f| %>
+                                <%= f.hidden_field :followed_id %>
+                                <%= f.submit "Follow", class: "follow_userlist btn btn-large btn-primary" %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                  </div>
+              <% end %>
+          <% end %>
+      <% end %>
+  <% end %>
+</div>

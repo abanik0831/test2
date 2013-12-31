@@ -47,10 +47,12 @@
   </p>
 
   <div class="user_area_pic">
+    <a class="techclick" href="<%= @areafindanswer %>">
     <span class="location_user_area fui-location"></span>
     <p class="user_area">
       <%= @profiles.area %>
     </p>
+    </a>
   </div>
 
   <%= render 'follow_form' if signed_in? %>
