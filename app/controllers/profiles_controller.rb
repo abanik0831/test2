@@ -131,6 +131,24 @@ class ProfilesController < ApplicationController
     #.paginate(page: params[:page])
   end
 
+  def usersearch1
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+    #.paginate(page: params[:page])
+  end
+
+  def usersearch2
+    if user_signed_in?
+      @profpic = ProfilePic.where('profile_pics.id' => current_user.id).first
+    end
+    @user = User.find(params[:id])
+    @profiles = Profile.find(params[:id])
+    #.paginate(page: params[:page])
+  end
+
 
   #:beverlyhillsuser, :burbank, :downtown, :hollywoodusers, :culvercityusers, :santamonicausers, :pasadenausers, :sanfernandovalleyusers, :venicebeachuser
 

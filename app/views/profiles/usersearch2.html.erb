@@ -1,0 +1,31 @@
+<div id="designskillset" style="display: none">
+  <div class="skillspagesearch">
+    <%= image_tag("arrow-right.png" , :class => "rightarrowdesign") %>
+    <p class="skill_text designskill">Design</p>
+    <%= image_tag("design.png" , :class => "skill_img design_mobile")%>
+    <p class="designusersskills"><%= Profile.where(:skills => "Design").count %></p>
+  </div>
+  <%= render 'userbyskill' %>
+</div>
+
+<div id="techskillset" style="display: none">
+
+  <div class="skillspagesearchtech" >
+    <%= image_tag("arrow-left.png" , :class => "leftarrowtech") %>
+    <%= image_tag("arrow-right.png" , :class => "rightarrowtech") %>
+    <p class="skill_text techskill">Technology</p>
+    <%= image_tag("technology.png" , :class => "skill_img technology") %>
+    <p class="techusersskills"><%= Profile.where(:skills => "Technology").count %></p>
+  </div>
+  <%= render 'userbytechskills' %>
+</div>
+
+<div id="businessskillset" style="display: inline">
+  <div class="skillspagesearch">
+    <%= image_tag("arrow-left.png" , :class => "leftarrowbusiness") %>
+    <p class="skill_text designskill">Business</p>
+    <%= image_tag("business.png", :class => "skill_img business_mobile") %>
+    <p class="businessuserskills"><%= Profile.where(:skills => "Business").count %></p>
+  </div>
+  <%= render 'userbybusinessskill' %>
+</div>
