@@ -8,7 +8,7 @@ $(document).ready(function(){
        $('.personalprofileinfofollowing img').attr("src", "/assets/following-dark.png");
 
        $("#followinguserlisting").hide();
-       $("#followeduserlisting").show();
+       $("#followeduserlisting").css("display", "inline-block");
        $("#dash_profile_page").hide();
    });
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
         $('.personalprofileinfofollowing img').attr("src", "/assets/following-light.png");
         $('.personalprofileinfofollowers img').attr("src", "/assets/followers-dark.png");
 
-        $("#followinguserlisting").show();
+        $("#followinguserlisting").css("display", "inline-block");
         $("#followeduserlisting").hide();
         $("#dash_profile_page").hide();
         });

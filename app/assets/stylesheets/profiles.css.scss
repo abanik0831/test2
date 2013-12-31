@@ -311,6 +311,9 @@
 
 #followeduserlisting, #followinguserlisting {
   display: none;
+  width: 57%;
+  left: 22%;
+  position: relative;
 }
 
 .personalprofileinfoupdatescount {
@@ -341,6 +344,12 @@
   display: inline;
   left: 55.5%;
   top: -100px;
+}
+
+.usersfollowlist {
+  &.profilepagelist {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width : 400px) and (max-aspect-ratio: 13/9) {
