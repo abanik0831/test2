@@ -28,7 +28,7 @@
       </div>
 
       <div class="settingsheader">
-        <%= image_tag("menu-settings.png", :border => 0)%>
+        <%= link_to(image_tag("sign-out.png", :border => 0), destroy_user_session_path, :method => :delete) %>
       </div>
 
       <div id="headerpictitle">
@@ -43,8 +43,7 @@
 </header>
 
 <div id="user_nav">
-    Signed in as <%= current_user.username %>. Not you?
-      <%= link_to("Sign Out", destroy_user_session_path, :method => :delete) %>
+   <br/>
 </div>
 <% else %>
 

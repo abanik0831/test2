@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/profiles.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sign-out.png" afterPath="$PROJECT_DIR$/app/assets/images/sign-out.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" afterPath="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" afterPath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profiles_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
+      <file leaf-file-name="splash_screen.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="41" selection-start="3470" selection-end="3470" vertical-scroll-proportion="0.0" vertical-offset="1660" max-vertical-offset="4545">
+            <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="-16.192308" vertical-offset="1844" max-vertical-offset="4065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splash_screen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
+      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="-16.192308" vertical-offset="1844" max-vertical-offset="4065">
+            <state line="124" column="13" selection-start="1893" selection-end="1893" vertical-scroll-proportion="-19.416666" vertical-offset="1394" max-vertical-offset="11520">
               <folding />
             </state>
           </provider>
@@ -57,19 +63,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profiles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="55" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.47799698" vertical-offset="390" max-vertical-offset="1200">
+            <state line="45" column="42" selection-start="1950" selection-end="1958" vertical-scroll-proportion="-10.961538" vertical-offset="390" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usersearch.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/usersearch.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="17" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="555">
+            <state line="92" column="51" selection-start="4168" selection-end="4189" vertical-scroll-proportion="72.375" vertical-offset="3117" max-vertical-offset="3765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show_follow.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/profiles/show_follow.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="5" selection-start="31" selection-end="66" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="44" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.42926046" vertical-offset="813" max-vertical-offset="2790">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="17" selection-start="863" selection-end="863" vertical-scroll-proportion="-4.82" vertical-offset="524" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -78,35 +111,10 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="-10.76" vertical-offset="362" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_userbyskill.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="57" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_userbytechskills.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbytechskills.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="56" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_userbybusinessskill.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="525">
-              <folding />
+            <state line="43" column="12" selection-start="1382" selection-end="1382" vertical-scroll-proportion="-8.7" vertical-offset="210" max-vertical-offset="1050">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/profiles/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
@@ -161,7 +168,6 @@
         <option value="$PROJECT_DIR$/app/views/profiles/_sanfernandovalleyusers.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_santamonicausers.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_venicebeachuser.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/venicebeachuser.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/downtown.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/culvercityusers.html.erb" />
@@ -177,18 +183,20 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
         <option value="$PROJECT_DIR$/app/views/profiles/usersearch.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/usersearch1.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/usersearch2.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
         <option value="$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_userbytechskills.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
         <option value="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
+        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
       </list>
     </option>
   </component>
@@ -474,6 +482,28 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -493,7 +523,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -701,11 +731,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_follow.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="222" selection-end="222" vertical-scroll-proportion="0.069767445" vertical-offset="0" max-vertical-offset="645" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_follow_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="26" selection-start="71" selection-end="93" vertical-scroll-proportion="0.046511628" vertical-offset="0" max-vertical-offset="645" />
@@ -754,11 +779,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/images/arrow-down-1.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show_follow.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="5" selection-start="31" selection-end="66" vertical-scroll-proportion="0.046511628" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -856,11 +876,6 @@
         <state line="12" column="45" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="270" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0" vertical-offset="2188" max-vertical-offset="2790" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="32" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="510" />
@@ -868,7 +883,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="306" selection-end="376" vertical-scroll-proportion="0.11160714" vertical-offset="0" max-vertical-offset="672" />
+        <state line="5" column="16" selection-start="306" selection-end="376" vertical-scroll-proportion="0.11160714" vertical-offset="0" max-vertical-offset="672">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/edit.html.erb">
@@ -891,11 +908,6 @@
         <state line="36" column="74" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="1680">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="48" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="3765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/usersearch1.html.erb">
@@ -931,11 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="78" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.5423198" vertical-offset="1394" max-vertical-offset="11415" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="41" selection-start="3470" selection-end="3470" vertical-scroll-proportion="0.0" vertical-offset="1660" max-vertical-offset="4545">
@@ -957,9 +964,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="-10.76" vertical-offset="362" max-vertical-offset="1065">
+        <state line="45" column="42" selection-start="1950" selection-end="1958" vertical-scroll-proportion="-10.961538" vertical-offset="390" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
@@ -971,9 +978,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="55" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.47799698" vertical-offset="390" max-vertical-offset="1200">
+        <state line="124" column="13" selection-start="1893" selection-end="1893" vertical-scroll-proportion="-19.416666" vertical-offset="1394" max-vertical-offset="11520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="12" selection-start="1382" selection-end="1382" vertical-scroll-proportion="-8.7" vertical-offset="210" max-vertical-offset="1050">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show_follow.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="5" selection-start="31" selection-end="66" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/comments.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="17" selection-start="863" selection-end="863" vertical-scroll-proportion="-4.82" vertical-offset="524" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="51" selection-start="4168" selection-end="4189" vertical-scroll-proportion="72.375" vertical-offset="3117" max-vertical-offset="3765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="44" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.42926046" vertical-offset="813" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>
