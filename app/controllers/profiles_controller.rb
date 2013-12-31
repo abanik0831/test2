@@ -17,7 +17,7 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @postnew = Post.new
-    @dash_post = Post.all
+    @dash_post = Post.where("posts.profile_id" => current_user.id)
     @dash_pic = ProfilePic.all
 
     @dash_post_array = (@dash_post.to_a + @post.to_a)
