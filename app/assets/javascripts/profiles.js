@@ -2,7 +2,6 @@ $(document).ready(function(){
 
    $(".personalprofileinfofollowers").on("click", function(e){
        e.preventDefault();
-
        $('.personalprofileinfoupdates img').attr("src", "/assets/updates-dark.png");
        $('.personalprofileinfofollowers img').attr("src", "/assets/followers-light.png");
        $('.personalprofileinfofollowing img').attr("src", "/assets/following-dark.png");
@@ -14,7 +13,6 @@ $(document).ready(function(){
 
     $(".personalprofileinfofollowing").on("click", function(e){
         e.preventDefault();
-
         $('.personalprofileinfoupdates img').attr("src", "/assets/updates-dark.png");
         $('.personalprofileinfofollowing img').attr("src", "/assets/following-light.png");
         $('.personalprofileinfofollowers img').attr("src", "/assets/followers-dark.png");
@@ -53,22 +51,22 @@ $(document).ready(function(){
         $("#businessskillset").show();
     });
 
-    $(".rightarrowdesign").on("click", function(){
+    $(document).on("click", ".rightarrowdesign", function(){
         $("#designskillset").hide();
         $("#techskillset").show();
     });
 
-    $(".leftarrowtech").on("click", function(){
+    $(document).on("click", ".leftarrowtech",function(){
         $("#designskillset").show();
         $("#techskillset").hide();
     });
 
-    $(".rightarrowtech").on("click", function(){
+    $(document).on("click", ".rightarrowtech", function(){
         $("#techskillset").hide();
         $("#businessskillset").show();
     });
 
-    $(".leftarrowbusiness").on("click", function(){
+    $(document).on("click", ".leftarrowbusiness", function(){
         $("#techskillset").show();
         $("#businessskillset").hide();
     });

@@ -111,7 +111,7 @@ $(document).ready(function(){
 
    // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-    $(".comment_field").on("input keyup", function(e){
+    $(document).on("input keyup", ".comment_field", function(e){
         var y = $(this).val();
         console.log(y);
         if(y.length > 0) {
@@ -123,7 +123,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".post_field").on("input keyup", function(e){
+    $(document).on("input keyup", ".post_field", function(e){
         var y = $(this).val();
         console.log(y);
         if(y.length > 0) {
