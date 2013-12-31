@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,55 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_usersfollowing.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_usersfollowing.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="6" selection-start="1396" selection-end="1402" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="121" selection-start="1625" selection-end="1625" vertical-scroll-proportion="63.041668" vertical-offset="2128" max-vertical-offset="2760">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_profilefollow_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_profilefollow.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_userbybusinessskill.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="78" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_userbyskill.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="78" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525">
+            <state line="19" column="74" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.47029704" vertical-offset="0" max-vertical-offset="606">
               <folding />
             </state>
           </provider>
@@ -94,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profiles.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="19" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.52363634" vertical-offset="2682" max-vertical-offset="6930">
+            <state line="198" column="19" selection-start="2973" selection-end="2973" vertical-scroll-proportion="-12.0" vertical-offset="2682" max-vertical-offset="6930">
               <folding />
             </state>
           </provider>
@@ -106,7 +61,7 @@
       <file leaf-file-name="profiles.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="31" selection-start="981" selection-end="1000" vertical-scroll-proportion="-8.230769" vertical-offset="116" max-vertical-offset="1230">
+            <state line="22" column="31" selection-start="981" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -179,14 +134,13 @@
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
-        <option value="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-307" />
-    <option name="y" value="41" />
+    <option name="y" value="22" />
     <option name="width" value="1271" />
     <option name="height" value="802" />
   </component>
@@ -671,7 +625,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-307" y="41" width="1271" height="802" extended-state="6" />
+    <frame x="0" y="22" width="1271" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -679,7 +633,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26362896" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2676973" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05298913" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -687,12 +641,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.054018445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -925,51 +879,21 @@
         <state line="36" column="34" selection-start="1397" selection-end="1405" vertical-scroll-proportion="0.35443038" vertical-offset="316" max-vertical-offset="1095" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="121" selection-start="1625" selection-end="1625" vertical-scroll-proportion="63.041668" vertical-offset="2128" max-vertical-offset="2760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profile_pics.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="669" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="31" selection-start="981" selection-end="1000" vertical-scroll-proportion="-8.230769" vertical-offset="116" max-vertical-offset="1230">
+        <state line="22" column="31" selection-start="981" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="78" selection-start="1322" selection-end="1322" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="78" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="525">
+        <state line="198" column="19" selection-start="2973" selection-end="2973" vertical-scroll-proportion="-12.0" vertical-offset="2682" max-vertical-offset="6930">
           <folding />
         </state>
       </provider>
@@ -981,16 +905,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="6" selection-start="1396" selection-end="1402" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="510">
+        <state line="20" column="78" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.5328597" vertical-offset="0" max-vertical-offset="563">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="19" selection-start="2973" selection-end="2973" vertical-scroll-proportion="0.52363634" vertical-offset="2682" max-vertical-offset="6930">
+        <state line="0" column="16" selection-start="15" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_profilefollow_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="18" selection-end="19" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="121" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-2.4966996" vertical-offset="2128" max-vertical-offset="2760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="74" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.47029704" vertical-offset="0" max-vertical-offset="606">
           <folding />
         </state>
       </provider>
