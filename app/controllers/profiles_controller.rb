@@ -46,8 +46,8 @@ class ProfilesController < ApplicationController
     @profiles = Profile.find(params[:id])
 
     @user = User.find(params[:id])
-    @usersfollowed = @user.followed_users
-    @usersfollowing = @user.followers
+    @usersfollowed = @user.followers
+    @usersfollowing = @user.followed_users
 
     @profiles = Profile.find(params[:id])
 
