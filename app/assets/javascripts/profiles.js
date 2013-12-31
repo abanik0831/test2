@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-   $(".personalprofileinfofollowers").on("click", function(e){
+   $(document).on("click", ".personalprofileinfofollowers", function(e){
        e.preventDefault();
        $('.personalprofileinfoupdates img').attr("src", "/assets/updates-dark.png");
        $('.personalprofileinfofollowers img').attr("src", "/assets/followers-light.png");
@@ -11,7 +11,7 @@ $(document).ready(function(){
        $("#dash_profile_page").hide();
    });
 
-    $(".personalprofileinfofollowing").on("click", function(e){
+    $(document).on("click", ".personalprofileinfofollowing", function(e){
         e.preventDefault();
         $('.personalprofileinfoupdates img').attr("src", "/assets/updates-dark.png");
         $('.personalprofileinfofollowing img').attr("src", "/assets/following-light.png");
@@ -22,7 +22,7 @@ $(document).ready(function(){
         $("#dash_profile_page").hide();
         });
 
-    $(".personalprofileinfoupdates").on("click", function(e){
+    $(document).on("click", ".personalprofileinfoupdates", function(e){
         e.preventDefault();
         $(".personalprofileinfoupdates img").attr("src", "/assets/updates-light.png");
         $('.personalprofileinfofollowers img').attr("src", "/assets/followers-dark.png");
@@ -33,19 +33,19 @@ $(document).ready(function(){
         $("#dash_profile_page").show();
     });
 
-    $(".designclick").on("click mousedown", function(){
+    $(document).on("click mousedown", ".designclick", function(){
         $("#designskillset").show();
         $("#techskillset").hide();
         $("#businessskillset").hide();
     });
 
-    $(".techclick").on("click mousedown", function(e){
+    $(document).on("click mousedown", ".techclick", function(e){
         $("#designskillset").hide();
 //        $("#techskillset").show();
 //        $("#businessskillset").hide();
     });
 
-    $(".businessclick").on("click mousedown", function(){
+    $(document).on("click mousedown",".businessclick",  function(){
         $("#designskillset").hide();
         $("#techskillset").hide();
         $("#businessskillset").show();

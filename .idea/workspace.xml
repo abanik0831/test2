@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" afterPath="$PROJECT_DIR$/public/assets/manifest-45eace6256fcd2a4c3598fecb879dd8c.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/profiles.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +42,7 @@
       <file leaf-file-name="splash_screen.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="4440">
+            <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="-16.192308" vertical-offset="1844" max-vertical-offset="4065">
               <folding />
             </state>
           </provider>
@@ -60,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profiles.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1200">
+            <state line="47" column="55" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.47799698" vertical-offset="390" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -78,10 +75,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.8703704" vertical-offset="336" max-vertical-offset="1065">
+            <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="-10.76" vertical-offset="362" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -188,10 +185,10 @@
         <option value="$PROJECT_DIR$/app/views/profiles/_userbyskill.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_userbytechskills.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_userbybusinessskill.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
         <option value="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js" />
       </list>
     </option>
   </component>
@@ -946,20 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="4440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="661">
@@ -976,7 +959,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="0.8703704" vertical-offset="336" max-vertical-offset="1065">
+        <state line="60" column="25" selection-start="1829" selection-end="1829" vertical-scroll-proportion="-10.76" vertical-offset="362" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="-16.192308" vertical-offset="1844" max-vertical-offset="4065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/profiles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="55" selection-start="2014" selection-end="2014" vertical-scroll-proportion="0.47799698" vertical-offset="390" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
