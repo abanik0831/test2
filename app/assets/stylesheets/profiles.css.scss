@@ -404,7 +404,7 @@
 
   #usersfollowlist {
     position: relative;
-    width: 95%;
+    width: 97%;
   }
 
   .usersfollowlist.profilepagelist {
@@ -424,7 +424,7 @@
     left: -11.5%;
   }
 
-  .design_mobile {
+  .skillspagesearch .design_mobile {
     position: relative !important;
     left: 25px !important;
     top: 32px !important;
@@ -435,9 +435,15 @@
     left: -34%;
   }
 
-  .skill_img.technology {
-    position: relative;
-    left: 29px;
+  .skillspagesearchtech .technology {
+    position: relative !important;
+    left: 29px !important;
+  }
+
+  .skillspagesearch .business_mobile {
+    position: relative !important;
+    left: 19px !important;
+    top: 30px !important;
   }
 
   .techusersskills {
