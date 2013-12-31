@@ -34,6 +34,8 @@
       </p>
   <% end %>
 
+
+   <% if @profiles.id != current_user.id %>
       <div class="social_links">
         <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
         <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
@@ -41,6 +43,15 @@
         <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
         <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
       </div>
+   <% else %>
+  <div class="social_links crntuser">
+    <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
+    <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
+    <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
+    <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
+    <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
+  </div>
+      <% end %>
 
   <p class="user_title">
     <%= @profiles.title %>

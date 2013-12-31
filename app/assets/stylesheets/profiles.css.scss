@@ -6,6 +6,7 @@
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
+  border-radius: 50%;
   position: relative;
   left: 45%;
 
@@ -33,13 +34,19 @@
   color: rgb(191, 195, 198);
   position: relative;
   left: 42.5%;
-  top: -1px;
+  top: 3px;
 }
 
 .social_links {
   display: table;
   position: relative;
   margin: 0 auto;
+  left: 1.5%;
+}
+
+.social_links.crntuser {
+  position: relative;
+  left: 0;
 }
 
 .social_link_spacing {
@@ -99,7 +106,7 @@
 .follow_user {
   position: relative;
   top: -3px;
-  left: 45%;
+  left: 46.5%;
   width: 107px !important;
   background: rgb(0, 0, 0) !important;
 
@@ -262,6 +269,7 @@
   position: relative;
   top: 21px;
   left: 214px;
+  display: table;
 
 }
 
@@ -394,6 +402,86 @@
     left: -13px;
   }
 
+  #usersfollowlist {
+    position: relative;
+    width: 95%;
+  }
+
+  .usersfollowlist.profilepagelist {
+    position: relative;
+    left: -30%;
+    width: 174%;
+  }
+
+  .profilefloat {
+    position: relative;
+    left: 4%;
+    margin-right: 62px;
+  }
+
+  .skillspagesearch {
+    position: relative;
+    left: -11.5%;
+  }
+
+  .design_mobile {
+    position: relative !important;
+    left: 25px !important;
+    top: 32px !important;
+  }
+
+  .skillspagesearchtech {
+    position: relative;
+    left: -34%;
+  }
+
+  .skill_img.technology {
+    position: relative;
+    left: 29px;
+  }
+
+  .techusersskills {
+    position: relative;
+    left: 302px;
+  }
+
+  .leftarrowtech {
+    position: relative;
+    left: 51%;
+    top: 35px;
+  }
+
+  .businessuserskills {
+    display: table;
+  }
+
+  .rightarrowtech {
+    position: relative;
+    left: 95.5%;
+  }
+
+  .designskill {
+    position: relative;
+    left: 111px;
+  }
+
+  .business_mobile {
+    position: relative;
+    left: 18px;
+  }
+
+  .businessuserskills {
+    position: relative;
+    left: 82%;
+    top: 25px;
+  }
+
+  .leftarrowbusiness {
+    position: relative;
+    top: 35px;
+    left: 30%;
+  }
+
   .picprofile img {
     width: 150px;
     height: 150px;
@@ -431,9 +519,19 @@
   .social_links {
     position: relative;
     display: inline-block;
-    left: 0%;
+    left: 4%;
     top: -3px;
     margin: 0 auto;
+  }
+
+  .social_links.crntuser {
+    position: relative;
+    left: -10%;
+  }
+
+  .user_area {
+    position: relative;
+    left: -5%;
   }
 
   .social_link_spacing {

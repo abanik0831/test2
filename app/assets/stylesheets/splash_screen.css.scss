@@ -110,6 +110,7 @@
   text-align: center;
   top: -91px;
   font-size: 25px;
+  left: 2%;
 }
 
 .dashboard-post_containter{
@@ -293,7 +294,7 @@ input[type="file"] {
   width: 70px;
   height: 70px;
   position: relative;
-  left: 42%;
+  left: 44%;
   top: -73px;
 }
 
@@ -313,6 +314,7 @@ input[type="file"] {
   margin: 0 auto;
   text-align: center;
   width: 32%;
+  left: 2%;
 }
 
 
@@ -573,6 +575,22 @@ input[type="file"] {
     height: 75px;
     position: relative;
     left: 9%;
+  }
+
+  #skillcount .designusers {
+    margin-right: 62px;
+    position: relative;
+    left: -28%;
+  }
+
+  #skillcount .techusers {
+    margin-right: 119px;
+
+  }
+
+  .postdashboard {
+    position: relative;
+    left: 0;
   }
 
   .notifications {
