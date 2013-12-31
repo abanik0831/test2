@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +79,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="18" selection-start="578" selection-end="578" vertical-scroll-proportion="-7.625" vertical-offset="57" max-vertical-offset="1335">
+            <state line="39" column="65" selection-start="1484" selection-end="1484" vertical-scroll-proportion="-9.74" vertical-offset="98" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -97,19 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="62" selection-start="981" selection-end="981" vertical-scroll-proportion="0.4382716" vertical-offset="136" max-vertical-offset="1095">
+            <state line="28" column="62" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.833333" vertical-offset="136" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles.css.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profiles.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="10" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0" vertical-offset="1409" max-vertical-offset="7260">
+            <state line="82" column="30" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.592126" vertical-offset="854" max-vertical-offset="7395">
               <folding />
             </state>
           </provider>
@@ -189,10 +186,10 @@
         <option value="$PROJECT_DIR$/app/views/profiles/santamonicausers.html.erb" />
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_usersfollowing.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss" />
       </list>
     </option>
   </component>
@@ -955,13 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="10" selection-start="1704" selection-end="1704" vertical-scroll-proportion="0.0" vertical-offset="1409" max-vertical-offset="7260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="16" selection-start="306" selection-end="376" vertical-scroll-proportion="0.11160714" vertical-offset="0" max-vertical-offset="672">
@@ -990,16 +980,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="578" selection-end="578" vertical-scroll-proportion="-7.625" vertical-offset="57" max-vertical-offset="1335">
+        <state line="28" column="62" selection-start="981" selection-end="981" vertical-scroll-proportion="-11.833333" vertical-offset="136" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="62" selection-start="981" selection-end="981" vertical-scroll-proportion="0.4382716" vertical-offset="136" max-vertical-offset="1095">
+        <state line="39" column="65" selection-start="1484" selection-end="1484" vertical-scroll-proportion="-9.74" vertical-offset="98" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/profiles.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="30" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.592126" vertical-offset="854" max-vertical-offset="7395">
           <folding />
         </state>
       </provider>

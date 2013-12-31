@@ -72,7 +72,16 @@
 .content_field {
   position: relative;
   top: 40px;
+  width: 97%;
 //  margin-bottom: -14px !important;
+}
+
+.content_field.headline {
+  width: 94% !important;
+}
+
+#profile_skills, #profile_area {
+  width: 106%;
 }
 
 .msguser_hide {
