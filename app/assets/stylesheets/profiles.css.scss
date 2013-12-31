@@ -32,8 +32,8 @@
   width: 30px;
   color: rgb(191, 195, 198);
   position: relative;
-  left: 615px;
-  top: 3px;
+  left: 42.5%;
+  top: -1px;
 }
 
 .social_links {
@@ -141,7 +141,8 @@
   font-family: automobi;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
+  top: 70px;
 
   p {
     font-size: 32px !important;
@@ -388,6 +389,7 @@
     width: 150px;
     height: 150px;
     -webkit-border-radius: 50%;
+    border-radius: 50%;
     position: relative;
     left: 28%;
 
