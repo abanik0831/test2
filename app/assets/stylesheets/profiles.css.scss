@@ -194,6 +194,9 @@
 .nameuser {
   margin:0 auto;
   text-align: center;
+  height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .profilefloat {
@@ -201,6 +204,7 @@
   margin-right: 100px;
   position: relative;
   left: 17%;
+  width: 118px;
 }
 
 #updatefollowfollowing, #updatefollowfollowingcount {
