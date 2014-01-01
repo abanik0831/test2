@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
   attr_accessible :username, :email, :password, :password_confirmation, :profile_attributes
 
   validates :email, :email => true
-  validates :username, :presence =>  true
+  validates :username, :presence =>  true, :uniqueness => true
 
 
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy, :autosave => true
