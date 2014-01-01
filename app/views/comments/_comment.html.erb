@@ -2,7 +2,7 @@
     <% Post.all.each do |f| %>
         <% if comment.post_id == f.id %>
             <% ProfilePic.all.each do |cmtpict| %>
-                <% if comment.profile_id == cmtpict.id && !cmtpict.image.blank? %>
+                <% if comment.profile_id == cmtpict.id %>
                     <li class="comment_image">
                       <%= link_to image_tag(cmtpict.image_url(:thumb).to_s, :class => "comment_profilepic"), profile_path(id: comment.profile_id)  %>
                     </li>
