@@ -1,3 +1,5 @@
-$("#follow_form, .profilefollow_form"+<%= @profile.id %>).html("<%= escape_javascript(render('profiles/follow')) %>")
+$("#follow_form").html("<%= escape_javascript(render('profiles/follow')) %>")
+$(".profilefollow_form"+<%= @profile.id %>).html("<%= escape_javascript(render('profiles/follow1')) %>")
+
 
 

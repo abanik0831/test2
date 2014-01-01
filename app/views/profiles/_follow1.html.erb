@@ -1,0 +1,9 @@
+  <p class="nameuser">
+    <%= @profile.f_name %>
+    <%= @profile.l_name %>
+  </p>
+  <%= link_to image_tag(ProfilePic.find(@profile.id).image_url(:thumb).to_s, :class => 'dashpost_profilepiclist'), profile_path(id: @profile.id)  %>
+  <%= form_for(current_user.relationships.build(followed_id: @profile.id), remote: true) do |f| %>
+    <%= f.hidden_field :followed_id %>
+    <%= f.submit "Follow", class: "follow_userlist btn btn-large btn-primary" %>
+<% end %>
