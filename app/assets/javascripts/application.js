@@ -51,8 +51,79 @@ $(document).ready(function(){
         var recipients = $("#conversation_recipients").val();
         recipients = current_user;
         window.location.href = "http://localhost:3000/conversations/new";
+    });
 
-        alert(recipients);
+    var myTour = jTour([
+        {
+            html: "Welcome to Startup Social"
+        },{
+            html: "start the Tour with this button",
+            element: $('a.button.primary'),
+            overlayOpacity:0.9,
+            expose: {
+                'background-color': '#fff',
+                'font-size': 20,
+                'color': '#000'
+            },
+            position: 'sw'
+        },{
+            html: "Click here to navigate to the Dashboard",
+            element: $('.skill_img.design_mobile, .skill_text.design, .designusers'),
+            expose: {
+                'font-size': 20,
+                'color': 'white'
+            },
+            overlayOpacity:0.9,
+            position: 's',
+            offset: 165
+        },{
+            html: "Click here to navigate to the Dashboard",
+            element: $('.skill_img.technology, .skill_text.technology, .techusers'),
+            expose: {
+                'font-size': 20,
+                'color': 'white'
+            },
+            overlayOpacity:0.9,
+            position: 's',
+            offset: 165
+        },{
+            html: "Click here to navigate to the Mobile",
+            element: $('.businessclick, .skill_text.business, .businessusers'),
+            overlayOpacity:0.9,
+            expose: {
+                'font-size': 20,
+                'color': 'white'
+            },
+            position: 'e',
+            offset: 165
+        }, {
+            html: "Share something startup related ...",
+            element: $('#dashboard-post'),
+            overlayOpacity:0.9,
+            expose: true,
+            position: 'e'
+
+
+        }, {
+            html: "View your posts and the users you are following",
+            element: $('.container').eq(0),
+            overlayOpacity:0.9,
+            expose: true,
+            position: 'e'
+
+
+        }, {
+            html: "View your posts and the users you are following",
+            element: $('header.logged'),
+            overlayOpacity:0.5,
+            expose: true,
+            position: 's'
+        }
+    ]);
+
+    //the Button
+    $(document).on("click", '#starttour', function(){
+        myTour.start();
     });
 
 

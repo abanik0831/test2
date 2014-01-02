@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="shortcut icon" href="icon.jpg" type="image/type here" />
   <title>StartupSocial - Connect, Collaborate, Create <%= yield(:title) || "Welcome" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "http://localhost:9292/faye.js"  %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <%= csrf_meta_tags %>
@@ -42,9 +43,12 @@
   </div>
 </header>
 
-<div id="user_nav">
+    <div id="user_nav">
    <br/>
-</div>
+      <% if current_user.id == 1 || current_user.id == 2 || current_user.id == 3 %>
+        <a class="button primary" id="starttour">Start this Tour</a>
+      <% end %>
+    </div>
 <% else %>
 
     <header class="not_logged <%= @home_page ? 'rvmheader' : ''%>">
@@ -59,6 +63,8 @@
 <%= yield %>
    <div style="height: 100px">
 
+
    </div>
+
 </body>
 </html>
