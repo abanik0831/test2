@@ -123,11 +123,11 @@
                                 View all <%= Comment.where(post_id: f.id).count %> comments
                               </li>
                           <% end %>
-
-
                           <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_comments_url(f.id)} do %>
                                <%= render f.comments %>
                           <% end %>
+
+                          <!--<%= Post.find(2).likes.find(1).profile_id %>-->
 
                           <li>
                             <%= link_to image_tag(@profpic.image_url(:thumb).to_s, :class => 'comment_profilepic'), profile_path(id: current_user.id)  %>
@@ -142,6 +142,8 @@
                                 <%= commentpost.submit "POST", :value => "POST", :class => "comment_splash btn btn-large btn-primary", :disabled => true %>
 
                             <% end %>
+
+                            <%= subscribe_to "/profiles/1" %>
                           </li>
                         </div>
                       </div>

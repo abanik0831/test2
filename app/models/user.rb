@@ -30,6 +30,12 @@ class User < ActiveRecord::Base
   has_many :reverse_relationships, foreign_key: "followed_id",class_name: "Relationship", dependent: :destroy, :autosave => true
   has_many :followers, through: :reverse_relationships, source: :follower, :autosave => true
 
+  has_many :likes
+
+  #def likes(other_post)
+  #  likes.find_by(post_id: )
+  #end
+
   def following?(other_user)
     relationships.find_by(followed_id: other_user.id)
   end

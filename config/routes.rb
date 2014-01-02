@@ -1,6 +1,8 @@
 StartupSocial::Application.routes.draw do
 
 
+  resources :likes
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :authentications
@@ -12,7 +14,7 @@ StartupSocial::Application.routes.draw do
   resources :post_pics
 
   resources :posts do
-    resources :comments
+    resources :comments, :likes
   end
 
   resources :conversations, only: [:index, :show, :new, :create] do
@@ -33,6 +35,7 @@ StartupSocial::Application.routes.draw do
   resources :relationships
 
   resources :profiles do
+    resources :likes
     member do
       get :following, :followers, :usersearch, :usersearch1, :usersearch2, :beverlyhillsuser, :burbank, :downtown, :hollywoodusers, :culvercityusers, :santamonicausers, :pasadenausers, :sanfernandovalleyusers, :venicebeachuser
     end

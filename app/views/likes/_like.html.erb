@@ -1,0 +1,13 @@
+<%= div_for like, data: {id: like.id} do %>
+    <% Post.all.each do |f| %>
+        <% if like.post_id == f.id %>
+            <% ProfilePic.all.each do |liekpic| %>
+                <% if like.profile_id == liekpic.id %>
+                    <li class="comment_image">
+                      <%= link_to image_tag(liekpic.image_url(:thumb).to_s, :class => "comment_profilepic"), profile_path(id: like.profile_id)  %>
+                    </li>
+                <% end %>
+            <% end %>
+        <% end %>
+    <% end %>
+<% end %>

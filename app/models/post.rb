@@ -15,4 +15,12 @@ class Post < ActiveRecord::Base
   has_many :deleteposts
   attr_accessible :post_id, :user_id
 
+  has_many :likes, :include => :profile
+
+  has_many :profiles, :through => :likes
+
+  has_many :liked_by, :through => :likes, :class_name => 'Profile'
+
+  attr_accessible :post_id, :profile_id
+
 end

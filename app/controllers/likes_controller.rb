@@ -1,5 +1,5 @@
-class CommentsController < ApplicationController
-  #before_action :set_comment, only: [:show, :edit, :update, :destroy]
+class LikesController < ApplicationController
+
 
   before_filter :load_article
   # GET /comments
@@ -19,8 +19,7 @@ class CommentsController < ApplicationController
 
     @postsall = Post.all
     # @comment = @post.comments.build(params[:comment])
-    @comment = @post.comments.create(params[:comment])
-    PrivatePub.publish_to("/profiles/1", comment: @comment)
+    @like = @post.likes.create(params[:like])
     #if @comment.save
     #  redirect_to(:controller => "/splash_screen", :action => "index")
     #else
@@ -44,6 +43,7 @@ class CommentsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def comment_params
-    params.require(:comment).permit(:cmtpost, :user_id, :comment_visibility, :post_id, :profile_id)
+    params.require(:like).permit(:profile_id, :post_id)
   end
+
 end

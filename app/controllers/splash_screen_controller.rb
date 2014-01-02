@@ -27,6 +27,7 @@ class SplashScreenController < ApplicationController
       #@postnew.build_post_pic
       @postnew.post_pics.build
       @comment = @postnew.comments.build
+      @like = @postnew.likes.build
       @profilepic = ProfilePic.all
 
       @Postvisibility = Post.all
