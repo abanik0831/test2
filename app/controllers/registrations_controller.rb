@@ -44,7 +44,9 @@ class RegistrationsController < Devise::RegistrationsController
         @profile_pic = ProfilePic.new
         @profile.save
         @profile_pic.profile_id = @profile.id
-
+        @profilepicidsave = Profile.find(@profile.id)
+        @profilepicidsave.profilepicid = @profile.id
+        @profilepicidsave.save
         @profile_pic.save
         set_flash_message :notice, :signed_up if is_navigational_format?
         sign_up(resource_name, resource)
