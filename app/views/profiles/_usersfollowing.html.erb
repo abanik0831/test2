@@ -5,7 +5,6 @@
               <div class="profilefloat profilefollow_form<%= user.id %>" >
                 <p class="nameuser">
                   <%= user.f_name %>
-                  <%= user.l_name %>
                 </p>
                 <%= link_to image_tag(pic.image_url(:thumb).to_s, :class => 'dashpost_profilepiclist'), profile_path(id: user.id)  %>
                 <% if current_user.following?(user) %>
