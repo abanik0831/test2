@@ -21,10 +21,7 @@ $(document).ready(function() {
 		iDeviceNotOS4 = (navigator.userAgent.match(/iphone|ipod|ipad/i) && !navigator.userAgent.match(/OS 5/i)) || false,
 		badIE = $('html').prop('class').match(/ie(6|7|8)/)|| false;
 		
-	//if Cufon replace headings
-	if(typeof Cufon == 'function'){
-		Cufon.replace('h1, h2, h3, h4, h5, h6');
-	}
+
 	//handle external links (new window)
 	$('a[href^=http]').bind('click',function(){
 		window.open($(this).attr('href'));
