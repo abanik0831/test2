@@ -3,7 +3,7 @@
 <head>
   <title>StartupSocial - Connect, Collaborate, Create <%= yield(:title) || "Welcome" %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
+  <%= javascript_include_tag "application", "http://localhost:9292/faye.js"  %>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <%= csrf_meta_tags %>
