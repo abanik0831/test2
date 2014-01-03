@@ -78,7 +78,7 @@
       <file leaf-file-name="private_pub.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="83" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
+            <state line="7" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.15328467" vertical-offset="0" max-vertical-offset="685">
               <folding />
             </state>
           </provider>
@@ -892,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="83" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
+        <state line="7" column="34" selection-start="193" selection-end="193" vertical-scroll-proportion="0.15328467" vertical-offset="0" max-vertical-offset="685">
           <folding />
         </state>
       </provider>
