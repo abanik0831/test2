@@ -24,7 +24,6 @@ gem 'protected_attributes'
 gem 'linkedin'
 gem 'omniauth'
 gem 'omniauth-linkedin'
-gem 'foreman'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem "therubyracer"
