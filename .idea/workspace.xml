@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/private_pub.yml" afterPath="$PROJECT_DIR$/config/private_pub.yml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,19 +66,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.3941606" vertical-offset="120" max-vertical-offset="1215">
+            <state line="26" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="private_pub.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="private_pub.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+            <state line="8" column="83" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
               <folding />
             </state>
           </provider>
@@ -187,8 +187,8 @@
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/comments.js" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/private_pub.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/private_pub.yml" />
       </list>
     </option>
   </component>
@@ -869,20 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private_pub.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685">
@@ -892,7 +878,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.3941606" vertical-offset="120" max-vertical-offset="1215">
+        <state line="26" column="0" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private_pub.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="83" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
           <folding />
         </state>
       </provider>
