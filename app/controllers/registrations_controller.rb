@@ -48,6 +48,18 @@ class RegistrationsController < Devise::RegistrationsController
         @profilepicidsave.profilepicid = @profile.id
         @profilepicidsave.save
         @profile_pic.save
+        @newrelationbobby = Relationship.new
+        @newrelationsheryl = Relationship.new
+        @newrelationbobby.followed_id = 2
+        @newrelationbobby.follower_id = @profile.id
+
+        @newrelationsheryl.followed_id = 3
+        @newrelationsheryl.follower_id = @profile.id
+
+        @newrelationbobby.save
+        @newrelationsheryl.save
+
+
         set_flash_message :notice, :signed_up if is_navigational_format?
         sign_up(resource_name, resource)
         respond_with resource, :location => after_sign_up_path_for(resource)
