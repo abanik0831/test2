@@ -76,7 +76,7 @@
   </div>
 
   <div id="updatefollowfollowingcount">
-   <p class="personalprofileinfoupdatescount updates"> <%= Post.where(:profile_id => @profiles.id).count  %> </p>
+   <p class="personalprofileinfoupdatescount updates"> <%= Post.where(:profile_id => @profiles.id).where(:visibility => true).count  %> </p>
     <p class="textprofileupdate updates">Updates</p>
    <p class="personalprofileinfoupdatescount followed"> <%= @usersfollowing.count %> </p>
     <p class="textprofileupdate following">Following</p>
