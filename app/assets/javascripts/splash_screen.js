@@ -63,10 +63,31 @@ $(document).ready(function(){
        // return CommentPoller.poll();
     //}
 
-    $(".fui-cross").on("click", function(e){
-        console.log("h1");
+    $(document).on("click", ".commentdlt", function(e){
         e.preventDefault();
-        var r=confirm("Are you sure you want to delete this comment ?");
+
+        alert("Thanks for your patience, delete comment is yet to be implemented! :)");
+
+//        var post_id_dlt = $(this).siblings(".profile_id_comment").val();
+//        var user_id_dlt = $(".user_id_comment").val();
+
+//        console.log(post_id_dlt + " " + user_id_dlt);
+
+//        if()
+//        var r=confirm("Are you sure you want to delete this comment ?");
+//        if (r == true) {
+//            var cmt_id_dlt = 1;
+//            var that = $(this);
+//            $.ajax({
+//               type: "POST",
+//                url: "/comments"+cmt_id_dlt
+//            });
+//        }
+    });
+
+    $(document).on("click", ".deletepost", function(e){
+        e.preventDefault();
+        var r=confirm("Are you sure you want to delete this post ?");
         if (r == true) {
         var that = $(this);
             var profile_id = that.siblings(".profileid").attr('data-url');
