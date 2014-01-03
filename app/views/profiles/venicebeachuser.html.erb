@@ -3,7 +3,7 @@
   <%= image_tag("venice.png", :class => "imgareaclass") %>
 </div>
 <div id="usersfollowlist">
-  <% Profile.all.each  do |user| %>
+  <% Profile.all.order("profiles.f_name DESC").each  do |user| %>
       <% if user.area == "Venice Beach"%>
           <% ProfilePic.all.each do |pic| %>
               <% if pic.id == user.profilepicid %>

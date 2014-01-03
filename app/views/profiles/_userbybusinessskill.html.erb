@@ -1,5 +1,5 @@
 <div id="usersfollowlist">
-  <% Profile.all.each  do |user| %>
+  <% Profile.all.order("profiles.f_name DESC").each  do |user| %>
       <% if user.skills == "Business"%>
           <% ProfilePic.all.each do |pic| %>
               <% if pic.id == user.profilepicid %>

@@ -1,5 +1,5 @@
 <div class="usersfollowlist profilepagelist">
-  <% @usersfollowing.each  do |user| %>
+  <% @usersfollowing.order("profiles.f_name DESC").each  do |user| %>
       <% ProfilePic.all.each do |pic| %>
           <% if pic.id == user.profilepicid %>
               <div class="profilefloat profilefollow_form<%= user.id %>" >
