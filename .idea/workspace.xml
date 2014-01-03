@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/faye.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/private_pub.yml" afterPath="$PROJECT_DIR$/config/private_pub.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,7 +69,7 @@
       <file leaf-file-name="private_pub.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
+            <state line="8" column="81" selection-start="295" selection-end="295" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
               <folding />
             </state>
           </provider>
@@ -879,7 +877,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/private_pub.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="238" selection-end="238" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
+        <state line="8" column="81" selection-start="295" selection-end="295" vertical-scroll-proportion="0.17518248" vertical-offset="0" max-vertical-offset="685">
           <folding />
         </state>
       </provider>

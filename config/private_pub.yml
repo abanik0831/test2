@@ -6,5 +6,5 @@ test:
   secret_token: "secret"
 production:
   server: "http://startupsocialmvp.herokuapp.com/faye"
-  secret_token: "batkaro"
+  secret_token: "07d2139c27876a8930458421a37a2c4990dc18b02bd5c8c1d86bd57f3fb23b71"
   signature_expiration: 86400 # one day
