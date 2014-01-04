@@ -115,21 +115,21 @@
 
 #imagesliderintro {
   position: relative;
-  margin-bottom: 460px;
+  margin-bottom: 390px;
   .scrollerimg {
       position: absolute;
       top: -44px;
-      left: 31%;
+      left: 442px;
   }
   .arrowsalignright {
     position: relative;
     top: 105px;
-    left: 25%;
+    left: 19%;
   }
   .arrowsalignleft {
     position: relative;
     top: 105px;
-    left: -25%;
+    left: -19%;
   }
 }
 
@@ -170,6 +170,21 @@
     left: 72%;
     top: -162px;
     float: left;
+  }
+
+  #imagesliderintro {
+    position: relative;
+    margin-bottom: 90px;
+    .scrollerimg {
+      position: absolute;
+      top: -40px;
+      left: 72px;
+      width: 61%;
+    }
+    .arrowsalignright, .arrowsalignleft {
+      top: 0;
+    }
+
   }
 
   #imagesheader {
