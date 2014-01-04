@@ -31,37 +31,7 @@
     <favorites_list name="StartupSocial" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="28" selection-start="10453" selection-end="10464" vertical-scroll-proportion="0.0" vertical-offset="2914" max-vertical-offset="3915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splash_screen.css.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="19" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.60638297" vertical-offset="2241" max-vertical-offset="12375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splash_screen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="54" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="4965">
-              <folding>
-                <marker date="1388826907000" expanded="true" signature="2278:3504" placeholder="//..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -128,8 +98,8 @@
         <option value="$PROJECT_DIR$/app/views/profiles/santamonicausers.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/venicebeachuser.html.erb" />
         <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/splash_screen.js" />
       </list>
     </option>
   </component>
@@ -464,7 +434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -479,12 +449,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.4992908" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.054018445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -503,9 +473,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28612304" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -765,25 +735,26 @@
         <state line="5" column="47" selection-start="210" selection-end="210" vertical-scroll-proportion="0.111773476" vertical-offset="0" max-vertical-offset="671" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="28" selection-start="10453" selection-end="10464" vertical-scroll-proportion="0.0" vertical-offset="2914" max-vertical-offset="3915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/splash_screen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="54" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="4965">
+        <state line="116" column="88" selection-start="3203" selection-end="3203" vertical-scroll-proportion="0.7881356" vertical-offset="807" max-vertical-offset="4965">
           <folding>
-            <marker date="1388826907000" expanded="true" signature="2278:3504" placeholder="//..." />
+            <marker date="1388828326000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1388828326000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="19" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.60638297" vertical-offset="2241" max-vertical-offset="12375">
+        <state line="176" column="21" selection-start="2745" selection-end="2745" vertical-scroll-proportion="0.58358663" vertical-offset="2256" max-vertical-offset="12375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="28" selection-start="10453" selection-end="10464" vertical-scroll-proportion="0.43274853" vertical-offset="2914" max-vertical-offset="3915">
           <folding />
         </state>
       </provider>

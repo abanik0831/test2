@@ -37,7 +37,7 @@
 
 .angelmargin {
   position: relative;
-  top: 53px;
+  top: 32px;
 }
 
 .requestbutton {
@@ -119,7 +119,7 @@
   .scrollerimg {
       position: absolute;
       top: -44px;
-      left: 442px;
+      left: 30.5%;
   }
   .arrowsalignright {
     position: relative;
@@ -174,15 +174,15 @@
 
   #imagesliderintro {
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 180px;
     .scrollerimg {
       position: absolute;
       top: -40px;
-      left: 72px;
+      left: 20%;
       width: 61%;
     }
     .arrowsalignright, .arrowsalignleft {
-      top: 0;
+      display: none;
     }
 
   }
