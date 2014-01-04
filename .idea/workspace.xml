@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +51,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="73" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.80932206" vertical-offset="582" max-vertical-offset="1335">
+            <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.80932206" vertical-offset="582" max-vertical-offset="1335">
               <folding />
             </state>
           </provider>
@@ -755,7 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="73" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.80932206" vertical-offset="582" max-vertical-offset="1335">
+        <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.80932206" vertical-offset="582" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
