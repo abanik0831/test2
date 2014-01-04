@@ -113,6 +113,30 @@
   left: 2%;
 }
 
+#imagesliderintro {
+  position: relative;
+  margin-bottom: 460px;
+  .scrollerimg {
+      position: absolute;
+      top: -44px;
+      left: 31%;
+  }
+  .arrowsalignright {
+    position: relative;
+    top: 105px;
+    left: 25%;
+  }
+  .arrowsalignleft {
+    position: relative;
+    top: 105px;
+    left: -25%;
+  }
+}
+
+#selectchild img:not(:first-child) {
+  display: none;
+}
+
 .dashboard-post_containter{
   position: relative;
   top: 45px;

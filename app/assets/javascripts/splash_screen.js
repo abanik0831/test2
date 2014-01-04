@@ -85,6 +85,45 @@ $(document).ready(function(){
 //        }
     });
 
+    var countertrack = 1;
+
+    var update = function(){
+        if(countertrack== 5 ){
+            countertrack = 0;
+        }
+        countertrack++;
+        $("#selectchild img:not(:nth-child("+countertrack+"))").css("display", "none");
+        $("#selectchild img:nth-child("+countertrack+")").fadeIn(400).css("display", "block");
+    }
+
+    var int = setInterval(update, 5000);
+
+    $(document).on("click", ".arrowsalignright", function(e){
+
+        if(countertrack== 5 ){
+            countertrack = 0;
+        }
+        countertrack++;
+        $("#selectchild img:not(:nth-child("+countertrack+"))").css("display", "none")
+        $("#selectchild img:nth-child("+countertrack+")").fadeIn(400).css("display", "block");
+        clearInterval(int);
+        int = setInterval(update, 6000);
+    });
+
+    $(document).on("click", ".arrowsalignleft", function(e){
+
+        countertrack--;
+        console.log(countertrack);
+        if(countertrack== 0 ){
+            countertrack = 5;
+        }
+        $("#selectchild img:not(:nth-child("+countertrack+"))").css("display", "none");
+        $("#selectchild img:nth-child("+countertrack+")").fadeIn(400).css("display", "block");
+        clearInterval(int);
+        int = setInterval(update, 6000);
+
+    });
+
     $(document).on("click", ".deletepost", function(e){
         e.preventDefault();
         var r=confirm("Are you sure you want to delete this post ?");
