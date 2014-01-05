@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="icon.jpg" type="image/type here" />
   <title>StartupSocial - Connect, Collaborate, Create <%= yield(:title) || "Welcome" %></title>
+  <%= favicon_link_tag 'favicon.png' %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true  %>
 
