@@ -48,13 +48,6 @@
         </div>
       </div>
 
-
-      <div class="field">
-        <div class="content_field">
-          <%= f.select :area, options_for_select(["Santa Monica", "Venice Beach", "Culver City", "Beverly Hills", "Hollywood", "Downtown", "Pasadena", "Burbank", "San Fernando Valley", "Visitor"], :selected => @prof.area) %>
-        </div>
-      </div>
-
       <div class="field">
         <%= image_tag("angel-list.png", :alt => "Show Group", :class => "picture_field") %><br>
         <%= f.text_field :angellist_url, :class => "content_field", :placeholder => "https://" %>

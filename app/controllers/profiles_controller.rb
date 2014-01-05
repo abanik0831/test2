@@ -51,43 +51,43 @@ class ProfilesController < ApplicationController
 
     @profiles = Profile.find(params[:id])
 
-    @areafind = @profiles.area
-
-    if @areafind == "Downtown"
-      @areafindanswer = downtown_profile_path(@profiles)
-    end
-
-    if @areafind == "Santa Monica"
-      @areafindanswer = santamonicausers_profile_path(@profiles)
-    end
-
-    if @areafind == "Venice Beach"
-      @areafindanswer = venicebeachuser_profile_path(@profiles)
-    end
-
-    if @areafind == "Culver City"
-      @areafindanswer = culvercityusers_profile_path(@profiles)
-    end
-
-    if @areafind == "San Fernando Valley"
-      @areafindanswer = sanfernandovalleyusers_profile_path(@profiles)
-    end
-
-    if @areafind == "Burbank"
-      @areafindanswer = burbank_profile_path(@profiles)
-    end
-
-    if @areafind == "Beverly Hills"
-      @areafindanswer = beverlyhillsuser_profile_path(@profiles)
-    end
-
-    if @areafind == "Hollywood"
-      @areafindanswer = hollywoodusers_profile_path(@profiles)
-    end
-
-    if @areafind == "Pasadena"
-      @areafindanswer = pasadenausers_profile_path(@profiles)
-    end
+    #@areafind = @profiles.area
+    #
+    #if @areafind == "Downtown"
+    #  @areafindanswer = downtown_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Santa Monica"
+    #  @areafindanswer = santamonicausers_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Venice Beach"
+    #  @areafindanswer = venicebeachuser_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Culver City"
+    #  @areafindanswer = culvercityusers_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "San Fernando Valley"
+    #  @areafindanswer = sanfernandovalleyusers_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Burbank"
+    #  @areafindanswer = burbank_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Beverly Hills"
+    #  @areafindanswer = beverlyhillsuser_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Hollywood"
+    #  @areafindanswer = hollywoodusers_profile_path(@profiles)
+    #end
+    #
+    #if @areafind == "Pasadena"
+    #  @areafindanswer = pasadenausers_profile_path(@profiles)
+    #end
 
     #@relationships = @crntuser.relationships.build(followed_id: @profiles.id)
   end
