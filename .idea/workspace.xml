@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2271ab10-664c-40a6-a0d4-e94a1351eab8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/header.png" afterPath="$PROJECT_DIR$/app/assets/images/header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StartupSocial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,25 +34,7 @@
       <file leaf-file-name="reset_password_instructions.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="118" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="203" column="12" selection-start="10009" selection-end="10009" vertical-scroll-proportion="0.0" vertical-offset="2633" max-vertical-offset="3870">
+            <state line="8" column="118" selection-start="396" selection-end="396" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -69,7 +52,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-14.7" vertical-offset="0" max-vertical-offset="1230">
+            <state line="49" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -97,7 +80,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="72" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.9517685" vertical-offset="683" max-vertical-offset="2835">
+            <state line="49" column="39" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.8396369" vertical-offset="180" max-vertical-offset="2985">
               <folding />
             </state>
           </provider>
@@ -194,10 +177,10 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/splash_screen/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
       </list>
     </option>
@@ -233,7 +216,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,6 +263,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartupSocial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="splash_screen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,6 +468,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -627,15 +632,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="802" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.4992908" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29470673" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05007153" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05298913" sideWeight="0.50070924" order="9" side_tool="true" content_ui="tabs" />
@@ -643,11 +647,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.4992908" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.054018445" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -666,9 +671,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28612304" sideWeight="0.7451299" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -688,6 +693,79 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="25" selection-start="11441" selection-end="11502" vertical-scroll-proportion="0.0" vertical-offset="3222" max-vertical-offset="3870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="6960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="45" selection-start="2151" selection-end="2151" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="4545">
+          <folding>
+            <marker date="1388894192000" expanded="true" signature="1434:1527" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="1539:1644" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="1656:1760" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="1772:1875" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="1887:2005" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="2017:2108" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="2120:2226" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="2238:2338" placeholder="if ... end" />
+            <marker date="1388894192000" expanded="true" signature="2350:2448" placeholder="if ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="72" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.0" vertical-offset="2213" max-vertical-offset="2835">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/splash_screen.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="17" selection-start="2758" selection-end="2758" vertical-scroll-proportion="0.0" vertical-offset="2564" max-vertical-offset="12405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1335" />
@@ -845,23 +923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="110" selection-start="153" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="118" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
-          <folding />
-        </state>
+        <state line="2" column="110" selection-start="153" selection-end="157" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
@@ -885,13 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="203" column="12" selection-start="10009" selection-end="10009" vertical-scroll-proportion="0.0" vertical-offset="2633" max-vertical-offset="3870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="6960">
@@ -901,7 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="-14.7" vertical-offset="0" max-vertical-offset="1230">
+        <state line="49" column="0" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
@@ -923,9 +978,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/splash_screen/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="25" selection-start="11441" selection-end="11502" vertical-scroll-proportion="4.266263" vertical-offset="825" max-vertical-offset="3870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="83" selection-start="3205" selection-end="3205" vertical-scroll-proportion="0.73722625" vertical-offset="650" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="118" selection-start="396" selection-end="396" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="72" selection-start="3524" selection-end="3524" vertical-scroll-proportion="0.9517685" vertical-offset="683" max-vertical-offset="2835">
+        <state line="49" column="39" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.8396369" vertical-offset="180" max-vertical-offset="2985">
           <folding />
         </state>
       </provider>
