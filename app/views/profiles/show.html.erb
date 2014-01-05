@@ -37,29 +37,39 @@
 
    <% if @profiles.id != current_user.id %>
       <div class="social_links">
-        <% if !@profiles.angellist_url.nil? %>
+        <% if !@profiles.angellist_url.nil? && !@profiles.angellist_url.empty? && !@profiles.angellist_url.blank? %>
             <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
         <% end %>
-        <% if !@profiles.fb_url.nil? %>
-            <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
+        <% if !@profiles.fb_url.nil? && !@profiles.fb_url.empty? && !@profiles.fb_url.blank? %>
+        <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
         <% end %>
-        <% if !@profiles.linkedin_url.nil? %>
-            <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
+        <% if !@profiles.linkedin_url.nil? && !@profiles.linkedin_url.empty? && !@profiles.linkedin_url.blank? %>
+        <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
         <% end %>
-        <% if !@profiles.meetup_url.nil? %>
-            <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
+        <% if !@profiles.meetup_url.nil? && !@profiles.meetup_url.empty? && !@profiles.meetup_url.blank? %>
+        <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
         <% end %>
-        <% if !@profiles.twitter_url.nil? %>
-            <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
+        <% if !@profiles.twitter_url.nil? && !@profiles.twitter_url.empty? && !@profiles.twitter_url.blank? %>
+        <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
         <% end %>
       </div>
    <% else %>
   <div class="social_links crntuser">
-    <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
-    <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
-    <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
-    <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
-    <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% if !@profiles.angellist_url.nil? && !@profiles.angellist_url.empty? && !@profiles.angellist_url.blank? %>
+        <%= link_to image_tag("angel-list.png"), @profiles.angellist_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% end %>
+    <% if !@profiles.fb_url.nil? && !@profiles.fb_url.empty? && !@profiles.fb_url.blank? %>
+        <%= link_to image_tag("facebook.png"), @profiles.fb_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% end %>
+    <% if !@profiles.linkedin_url.nil? && !@profiles.linkedin_url.empty? && !@profiles.linkedin_url.blank? %>
+        <%= link_to image_tag("linkedin.png"), @profiles.linkedin_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% end %>
+    <% if !@profiles.meetup_url.nil? && !@profiles.meetup_url.empty? && !@profiles.meetup_url.blank? %>
+        <%= link_to image_tag("meetup.png"), @profiles.meetup_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% end %>
+    <% if !@profiles.twitter_url.nil? && !@profiles.twitter_url.empty? && !@profiles.twitter_url.blank? %>
+        <%= link_to image_tag("twitter.png"), @profiles.twitter_url, :class => "social_link_spacing", :target => "_blank" %>
+    <% end %>
   </div>
       <% end %>
 
