@@ -68,6 +68,10 @@ class SplashScreenController < ApplicationController
   #
   #end
 
+  def vote
+    value = params[:type] == "up" ? 1 : -1
+  end
+
   def create
     @post_pic = PostPic.create(params[:post_pic])
   end

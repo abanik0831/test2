@@ -24,6 +24,8 @@ gem 'protected_attributes'
 gem 'linkedin'
 gem 'omniauth'
 gem 'omniauth-linkedin'
+gem 'activerecord-reputation-system', require: 'reputation_system'
+gem 'public_activity'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem "therubyracer"

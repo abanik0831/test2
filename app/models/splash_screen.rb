@@ -1,4 +1,8 @@
 class Splash_screen < ActiveRecord::Base
+
+  include PublicActivity::Model
+  tracked owner: ->(controller, model) {controller && controller.current_user}
+
   has_many :requests
   has_many :posts
   has_many :comments
@@ -12,5 +16,7 @@ class Splash_screen < ActiveRecord::Base
   accepts_nested_attributes_for :post_pic
   attr_accessible :post_pic_attributes
   attr_accessible :user_id, :comment_visibility, :post_id, :cmtpost, :profile_id
+
+  has_reputation :votes, source: :user, aggregated_by: :sum
 
 end

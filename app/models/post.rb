@@ -1,4 +1,8 @@
 class Post < ActiveRecord::Base
+
+  include PublicActivity::Model
+  tracked owner: ->(controller, model) {controller && controller.current_user}
+
   belongs_to :profiles
   belongs_to :splash_screen
   has_many :post_pics

@@ -2,6 +2,7 @@ StartupSocial::Application.routes.draw do
 
 
   resources :likes
+  resources :activities
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -26,6 +27,11 @@ StartupSocial::Application.routes.draw do
   end
 
   # post '/posts/143'
+
+  resource :splash_screen do
+    member {post :vote}
+  end
+
 
   get "flatuipro_demo/index"
   resources :profile_pics
