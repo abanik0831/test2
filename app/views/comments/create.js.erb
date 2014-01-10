@@ -1,1 +1,3 @@
+<% publish_to "/profiles/1" do %>
 $("#"+ <%= @post.id %>).html("<%=j render @post.comments %>");
+<% end %>
