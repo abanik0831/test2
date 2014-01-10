@@ -1,2 +1,6 @@
-<%= likepost.submit image_tag(facebook.png), :value => "LIKE", :class => "comment_splash btn btn-large btn-primary" %>
+<%= form_for(current_user.likes.build(:post_id => @post.id), remote: true) do |f| %>
+        <%= f.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
+        <%= f.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
+        <%= f.submit "", :class => "likes_splash" %>
 
+<% end %>

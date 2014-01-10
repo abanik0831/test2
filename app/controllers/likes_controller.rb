@@ -19,7 +19,7 @@ class LikesController < ApplicationController
 
     @postsall = Post.all
     # @comment = @post.comments.build(params[:comment])
-    @like = @post.likes.create(params[:like])
+    #@like = @post.likes.create(params[:like])
     #if @comment.save
     #  redirect_to(:controller => "/splash_screen", :action => "index")
     #else
@@ -37,13 +37,13 @@ class LikesController < ApplicationController
 
   def load_article
     @postsall = Post.all
-    @post = Post.find(params[:post_id])
+    #@post = Post.find(params[:post_id])
 
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def comment_params
-    params.require(:like).permit(:profile_id, :post_id)
+    params.require(:like).permit(:user_id, :post_id)
   end
 
 end

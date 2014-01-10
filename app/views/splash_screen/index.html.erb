@@ -104,7 +104,7 @@
                           <li class="form_post">
                             <%= form_for [f, @like], remote: true do |likepost| %>
                                 <%= likepost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
-                                <%= likepost.hidden_field :profile_id, :value => current_user.id, :class => "profile_id_comment" %>
+                                <%= likepost.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
                                 <%= likepost.submit "", :class => "likes_splash" %>
 
                             <% end %>
