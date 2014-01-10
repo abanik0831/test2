@@ -96,6 +96,21 @@
                             <!--Post.where("posts.id" => ff.id).first-->
                           </li>
 
+                          <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_likes_url(f.id)} do %>
+                              <%= render f.likes %>
+                          <% end %>
+
+
+                          <li class="form_post">
+                            <%= form_for [f, @like], remote: true do |likepost| %>
+                                <%= likepost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
+                                <%= likepost.hidden_field :profile_id, :value => current_user.id, :class => "profile_id_comment" %>
+                                <%= likepost.submit "", :class => "likes_splash" %>
+
+                            <% end %>
+                          </li>
+
+
                           <li class="cross">
                             <% @Postvisibility.each do |ff| %>
                                 <% if f.id == ff.id %>
