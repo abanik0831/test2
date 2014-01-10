@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
     @postsall = Post.all
     # @comment = @post.comments.build(params[:comment])
     @comment = @post.comments.create(params[:comment])
-    PrivatePub.publish_to("/profiles/1", comment: @comment)
+    #PrivatePub.publish_to("/profiles/1", comment: @comment)
     #if @comment.save
     #  redirect_to(:controller => "/splash_screen", :action => "index")
     #else

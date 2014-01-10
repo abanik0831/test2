@@ -15,5 +15,5 @@
 //
 
 PrivatePub.subscribe("/profiles/1", function(data, channel) {
-    alert(data.comment.cmtpost);
+//    alert(data.comment.cmtpost);
 });
