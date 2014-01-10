@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
     #if @comment.save
     #  redirect_to(:controller => "/splash_screen", :action => "index")
     #else
-    #  render :new
+    #  render :newa
     #end
 
     respond_to do |format|
