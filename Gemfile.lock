@@ -293,6 +293,8 @@ GEM
     simple_form (3.0.1)
       actionpack (>= 4.0.0, < 4.1)
       activemodel (>= 4.0.0, < 4.1)
+    simple_hashtag (0.1.9)
+      rails (> 3.2.0)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -380,6 +382,7 @@ DEPENDENCIES
   sdoc
   sidekiq
   simple_form
+  simple_hashtag
   sqlite3
   therubyracer
   thin

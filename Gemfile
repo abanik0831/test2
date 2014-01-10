@@ -26,6 +26,7 @@ gem 'omniauth'
 gem 'omniauth-linkedin'
 gem 'activerecord-reputation-system', require: 'reputation_system'
 gem 'public_activity'
+gem 'simple_hashtag'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem "therubyracer"

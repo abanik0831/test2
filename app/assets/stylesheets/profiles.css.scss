@@ -307,10 +307,10 @@
   display: inline-block;
   position: relative;
   &.updates {
-    left: -17%;
+    left: -12%;
   }
   &.followers {
-    left: 19%;
+    left: 10%;
   }
 }
 
@@ -368,19 +368,19 @@
 
   &.updates {
     position: relative;
-    left: -3%;
+    left: 2%;
     top: 25px;
   }
 
   &.followers {
     position: relative;
-    left: 85px;
+    left: 74px;
     top: 25px;
   }
 
   &.followed {
     position: relative;
-    left: 18%;
+    left: 17%;
     top: 25px;
   }
 
