@@ -1,18 +1,42 @@
-<h1>My Activities</h1>
+<br/><br/>
+
+
+<h3>Activities</h3>
+
+
+<%# @activities.each do |activity| %>
+
+   <%#if activity.trackable_type == "Relationship" && activity.trackable.followed_id == current_user.id %>
+    <!-- <%#= Profile.where("profiles.id" => activity.trackable.follower_id)[0].f_name %>  is now following You -->
+   <%# end %>
+
+    <%#if activity.trackable_type == "Relationship" && activity.trackable.follower_id == current_user.id %>
+        <!-- You are now following <%#=  Profile.where("profiles.id" => activity.trackable.followed_id)[0].f_name %> -->
+    <%# end %>
+
+    <%#if activity.trackable_type == "Comment" %>
+
+     <%#= link_to Profile.where("profiles.id" => activity.owner.id)[0].f_name if activity.owner %>
+        <!-- added a comment to your Post -->
+    <%# end %>
+
+<%# end %>
+
+
+
+
 <% @activities.each do |activity| %>
+  <div class="activity">
+  <% if activity.created_at.to_date == Date.today %>
 
-   <%if activity.trackable_type == "Relationship" && activity.trackable.followed_id == current_user.id %>
-    <%= Profile.where("profiles.id" => activity.trackable.follower_id)[0].f_name %>  is now following You
-   <% end %>
+    <%= render_activity(activity) %>
+  <% elsif activity.created_at.to_date == (Time.now - 3.days).to_date %>
 
-    <%if activity.trackable_type == "Relationship" && activity.trackable.follower_id == current_user.id %>
-        You are now following <%=  Profile.where("profiles.id" => activity.trackable.followed_id)[0].f_name %>
-    <% end %>
-
-    <%if activity.trackable_type == "Comment" %>
-
-     <%= link_to Profile.where("profiles.id" => activity.owner.id)[0].f_name if activity.owner %>
-        added a comment to your Post
-    <% end %>
-
+    <%= render_activity(activity) %>
+  <% end %>
+  </div>
 <% end %>
+
+
+
+

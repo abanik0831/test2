@@ -1,0 +1,41 @@
+
+
+<% unless activity.blank? %>
+	<%# binding.pry %>
+	<% if activity.created_at.to_date == Date.today %> 
+		<% if activity.trackable.try(:followed_id)  == current_user.id %>
+			<p class='well'>
+				<%= Profile.where("profiles.id" => activity.trackable.follower_id)[0].try(:f_name) %>
+						is now following
+				<%= link_to "You", current_user %> &nbsp;&nbsp;&nbsp; &nbsp;
+				<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
+			</p>
+		<% end %>
+
+
+		<% if activity.trackable.try(:follower_id) == current_user.id %>
+			<p class="well">
+				<%= link_to "You are" , current_user %> now following 
+				<%= link_to Profile.find_by_id(activity.trackable.followed_id).try(:f_name) , Profile.find_by_id(activity.trackable.followed_id)  %> &nbsp;&nbsp;&nbsp; &nbsp;
+				<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
+			</p>
+		<% end %>  
+	<% end %>
+
+	<% if activity.created_at.to_date == Time.now - 2.days  %>
+       cva
+	<% end %>
+
+<% end %>
+
+
+
+
+
+  <%#if activity.trackable_type == "Relationship" && activity.trackable.followed_id == current_user.id %>
+    <!-- <%#= Profile.where("profiles.id" => activity.trackable.follower_id)[0].f_name %>  is now following You -->
+   <%# end %>
+
+    <%#if activity.trackable_type == "Relationship" && activity.trackable.follower_id == current_user.id %>
+        <!-- You are now following <%#=  Profile.where("profiles.id" => activity.trackable.followed_id)[0].f_name %> -->
+   <%# end %>

@@ -100,16 +100,31 @@
                               <%= render f.likes %>
                           <% end %>
 
+                          <%= content_tag :div , id: "post_likes_form_" + f.id.to_s do %>
+	                          <% if like = f.likes.find_by_user_id(current_user.id) %>
+	  							<%#= form_for like, :html => { :method => :delete },:remote => true do |f| %>
+	    						<%#= f.submit "Unlike" %>
+	    						<%= link_to 'Unlike', [f, like], :method => :delete , :remote => true %> 
+	  							<%# end %>
+							  <% else %>
+								 <%= form_for [f, @like], remote: true do |likepost| %>
+	                                <%= likepost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
+	                                <%= likepost.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
+	                                <%= likepost.submit "", :class => "likes_splash" %>
+	                            <% end %>
+							  <% end %>
+						  <% end %>
+<!-- 
+
 
                           <li class="form_post">
-                            <%= form_for [f, @like], remote: true do |likepost| %>
-                                <%= likepost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
-                                <%= likepost.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
-                                <%= likepost.submit "", :class => "likes_splash" %>
-
-                            <% end %>
+                            <%#= form_for [f, @like], remote: true do |likepost| %>
+                                <%#= likepost.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
+                                <%#= likepost.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
+                                <%#= likepost.submit "", :class => "likes_splash" %>
+                            <%# end %>
                           </li>
-
+ -->
 
                           <li class="cross">
                             <% @Postvisibility.each do |ff| %>

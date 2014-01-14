@@ -1,0 +1,20 @@
+<p class='well'>
+  <% if activity.created_at.to_date == Date.today %> 
+	<% if current_user == activity.owner %>
+	   	<%= link_to "You are ", current_user %>
+	<% else %>
+	   <%= link_to activity.owner , activity.owner %> 
+	<% end %>
+		unfollowing
+		<%# binding.pry %>
+	<%= link_to Profile.find_by_id(activity.parameters[:followed_id]).try(:f_name) , Profile.find_by_id(activity.parameters[:followed_id]).try(:f_name)  %>
+	 &nbsp;&nbsp;&nbsp; &nbsp;
+	<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
+   <% end %>
+
+   <%# binding.pry %>
+
+   <% if activity.created_at.to_date == (Time.now - 3.days).to_date  %>
+      <span> fasdfasdf asdf asd fasdf asdf asd </span>
+	<% end %>
+</p>

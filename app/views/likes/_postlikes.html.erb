@@ -1,6 +1,17 @@
-<%= form_for(current_user.likes.build(:post_id => @post.id), remote: true) do |f| %>
-        <%= f.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
-        <%= f.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
-        <%= f.submit "", :class => "likes_splash" %>
+<%#= form_for(current_user.likes.build(:post_id => @post.id), remote: true) do |f| %>
+        <%#= f.hidden_field :post_id, :value => f.id, :class => "post_id_comment" %>
+        <%#= f.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>
+        <%#= f.submit "", :class => "likes_splash" %>
 
+<%# end %>
+
+<% if l = post.likes.find_by_user_id(current_user.id) %>
+  <%= link_to 'Unlike', [post, l], :method => :delete , :remote => true %> 
+<% else %>
+	<%= form_for [post, like], remote: true do |likepost| %>
+	  <%= likepost.hidden_field :post_id, :value => post.id, :class => "post_id_comment" %>	                                
+	  <%= likepost.hidden_field :user_id, :value => current_user.id, :class => "profile_id_comment" %>                
+	  <%= likepost.submit "", :class => "likes_splash" %>                           
+	 <% end %>
 <% end %>
+

@@ -1,7 +1,8 @@
 class Relationship < ActiveRecord::Base
 
   include PublicActivity::Model
-  tracked owner: ->(controller, model) {controller && controller.current_user}
+  tracked owner: ->(controller, model) {controller && controller.current_user} ,
+  		  :params => {:followed_id => proc{ |controller, model_instance| model_instance.followed_id } }
 
   belongs_to :follower, class_name: "Profile"
   belongs_to :followed, class_name: "Profile"
@@ -14,3 +15,4 @@ class Relationship < ActiveRecord::Base
   attr_accessible :followed_id, :follower_id
 
 end
+

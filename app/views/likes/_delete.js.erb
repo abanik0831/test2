@@ -1,0 +1,2 @@
+$("#"+ <%= @post.id %>).html("<%=j render @post.likes %>");
+$("#post_likes_form_<%= @post.id %>").html("<%= j(render(:partial => 'postlikes', :locals=>{:post => @post, :like => @like})) %>")
