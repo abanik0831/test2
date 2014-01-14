@@ -1,13 +1,17 @@
 
 
 <% unless activity.blank? %>
-	<%# binding.pry %>
-	<% if activity.created_at.to_date == Date.today %> 
 		<% if activity.trackable.try(:followed_id)  == current_user.id %>
 			<p class='well'>
-				<%= Profile.where("profiles.id" => activity.trackable.follower_id)[0].try(:f_name) %>
+				<% pf = Profile.find_by_id(activity.trackable.follower_id) %> 
+				<span class="capitalize">
+					<%= link_to pf.f_name , pf %>
+				</span>
 						is now following
-				<%= link_to "You", current_user %> &nbsp;&nbsp;&nbsp; &nbsp;
+				<span class="capitalize">
+					<%= link_to "you", current_user %>
+				</span>
+				 &nbsp;&nbsp;&nbsp; &nbsp;
 				<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
 			</p>
 		<% end %>
@@ -15,16 +19,17 @@
 
 		<% if activity.trackable.try(:follower_id) == current_user.id %>
 			<p class="well">
-				<%= link_to "You are" , current_user %> now following 
-				<%= link_to Profile.find_by_id(activity.trackable.followed_id).try(:f_name) , Profile.find_by_id(activity.trackable.followed_id)  %> &nbsp;&nbsp;&nbsp; &nbsp;
+				<span class="capitalize">
+					<%= link_to "You are" , current_user %>
+				</span>
+					 now following 
+				<span class="capitalize">
+					<%= link_to Profile.find_by_id(activity.trackable.followed_id).try(:f_name) , Profile.find_by_id(activity.trackable.followed_id)  %> 
+				</span>
+				&nbsp;&nbsp;&nbsp; &nbsp;
 				<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
 			</p>
 		<% end %>  
-	<% end %>
-
-	<% if activity.created_at.to_date == Time.now - 2.days  %>
-       cva
-	<% end %>
 
 <% end %>
 

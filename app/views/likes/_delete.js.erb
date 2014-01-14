@@ -1,2 +1,2 @@
-$("#"+ <%= @post.id %>).html("<%=j render @post.likes %>");
+$("#like_pf_pic_"+ <%= @post.id.to_s %>).html("<%=j render @post.likes.order('created_at DESC') %>");
 $("#post_likes_form_<%= @post.id %>").html("<%= j(render(:partial => 'postlikes', :locals=>{:post => @post, :like => @like})) %>")

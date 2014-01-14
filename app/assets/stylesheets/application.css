@@ -26,6 +26,9 @@ body.homepage {
     padding: 0;
 }
 
+.capitalize {
+   text-transform: capitalize; 
+}
 .rvmheader {
     display: none !important;
 }

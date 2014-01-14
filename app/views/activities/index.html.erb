@@ -22,20 +22,63 @@
 
 <%# end %>
 
+<div class="row">
+  <div class="container">
+    <div id="today"> 
+      <h4> Today <hr></h4>
+      <% @today_activities.each do |activity| %>
+        <%= render_activity(activity) %>
+      <% end %>
+      <div class="activity_date offset4"> <%=  @today_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+    </div>
 
+    <div id="yesterday">
+      <h4> Yesterday <hr></h4>
+      <% @yesterday_activities.each do |activity| %>
+         <%= render_activity(activity) %>  
+      <% end %>
+      <div class="activity_date offset4"> <%=  @yesterday_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+    </div>
 
+    <div id="2daysago">
+      <h4> 2 Days ago<hr></h4>
+      <% @remaining_activities.each do |activity| %>
+         <%= render_activity(activity) %>
+      <% end %>
+      <div class="activity_date offset4"> <%=  @remaining_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+    </div>
 
-<% @activities.each do |activity| %>
-  <div class="activity">
-  <% if activity.created_at.to_date == Date.today %>
-
-    <%= render_activity(activity) %>
-  <% elsif activity.created_at.to_date == (Time.now - 3.days).to_date %>
-
-    <%= render_activity(activity) %>
-  <% end %>
   </div>
-<% end %>
+</div>
+
+<%# @activities.each do |activity| %>
+    <%# if activity.created_at.to_date == Date.today %>
+      <%# sorted_hash[:today] <<  activity %>
+    <%# elsif activity.created_at.to_date == Date.today - 1.day %> 
+      <%# sorted_hash[:yesterday] <<   activity %>
+    <%# else %>
+      <%# sorted_hash[:remaining] << activity %>
+    <%# end %>
+<%# end %>
+
+   
+<%# binding.pry %>
+<%# @activities.each do |activity| %>
+  <!-- <div class="activity"> -->
+    <%#= render_activity(activity) %>
+  <!-- </div> -->
+<%# end %>
+
+<%# @activities.each do |activity| %>
+  <!-- <div class="activity"> -->
+  <%# if activity.created_at.to_date == Date.today %>
+    <%#= render_activity(activity) %>
+  <%# elsif activity.created_at.to_date == (Time.now - 3.days).to_date %>
+
+    <%#= render_activity(activity) %>
+  <%# end %>
+  <!-- </div> -->
+<%# end %>
 
 
 

@@ -1,0 +1,54 @@
+<br/>
+<div class="row">
+  <div class="container">
+  	  <p class="username_profile_page">
+    	Messages
+  	  </p>
+
+ 
+  	  <%= form_for(@setting, :url => settingsupdate_path(@setting), :html => {:method => :put}) do |f| %>
+	    <%#= devise_error_messages! %>
+
+	  	<div class="span6 well offset2 bg">
+	  	  	<h4 class="head">Emails<hr></h4>
+	  	  	
+	  	  	<p> Email me when I receive new follower  <%= f.check_box :email_for_new_follower %> </p>
+	  	  	<p> Email me when I receive a new like    <%= f.check_box :email_for_new_like %></p>
+	  	  	<p>	Email me when I receive a new comment <%= f.check_box :email_for_new_cmnt %></p>
+
+	  	</div> 
+
+
+	  	<div class="span6 offset1">
+
+		  	<div>
+		    	<%= f.password_field :password, :placeholder => "Password", :class => "signup_password signup" %>
+		        <!-- <span class="signup_user_lock fui-lock"></span> -->
+		    </div>
+
+		    <div>
+		        <%= f.password_field :password_confirmation, :placeholder => "Password Confirmation", :class => "signup_password signup" %>
+		        <!-- <span class="signup_user_lock fui-lock"></span> -->
+		    </div>
+
+		    <div><%= f.submit "ENTER", :class => "signin_btn signup_btn btn btn-small btn-primary btn-embossed mlm" %></div>
+
+	    </div>
+  	  <% end %>
+
+  </div>
+</div>
+
+
+
+
+
+<style>
+ .head {
+ 	margin: 0px auto;
+ 	text-align: center;
+ }
+ .bg {
+ 	background: #fff;
+ }
+</style>

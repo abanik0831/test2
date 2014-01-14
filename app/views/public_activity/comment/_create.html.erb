@@ -1,0 +1,16 @@
+
+<% if activity.trackable %>
+	<p class="well"> 
+		<span class="capitalize">
+			<% if activity.owner == current_user %>
+				<%= link_to "You", current_user %> &nbsp;&nbsp;
+			<% else %>
+				<%= link_to activity.owner.username , activity.owner %> &nbsp;&nbsp;
+			<% end %>
+		</span>
+		comented on the Post &nbsp;&nbsp;
+			<b class="capitalize"><%= Post.find_by_id(activity.trackable.post_id).try(:post) %></b>
+			&nbsp;&nbsp;&nbsp; 
+		<span class="activity_time"><%= time_ago_in_words(activity.created_at) %></span>
+	</p>
+<% end %>

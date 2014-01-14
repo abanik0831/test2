@@ -1,6 +1,10 @@
 StartupSocial::Application.routes.draw do
 
 
+  get "settings" , to: "settings#index"
+
+  put "settingsupdate" => "settings#update"
+
   get "hashtags/:hashtag",   to: "hashtags#show",      as: :hashtag
   get "hashtags",            to: "hashtags#index",     as: :hashtags
   resources :likes

@@ -96,8 +96,8 @@
                             <!--Post.where("posts.id" => ff.id).first-->
                           </li>
 
-                          <%= content_tag :div, class:"commentsheight", id: f.id, data: {url: post_likes_url(f.id)} do %>
-                              <%= render f.likes %>
+                          <%= content_tag :div, class:"commentsheight", id: "like_pf_pic_"+f.id.to_s, data: {url: post_likes_url(f.id)} do %>
+                              <%= render f.likes.order('created_at DESC') %>
                           <% end %>
 
                           <%= content_tag :div , id: "post_likes_form_" + f.id.to_s do %>
