@@ -21,6 +21,7 @@ class LikesController < ApplicationController
 
     respond_to do |format|
       if @like.save 
+        
         format.html { redirect_to(:controller => "/splash_screen", :action => "index") }
         format.js
       else

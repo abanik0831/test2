@@ -1,9 +1,28 @@
 StartupSocial::Application.routes.draw do
 
 
-  get "settings" , to: "settings#index"
+  #get "settings" , to: "settings#index"
 
-  put "settingsupdate" => "settings#update"
+  #put "settingsupdate" => "settings#update"
+
+
+
+  # resource :user, only: [:settings] do
+  #   collection do
+  #     patch 'update_password'
+  #   end
+  # end
+
+
+  get "settings"  => "users#settings"
+
+  resource :user, only: [:settings] do
+    collection do
+      patch 'update_password'
+    end
+  end
+
+
 
   get "hashtags/:hashtag",   to: "hashtags#show",      as: :hashtag
   get "hashtags",            to: "hashtags#index",     as: :hashtags

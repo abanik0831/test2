@@ -14,5 +14,22 @@ class Relationship < ActiveRecord::Base
 
   attr_accessible :followed_id, :follower_id
 
+  after_save :send_notification_mail 
+
+
+
+  def send_notification_mail 
+
+  	#binding.pry
+  	followed_user = User.find(followed_id)
+
+  	if followed_user.email_for_new_follower?  
+  		current_user = User.find(follower_id)
+	  	UserMailer.follower_notification(followed_user, current_user).deliver
+  	end
+
+  end
+
+
 end
 

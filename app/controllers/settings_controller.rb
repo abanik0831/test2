@@ -37,9 +37,14 @@ private
 
 
 	def needs_password?(user, params)
-	    user.email != params[:user][:email] ||
-	    !params[:user][:password].blank?
-	    #HERE
+	    user.email != params[:user][:email] || !params[:user][:password].blank?
+	    
 	end
+
+
+
+	def user_params
+    	params.required(:user).permit(:password, :password_confirmation,:current_password) 
+    end
 
 end

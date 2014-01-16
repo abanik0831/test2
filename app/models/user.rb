@@ -19,7 +19,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :token_authenticatable
 
-  attr_accessible :username, :email, :password, :password_confirmation, :profile_attributes
+
+  attr_accessible :username, :email, :password, :password_confirmation,:email_for_new_like , :email_for_new_follower,:email_for_new_cmnt ,:profile_attributes 
+
+  attr_accessor :current_password
 
   validates :email, :email => true
   validates :username, :presence =>  true, :uniqueness => true

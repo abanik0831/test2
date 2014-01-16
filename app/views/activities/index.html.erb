@@ -3,83 +3,49 @@
 
 <h3>Activities</h3>
 
-
-<%# @activities.each do |activity| %>
-
-   <%#if activity.trackable_type == "Relationship" && activity.trackable.followed_id == current_user.id %>
-    <!-- <%#= Profile.where("profiles.id" => activity.trackable.follower_id)[0].f_name %>  is now following You -->
-   <%# end %>
-
-    <%#if activity.trackable_type == "Relationship" && activity.trackable.follower_id == current_user.id %>
-        <!-- You are now following <%#=  Profile.where("profiles.id" => activity.trackable.followed_id)[0].f_name %> -->
-    <%# end %>
-
-    <%#if activity.trackable_type == "Comment" %>
-
-     <%#= link_to Profile.where("profiles.id" => activity.owner.id)[0].f_name if activity.owner %>
-        <!-- added a comment to your Post -->
-    <%# end %>
-
-<%# end %>
-
 <div class="row">
   <div class="container">
+
+
     <div id="today"> 
       <h4> Today <hr></h4>
-      <% @today_activities.each do |activity| %>
-        <%= render_activity(activity) %>
+      <% unless @today_activities.blank? %>
+        <% @today_activities.each do |activity| %>
+          <%= render_activity(activity) %>
+        <% end %>
+        <div class="activity_date offset4"> <%=  @today_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+      <% else %>
+        <span> There are no activities logged for today </span>
       <% end %>
-      <div class="activity_date offset4"> <%=  @today_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
     </div>
+
 
     <div id="yesterday">
       <h4> Yesterday <hr></h4>
-      <% @yesterday_activities.each do |activity| %>
-         <%= render_activity(activity) %>  
-      <% end %>
+      <% unless @yesterday_activities.blank?  %>
+        <% @yesterday_activities.each do |activity| %>
+           <%= render_activity(activity) %>  
+        <% end %>
       <div class="activity_date offset4"> <%=  @yesterday_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+      <% else %>
+        <span> There are no activities logged for yeseterday </span>
+      <% end %>
     </div>
 
     <div id="2daysago">
       <h4> 2 Days ago<hr></h4>
-      <% @remaining_activities.each do |activity| %>
-         <%= render_activity(activity) %>
-      <% end %>
+      <% unless @remaining_activities.blank? %>
+        <% @remaining_activities.each do |activity| %>
+           <%= render_activity(activity) %>
+        <% end %>
       <div class="activity_date offset4"> <%=  @remaining_activities.try(:first).created_at.strftime("%B %d, %Y") %> </div>
+      <% else %>
+        <span> There are no activities logged for these days </span>
+      <% end %>
     </div>
 
   </div>
 </div>
-
-<%# @activities.each do |activity| %>
-    <%# if activity.created_at.to_date == Date.today %>
-      <%# sorted_hash[:today] <<  activity %>
-    <%# elsif activity.created_at.to_date == Date.today - 1.day %> 
-      <%# sorted_hash[:yesterday] <<   activity %>
-    <%# else %>
-      <%# sorted_hash[:remaining] << activity %>
-    <%# end %>
-<%# end %>
-
-   
-<%# binding.pry %>
-<%# @activities.each do |activity| %>
-  <!-- <div class="activity"> -->
-    <%#= render_activity(activity) %>
-  <!-- </div> -->
-<%# end %>
-
-<%# @activities.each do |activity| %>
-  <!-- <div class="activity"> -->
-  <%# if activity.created_at.to_date == Date.today %>
-    <%#= render_activity(activity) %>
-  <%# elsif activity.created_at.to_date == (Time.now - 3.days).to_date %>
-
-    <%#= render_activity(activity) %>
-  <%# end %>
-  <!-- </div> -->
-<%# end %>
-
 
 
 
