@@ -1,7 +1,7 @@
 class Comment < ActiveRecord::Base
 
   include PublicActivity::Model
-  tracked owner: ->(controller, model) {controller && controller.current_user} ,
+  tracked except: :destroy, owner: ->(controller, model) {controller && controller.current_user} ,
   		  :params => {:post_id => proc {|controller,model_instance| model_instance.post_id}}
 
   belongs_to :posts
