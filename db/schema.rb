@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140110125616) do
+ActiveRecord::Schema.define(version: 20140114092425) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -244,6 +247,15 @@ ActiveRecord::Schema.define(version: 20140110125616) do
   add_index "rs_reputations", ["reputation_name", "target_id", "target_type"], name: "index_rs_reputations_on_reputation_name_and_target", unique: true, using: :btree
   add_index "rs_reputations", ["reputation_name"], name: "index_rs_reputations_on_reputation_name", using: :btree
   add_index "rs_reputations", ["target_id", "target_type"], name: "index_rs_reputations_on_target_id_and_target_type", using: :btree
+
+  create_table "settings", force: true do |t|
+    t.boolean  "email_for_new_follower"
+    t.boolean  "email_for_new_like"
+    t.boolean  "email_for_new_cmnt"
+    t.string   "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "simple_hashtag_hashtaggings", force: true do |t|
     t.integer "hashtag_id"

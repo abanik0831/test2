@@ -31,8 +31,12 @@
 .likes_splash {
   background: url("likes.png") !important;
   width: 50px !important;
-  height: 54px !important;
+  height: 50px !important;
   border: none;
+}
+
+.liked_splash {
+  height: 50px !important;
 }
 
 .orcls {
@@ -47,6 +51,44 @@
   top: 32px;
 }
 
+.countdesignid {
+  display: inline;
+}
+
+.countdesign {
+  display: inline-block;
+  left: 85%;
+  position: relative;
+  top: -13px;
+  width: 55px;
+  height: 55px;
+  background: rgb(52, 58, 66) !important;
+  color: #ffffff;
+  border-radius: 50%;
+  p {
+    text-align: center;
+    top: 14px;
+    position: relative;
+  }
+}
+
+.countdesignempty {
+  display: inline-block;
+  left: 85%;
+  position: relative;
+  top: -13px;
+  width: 55px;
+  height: 55px;
+  background: tan;
+  color: #ffffff;
+  border-radius: 50%;
+  p {
+    text-align: center;
+    top: 14px;
+    position: relative;
+  }
+}
+
 .requestbutton {
   background: rgb(0,0,0) !important;
   position: relative;
@@ -54,6 +96,22 @@
   left: -35px;
   top: 15px;
   width: 19% !important;
+}
+
+.likeclickform {
+  display: inline-block;
+  position: relative;
+  top: -13px;
+  left: -15%;
+  height: 50px !important;
+}
+
+.likesdesign {
+  height: 45px;
+  width: 285px;
+  display: inline-block;
+  position: absolute;
+  left: 29%;
 }
 
 .textinline {

@@ -224,7 +224,7 @@ $(document).ready(function(){
         $('body').animate({scrollTop: 0}, 1000);
     });
 
-    $(".view_all_comments").on("click", function(e){
+    $(document).on("click", ".view_all_comments",  function(e){
         e.preventDefault();
         $(this).parent().find(".comment:not(:nth-last-of-type(-n+2))").css("display", "block");
         $(this).parent().find(".comment:nth-last-child(2)").css("border-top", "1px solid gray");

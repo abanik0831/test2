@@ -14,10 +14,6 @@
     <%# end %>
 <%# end %>
 
-
-
-
-
 <%= div_for like , data: {id: like.id } do %>
     <% pf =  ProfilePic.find_by_profile_id(Profile.find_by_user_id(like.user_id))  %>
     <% unless pf.blank? %>
@@ -25,7 +21,7 @@
             <%= link_to image_tag(pf.image_url(:thumb).to_s, :class => "comment_profilepic"), profile_path(id: like.user_id)  %>
         </li>
     <% end %>
-<% end %> 
+<% end %>
 
 
 

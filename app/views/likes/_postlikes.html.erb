@@ -6,7 +6,7 @@
 <%# end %>
 
 <% if l = post.likes.find_by_user_id(current_user.id) %>
-  <%= link_to 'Unlike', [post, l], :method => :delete , :remote => true %> 
+  <%= link_to image_tag("liked.png", :class => "liked_splash"), [post, l], :method => :delete , :remote => true %>
 <% else %>
 	<%= form_for [post, like], remote: true do |likepost| %>
 	  <%= likepost.hidden_field :post_id, :value => post.id, :class => "post_id_comment" %>	                                

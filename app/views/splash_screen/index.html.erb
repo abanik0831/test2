@@ -96,15 +96,51 @@
                             <!--Post.where("posts.id" => ff.id).first-->
                           </li>
 
-                          <%= content_tag :div, class:"commentsheight", id: "like_pf_pic_"+f.id.to_s, data: {url: post_likes_url(f.id)} do %>
-                              <%= render f.likes.order('created_at DESC') %>
+                          <%= content_tag :div, class:"likesdesign", id: "like_pf_pic_"+f.id.to_s, data: {url: post_likes_url(f.id)} do %>
+                              <% if f.likes.count <= 3 %>
+                                  <%= render f.likes.order('created_at DESC') %>
+                              <% else %>
+                                  <%= render f.likes.order('created_at DESC').limit(3) %>
+                              <% end %>
+                          <% end %>
+                          <% if f.likes.count > 3 %>
+                            <%= content_tag :div, class: "countdesignid", id: "count_post_likes_" + f.id.to_s do %>
+
+                                  <button class="countdesign btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    +<%= f.likes.count-3 %>
+                                  </button>
+
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                          ...
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                      </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                  </div><!-- /.modal -->
+
+                            <% end %>
+                          <% else %>
+                              <%= content_tag :div, class:"countdesignempty" do %>
+                                  <p></p>
+                              <% end %>
                           <% end %>
 
-                          <%= content_tag :div , id: "post_likes_form_" + f.id.to_s do %>
+                          <%= content_tag :div , class: "likeclickform", id: "post_likes_form_" + f.id.to_s do %>
 	                          <% if like = f.likes.find_by_user_id(current_user.id) %>
 	  							<%#= form_for like, :html => { :method => :delete },:remote => true do |f| %>
 	    						<%#= f.submit "Unlike" %>
-	    						<%= link_to 'Unlike', [f, like], :method => :delete , :remote => true %> 
+	    						<%= link_to image_tag("liked.png", :class => "liked_splash"), [f, like], :method => :delete , :remote => true %>
 	  							<%# end %>
 							  <% else %>
 								 <%= form_for [f, @like], remote: true do |likepost| %>
