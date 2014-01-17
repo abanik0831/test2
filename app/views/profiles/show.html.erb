@@ -19,7 +19,6 @@
       <% ProfilePic.all.each do |f| %>
         <% if @profiles.profilepicid == f.id %>
               <%= image_tag f.image_url(:thumb).to_s %>
-
           <% end %>
 
       <% end %>
@@ -32,6 +31,16 @@
       <p class="editprofiletext">
         Edit Profile
       </p>
+  <% else %>
+      <p class="profileedit">
+        <%= link_to image_tag("messages.png", :class => "editprofile_image"), new_conversation_path(:profile_id => @profile.id), :remote => true %>
+      </p>
+      <p class="editprofiletext">
+        Send Message
+      </p>
+      <%= content_tag :div, class: "countdesignid", id: "message_modal_" + @profile.id.to_s do %>
+        <!-- Modal -->
+      <% end %>
   <% end %>
 
 

@@ -1,0 +1,2 @@
+$("#message_modal_<%= @profile.id %>").html("<%= j(render(:partial => 'modal_form', :locals=>{:profile => @profile})) %>")
+$(".countdesign").trigger('click')
