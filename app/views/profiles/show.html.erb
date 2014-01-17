@@ -32,6 +32,7 @@
         Edit Profile
       </p>
   <% else %>
+      <% if @user.following?(current_user) %>
       <p class="profileedit">
         <%= link_to image_tag("messages.png", :class => "editprofile_image"), new_conversation_path(:profile_id => @profile.id), :remote => true %>
       </p>
@@ -41,6 +42,7 @@
       <%= content_tag :div, class: "countdesignid", id: "message_modal_" + @profile.id.to_s do %>
         <!-- Modal -->
       <% end %>
+          <% end %>
   <% end %>
 
 
